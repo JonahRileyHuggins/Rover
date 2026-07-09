@@ -65,6 +65,8 @@ def test_process_update_returns_delta_array():
 
 def test_hybrid_short_run_proteins_rise():
     """mRNA is present; translation should produce protein over a short run."""
+    from rover.composite import run_operator_split
+
     composite, index = build_hybrid_composite(DET, STOCH, dt=1.0)
     prot_i = index.name_to_index["cyt_prot__LIGAND_"]
     mrna_i = index.name_to_index["cyt_mrna__LIGAND_"]
@@ -73,14 +75,19 @@ def test_hybrid_short_run_proteins_rise():
     assert counts0[mrna_i] == pytest.approx(5.0, rel=1e-2)
     assert counts0[prot_i] == pytest.approx(0.0, abs=1e-6)
 
-    composite.run(50.0)
-    counts1 = np.asarray(composite.state["counts"], dtype=np.float64)
+    counts1 = run_operator_split(composite, t_end=50.0, dt=1.0)
 
     # Translation from mRNA should increase ligand protein
     assert counts1[prot_i] > counts0[prot_i] + 0.1
 
 
 def test_run_hybrid_helper():
-    counts, index = run_hybrid(DET, STOCH, t_end=5.0, dt=1.0)
+    counts, index = run_hybrid(DET, STOCH, t_end=5.0, dt=1.0, engine="split")
+    assert counts.shape == (index.n_species,)
+    assert np.all(np.isfinite(counts))
+
+
+def test_run_hybrid_composite_engine():
+    counts, index = run_hybrid(DET, STOCH, t_end=5.0, dt=1.0, engine="composite")
     assert counts.shape == (index.n_species,)
     assert np.all(np.isfinite(counts))

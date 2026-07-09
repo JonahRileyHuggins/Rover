@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import logging
 from pathlib import Path
 from typing import Any
 
@@ -11,6 +12,8 @@ from process_bigraph import Process
 
 from rover.species_index import gather, scatter_delta
 
+logger = logging.getLogger("rover.stochmod")
+
 
 class StochModProcess(Process):
     """Advance a stochastic SBML model via StochMod; exchange molecule counts.
@@ -18,7 +21,9 @@ class StochModProcess(Process):
     Config
     ------
     sbml_path : str
-        Path to the stochastic SBML file.
+        Path to the stochastic SBML file (used if ``module`` is not given).
+    module : object, optional
+        Pre-built ``stochmod.StochasticModule`` (avoids rebuild/reload).
     local_indices : list[int]
         Global dense indices for this module's ``species_names`` order.
     ownership_mask : list[bool] | None
@@ -30,7 +35,8 @@ class StochModProcess(Process):
     """
 
     config_schema = {
-        "sbml_path": "string",
+        "sbml_path": {"_type": "string", "_default": ""},
+        "module": {"_type": "maybe[node]", "_default": None},
         "local_indices": "list[integer]",
         "ownership_mask": {"_type": "maybe[list[boolean]]", "_default": None},
         "n_species": "integer",
@@ -40,14 +46,33 @@ class StochModProcess(Process):
     def initialize(self, config: dict[str, Any] | None = None) -> None:
         from stochmod import StochasticModule
 
-        path = Path(self.config["sbml_path"])
-        self._module = StochasticModule(path)
+        module = self.config.get("module")
+        if module is None:
+            path = self.config.get("sbml_path") or ""
+            if not path:
+                raise ValueError("StochModProcess requires 'module' or 'sbml_path'")
+            module = StochasticModule(path)
+            logger.info(
+                "StochMod loaded %s (%d species)",
+                Path(path).name,
+                len(module.species_names),
+            )
+        else:
+            logger.info(
+                "StochMod using pre-built module (%d species)",
+                len(module.species_names),
+            )
+
+        self._module = module
         self._local_indices = np.asarray(self.config["local_indices"], dtype=np.int64)
         self._n_species = int(self.config["n_species"])
         mask = self.config.get("ownership_mask")
         self._ownership_mask = (
             np.asarray(mask, dtype=bool) if mask is not None else None
         )
+        self._owned_local = None
+        if self._ownership_mask is not None:
+            self._owned_local = self._ownership_mask[self._local_indices]
         self._local_names = list(self._module.species_names)
         if len(self._local_indices) != len(self._local_names):
             raise ValueError(
@@ -77,15 +102,27 @@ class StochModProcess(Process):
         global_counts = np.asarray(state["counts"], dtype=np.float64)
         local_counts = gather(global_counts, self._local_indices)
         self._module.set_state(local_counts)
-        new_counts = self._module.advance(float(interval))
-        local_delta = np.asarray(new_counts, dtype=np.float64) - local_counts
+        new_counts = np.asarray(self._module.advance(float(interval)), dtype=np.float64)
+        local_delta = new_counts - local_counts
+        if self._owned_local is not None:
+            local_delta = np.where(self._owned_local, local_delta, 0.0)
         delta = scatter_delta(
             local_delta,
             self._local_indices,
             self._n_species,
-            ownership_mask=self._ownership_mask,
+            ownership_mask=None,
         )
         return {"counts": delta}
+
+    def apply_inplace(self, counts: np.ndarray, interval: float) -> None:
+        """Operator-split step that mutates ``counts`` in place (lean runner)."""
+        local_counts = counts[self._local_indices].copy()
+        self._module.set_state(local_counts)
+        new_counts = np.asarray(self._module.advance(float(interval)), dtype=np.float64)
+        local_delta = new_counts - local_counts
+        if self._owned_local is not None:
+            local_delta = np.where(self._owned_local, local_delta, 0.0)
+        counts[self._local_indices] += local_delta
 
     @property
     def module(self):
