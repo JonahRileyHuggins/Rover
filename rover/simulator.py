@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import logging
 from pathlib import Path
-from typing import Any, Mapping
+from typing import Any, Literal, Mapping
 
 import numpy as np
 
@@ -14,12 +14,17 @@ from rover.composite import (
     _ensure_rover_logging,
     _get_process_instance,
 )
+from rover.trajectory import TrajectoryStore
 
 logger = logging.getLogger("rover")
 
 
 class HybridSimulator:
     """Stateful hybrid engine: load models once, then ``update`` / ``run``.
+
+    Live shared state is a 1-D molecule-count vector in RAM (``counts``).
+    Trajectories are recorded separately into a pre-sized matrix — either in
+    memory or a memory-mapped ``.npy`` file for large runs.
 
     Parameters
     ----------
@@ -36,9 +41,9 @@ class HybridSimulator:
     --------
     >>> sim = HybridSimulator(det_xml, stoch_xml, dt=1.0)
     >>> sim.update("cyt_mrna__LIGAND_", 10)
-    >>> sim.update({"kTL1_1": 2.0, "kTC1_1": 0.01})
-    >>> counts = sim.run(t_end=60.0)
-    >>> df = sim.to_dataframe()
+    >>> traj = sim.run(t_end=60.0)                 # shape (n_points, n_species)
+    >>> df = sim.to_dataframe()                    # time + species columns
+    >>> traj = sim.run(t_end=259200, results_path="out/traj.npy")  # memmap
     """
 
     def __init__(
@@ -64,8 +69,10 @@ class HybridSimulator:
         )
         self._bng = _get_process_instance(self.composite, "bngsim")
         self._stoch = _get_process_instance(self.composite, "stochmod")
+        # Live coupling state — always 1-D, always in RAM.
         self._counts = np.asarray(self.composite.state["counts"], dtype=np.float64).copy()
         self._t = 0.0
+        self._trajectory: TrajectoryStore | None = None
 
         # Snapshot for reset() + parameter membership sets
         self._initial_counts = self._counts.copy()
@@ -99,8 +106,22 @@ class HybridSimulator:
 
     @property
     def counts(self) -> np.ndarray:
-        """Live shared molecule-count vector (copy)."""
+        """Live shared molecule-count vector (copy of the 1-D RAM state)."""
         return self._counts.copy()
+
+    @property
+    def results(self) -> np.ndarray | None:
+        """Last trajectory matrix ``(n_points, n_species)``, or ``None``."""
+        if self._trajectory is None:
+            return None
+        return self._trajectory.counts
+
+    @property
+    def times(self) -> np.ndarray | None:
+        """Time axis for :attr:`results`, or ``None``."""
+        if self._trajectory is None:
+            return None
+        return self._trajectory.times
 
     @property
     def time(self) -> float:
@@ -133,10 +154,21 @@ class HybridSimulator:
         raise KeyError(f"Unknown species or parameter id: {name!r}")
 
     def to_dataframe(self):
-        """One-row pandas DataFrame of current counts (columns = species ids)."""
+        """Pandas DataFrame of the last trajectory (``time`` + species columns).
+
+        Falls back to a one-row frame of the live counts if ``run`` has not
+        been called yet.
+        """
         import pandas as pd
 
-        return pd.DataFrame([self._counts], columns=list(self.index.names))
+        if self._trajectory is not None:
+            data = {name: self._trajectory.counts[:, i] for i, name in enumerate(self.index.names)}
+            data = {"time": np.asarray(self._trajectory.times), **data}
+            return pd.DataFrame(data)
+
+        return pd.DataFrame(
+            [{"time": self._t, **{n: float(self._counts[i]) for i, n in enumerate(self.index.names)}}]
+        )
 
     # ------------------------------------------------------------------
     # Mutation
@@ -221,26 +253,42 @@ class HybridSimulator:
         t_span: tuple[float, float] | None = None,
         engine: str = "split",
         progress_every: int | None = None,
+        record: bool = True,
+        results_path: str | Path | None = None,
+        results_backend: Literal["auto", "memory", "memmap"] = "auto",
     ) -> np.ndarray:
-        """Advance the hybrid simulation; return the live counts vector.
+        """Advance the hybrid simulation; return the trajectory matrix.
 
         Parameters
         ----------
         t_end :
-            Integrate from the current ``time`` to ``t_end`` (duration =
-            ``t_end - time`` when ``time > 0``, else ``t_end`` from 0).
+            Integrate from the current ``time`` to ``t_end``.
         t_span :
-            ``(t0, t1)`` absolute window; resets the clock to ``t0`` conceptually
-            for the step count ``(t1 - t0) / dt`` without clearing state.
+            ``(t0, t1)`` absolute window for step count ``(t1 - t0) / dt``.
         dt :
             Coupling step (default: constructor ``dt``).
         engine :
             ``"split"`` (default) or ``"composite"``.
+        record :
+            If True (default), allocate a trajectory buffer and write every
+            timepoint. Live ``_counts`` stays a 1-D RAM vector either way.
+        results_path :
+            If set, force a memory-mapped ``.npy`` trajectory at this path
+            (plus a sibling ``*_times.npy``). Recommended for large runs.
+        results_backend :
+            ``"auto"`` (memmap if path set or buffer ≥ 256 MiB), ``"memory"``,
+            or ``"memmap"``.
+
+        Returns
+        -------
+        np.ndarray
+            Shape ``(n_steps + 1, n_species)`` when ``record=True``; otherwise
+            the final 1-D counts vector.
         """
         step = float(self.dt if dt is None else dt)
         if t_span is not None:
-            t0, t1 = float(t_span[0]), float(t_span[1])
-            duration = t1 - t0
+            t0_abs, t1 = float(t_span[0]), float(t_span[1])
+            duration = t1 - t0_abs
             if duration <= 0:
                 raise ValueError(f"t_span must have t1 > t0, got {t_span}")
         elif t_end is not None:
@@ -250,6 +298,7 @@ class HybridSimulator:
                 raise ValueError(
                     f"t_end={t_end} must be greater than current time={self._t}"
                 )
+            t0_abs = self._t
             t1 = self._t + duration
         else:
             raise TypeError("run() requires t_end=... or t_span=(t0, t1)")
@@ -260,6 +309,20 @@ class HybridSimulator:
         n_steps = int(np.floor(duration / step))
         if n_steps < 1:
             raise ValueError(f"duration={duration} / dt={step} yields no steps")
+
+        traj: TrajectoryStore | None = None
+        if record:
+            backend = results_backend
+            path = results_path
+            if path is not None and backend == "auto":
+                backend = "memmap"
+            traj = TrajectoryStore(
+                n_steps + 1,
+                self.index.n_species,
+                backend=backend,
+                path=path,
+            )
+            self._trajectory = traj
 
         if engine == "split":
             if n_steps > 1000:
@@ -273,19 +336,31 @@ class HybridSimulator:
                 t_end=duration,
                 dt=step,
                 progress_every=progress_every,
+                trajectory=traj,
+                t0_abs=t0_abs,
             )
         elif engine == "composite":
-            # Temporarily set process intervals
-            for name in ("bngsim", "stochmod"):
-                node = self.composite.state[name]
-                if isinstance(node, dict):
-                    node["interval"] = step
-            self.composite.run(float(duration))
-            self._counts = np.asarray(self.composite.state["counts"], dtype=np.float64)
+            if record:
+                # Composite engine has no per-step hook; fall back to split
+                # recording path for trajectories.
+                logger.warning(
+                    "engine='composite' cannot record per-step trajectories; "
+                    "using engine='split' for this run"
+                )
+            self._counts = run_operator_split(
+                self.composite,
+                t_end=duration,
+                dt=step,
+                progress_every=progress_every,
+                trajectory=traj,
+                t0_abs=t0_abs,
+            )
         else:
             raise ValueError(f"Unknown engine={engine!r}; use 'split' or 'composite'")
 
-        self._t = float(t1) if t_span is not None else self._t + duration
+        self._t = float(t1)
+        if traj is not None:
+            return traj.counts
         return self.counts
 
     def reset(self) -> None:
@@ -296,8 +371,8 @@ class HybridSimulator:
             self._bng.kernel.model.set_param(name, val)
         for name, val in self._initial_stoch_params.items():
             self._stoch.module.update(name, val)
-        # Reset BNGsim interactive clock / IC if available
         reset = getattr(self._bng.kernel, "reset", None)
         if callable(reset):
             reset()
         self._t = 0.0
+        self._trajectory = None

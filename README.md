@@ -28,25 +28,36 @@ sim = HybridSimulator(
     dt=1.0,
 )
 
-# Species and/or parameters by id (shared store + routed to the owning kernel)
 sim.update("cyt_mrna__LIGAND_", 10)
 sim.update({"kTL1_1": 2.0, "kTC1_1": 0.01})
 
-counts = sim.run(t_end=60.0)
-df = sim.to_dataframe()          # one-row pandas frame, columns = species ids
-sim.reset()                      # restore ICs + parameters
+traj = sim.run(t_end=60.0)           # shape (61, n_species); live state stays 1-D
+df = sim.to_dataframe()              # columns: time + species ids
+# Large runs — pre-size a memmap .npy (OS page cache; kernels never open the file):
+# traj = sim.run(t_end=259200, dt=30, results_path="out/traj.npy")
+sim.reset()
 ```
 
 One-shot helper (rebuilds models each call — prefer `HybridSimulator` for sweeps):
 
 ```python
 from rover import run_hybrid
-counts, index = run_hybrid(det_xml, stoch_xml, t_end=50.0, dt=1.0)
+traj, index = run_hybrid(det_xml, stoch_xml, t_end=50.0, dt=1.0)
 ```
 
 Shared store currency is molecule counts. BNGsim nM concentrations are
 converted at the process boundary using SBML compartment volumes.
 
+### Trajectory storage
+
+| Piece | Where | Why |
+|-------|--------|-----|
+| Live `_counts` | 1-D `float64` in RAM | Hot path for operator splitting |
+| Trajectory | `(n_points, n_species)` memory **or** memmap `.npy` | History only; one row write per step |
+
+Do **not** have BNGsim/StochMod dump to disk each step — that would dominate cost.
+The orchestrator copies the live vector into the next trajectory row (sequential
+write; memmap is fine because the OS caches pages).
 ## Performance notes
 
 `run` / `run_hybrid` default to `engine="split"`: a tight Python loop that calls

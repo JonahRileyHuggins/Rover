@@ -51,20 +51,46 @@ def test_update_unknown_raises(sim: HybridSimulator):
         sim.update("not_a_real_id", 1.0)
 
 
-def test_run_after_update_and_dataframe(sim: HybridSimulator):
+def test_run_records_full_trajectory(sim: HybridSimulator):
     sim.reset()
     sim.update("cyt_mrna__LIGAND_", 20.0)
-    counts = sim.run(t_end=10.0)
-    assert counts.shape == (sim.index.n_species,)
+    traj = sim.run(t_end=10.0)
+    assert traj.ndim == 2
+    assert traj.shape == (11, sim.index.n_species)  # t=0..10 inclusive
+    assert sim.times is not None
+    assert sim.times.shape == (11,)
+    np.testing.assert_allclose(sim.times, np.arange(0.0, 11.0, 1.0))
+    # Final live state matches last trajectory row
+    np.testing.assert_allclose(sim.counts, traj[-1])
     assert sim.time == pytest.approx(10.0)
-    # Translation should produce protein from elevated mRNA
-    prot = sim.get("cyt_prot__LIGAND_")
-    assert prot > 0.0
+    assert sim.get("cyt_prot__LIGAND_") > 0.0
 
     df = sim.to_dataframe()
-    assert list(df.columns) == list(sim.species_names)
-    assert df.shape == (1, sim.index.n_species)
-    assert float(df["cyt_prot__LIGAND_"].iloc[0]) == pytest.approx(prot)
+    assert "time" in df.columns
+    assert list(df.columns[1:]) == list(sim.species_names)
+    assert df.shape == (11, sim.index.n_species + 1)
+    assert float(df["cyt_prot__LIGAND_"].iloc[-1]) == pytest.approx(
+        sim.get("cyt_prot__LIGAND_")
+    )
+
+
+def test_run_memmap_trajectory(sim: HybridSimulator, tmp_path: Path):
+    sim.reset()
+    out = tmp_path / "traj.npy"
+    traj = sim.run(t_end=5.0, results_path=out, results_backend="memmap")
+    assert out.exists()
+    assert (tmp_path / "traj_times.npy").exists()
+    assert isinstance(traj, np.memmap)
+    assert traj.shape == (6, sim.index.n_species)
+    loaded = np.load(out)
+    np.testing.assert_allclose(loaded, traj)
+
+
+def test_run_record_false_returns_final_vector(sim: HybridSimulator):
+    sim.reset()
+    final = sim.run(t_end=5.0, record=False)
+    assert final.ndim == 1
+    assert final.shape == (sim.index.n_species,)
 
 
 def test_reset_restores_state(sim: HybridSimulator):
@@ -75,6 +101,7 @@ def test_reset_restores_state(sim: HybridSimulator):
     sim.run(t_end=5.0)
     sim.reset()
     assert sim.time == 0.0
+    assert sim.results is None
     assert sim.get("cyt_mrna__LIGAND_") == pytest.approx(mrna0)
     assert sim.get("kTL1_1") == pytest.approx(k0)
 

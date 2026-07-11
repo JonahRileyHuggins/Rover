@@ -179,12 +179,15 @@ def run_operator_split(
     t_end: float,
     dt: float,
     progress_every: int | None = None,
+    trajectory=None,
+    t0_abs: float = 0.0,
 ) -> np.ndarray:
     """Tight operator-split loop — bypasses per-step process-bigraph scheduling.
 
-    This is the genome-scale path: each step is two ``apply_inplace`` calls on
-    a shared NumPy counts vector. Prefer this over ``composite.run`` when
-    ``t_end / dt`` is large.
+    Live state is a 1-D ``counts`` vector in RAM. If ``trajectory`` is given
+    (a :class:`~rover.trajectory.TrajectoryStore`), each coupling step writes
+    one row into that pre-sized buffer (memory or memmap) — the kernels never
+    touch disk themselves.
     """
     _ensure_rover_logging()
     bng = _get_process_instance(composite, "bngsim")
@@ -206,7 +209,14 @@ def run_operator_split(
         getattr(bng, "codegen_active", "?"),
     )
 
-    t0 = time.perf_counter()
+    if trajectory is not None:
+        if trajectory.n_points != n_steps + 1:
+            raise ValueError(
+                f"trajectory.n_points={trajectory.n_points} != n_steps+1={n_steps + 1}"
+            )
+        trajectory.record(0, float(t0_abs), counts)
+
+    wall0 = time.perf_counter()
     t_bng = 0.0
     t_stoch = 0.0
     for step in range(1, n_steps + 1):
@@ -218,22 +228,28 @@ def run_operator_split(
         t_stoch += t_b - t_a
         t_bng += t_c - t_b
 
+        if trajectory is not None:
+            trajectory.record(step, float(t0_abs + step * dt), counts)
+
         if step % progress_every == 0 or step == n_steps:
-            elapsed = time.perf_counter() - t0
+            elapsed = time.perf_counter() - wall0
             logger.info(
                 "  step %d/%d (t=%.4g)  elapsed=%.2fs  "
                 "stoch=%.2fs  bng=%.2fs  us/step=%.1f",
                 step,
                 n_steps,
-                step * dt,
+                t0_abs + step * dt,
                 elapsed,
                 t_stoch,
                 t_bng,
                 1e6 * elapsed / step,
             )
 
+    if trajectory is not None:
+        trajectory.flush()
+
     composite.state["counts"] = counts
-    total = time.perf_counter() - t0
+    total = time.perf_counter() - wall0
     logger.info(
         "Operator-split done in %.3fs (%.1f us/step; stoch=%.1f%% bng=%.1f%%)",
         total,
@@ -253,18 +269,12 @@ def run_hybrid(
     initial_counts: np.ndarray | None = None,
     bngsim_kwargs: dict[str, Any] | None = None,
     engine: str = "split",
+    results_path: str | Path | None = None,
 ) -> tuple[np.ndarray, SpeciesIndex]:
     """One-shot hybrid run (builds a :class:`~rover.simulator.HybridSimulator`).
 
-    For repeated ``update`` / ``run`` calls, construct ``HybridSimulator`` once
-    instead — that avoids reloading SBML on every invocation.
-
-    Parameters
-    ----------
-    engine :
-        ``"split"`` (default) — tight operator-split loop (fast; recommended).
-        ``"composite"`` — process-bigraph ``Composite.run`` (correct but slow
-        for large ``t_end/dt`` because of per-step scheduling overhead).
+    Returns ``(trajectory, index)`` where trajectory has shape
+    ``(n_steps + 1, n_species)``.
     """
     from rover.simulator import HybridSimulator
 
@@ -275,5 +285,5 @@ def run_hybrid(
         initial_counts=initial_counts,
         bngsim_kwargs=bngsim_kwargs,
     )
-    counts = sim.run(t_end=t_end, engine=engine)
-    return counts, sim.index
+    traj = sim.run(t_end=t_end, engine=engine, results_path=results_path)
+    return traj, sim.index

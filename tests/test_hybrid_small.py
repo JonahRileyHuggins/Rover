@@ -82,12 +82,14 @@ def test_hybrid_short_run_proteins_rise():
 
 
 def test_run_hybrid_helper():
-    counts, index = run_hybrid(DET, STOCH, t_end=5.0, dt=1.0, engine="split")
-    assert counts.shape == (index.n_species,)
-    assert np.all(np.isfinite(counts))
+    traj, index = run_hybrid(DET, STOCH, t_end=5.0, dt=1.0, engine="split")
+    assert traj.ndim == 2
+    assert traj.shape == (6, index.n_species)
+    assert np.all(np.isfinite(traj))
 
 
 def test_run_hybrid_composite_engine():
-    counts, index = run_hybrid(DET, STOCH, t_end=5.0, dt=1.0, engine="composite")
-    assert counts.shape == (index.n_species,)
-    assert np.all(np.isfinite(counts))
+    traj, index = run_hybrid(DET, STOCH, t_end=5.0, dt=1.0, engine="composite")
+    assert traj.ndim == 2
+    assert traj.shape == (6, index.n_species)
+    assert np.all(np.isfinite(traj))

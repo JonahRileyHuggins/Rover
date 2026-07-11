@@ -19,10 +19,10 @@ def main() -> None:
         DATA / "stochastic-gene-expression.xml",
         dt=1.0,
     )
-    counts = sim.run(t_end=60.0)
+    traj = sim.run(t_end=60.0)
+    print("trajectory shape:", traj.shape)
     print("species:", sim.species_names)
-    print("final counts:", counts)
-    print(sim.to_dataframe())
+    print(sim.to_dataframe().tail())
 
 
 if __name__ == "__main__":
