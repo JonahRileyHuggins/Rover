@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Iterable, Sequence
+from typing import Sequence
 
 import numpy as np
 
@@ -41,7 +41,6 @@ def _species_ids_from_sbml(path: str | Path) -> list[str]:
 
 def _annotation_text(species) -> str:
     ann = species.getAnnotationString() or ""
-    # Prefer plain <annotation>...</annotation> body if present
     if "<annotation>" in ann and "</annotation>" in ann:
         start = ann.find("<annotation>") + len("<annotation>")
         end = ann.find("</annotation>")
@@ -50,10 +49,10 @@ def _annotation_text(species) -> str:
 
 
 def ownership_from_sbml(path: str | Path) -> dict[str, str]:
-    """Map species id → 'deterministic' | 'stochastic' from SBML annotations.
+    """Map species id → role when annotation explicitly says Deterministic/Stochastic.
 
-    Annotations look like ``Cytoplasm 0 Deterministic`` / ``Nucleus 1 Stochastic``.
-    Defaults to ``stochastic`` if the role token is missing.
+    Annotations like ``Cytoplasm 0 Deterministic`` / ``Nucleus 1 Stochastic``.
+    Species without an explicit role token are omitted (caller decides).
     """
     doc = libsbml.readSBMLFromFile(str(path))
     model = doc.getModel()
@@ -67,19 +66,58 @@ def ownership_from_sbml(path: str | Path) -> dict[str, str]:
             roles[sp.getId()] = "deterministic"
         elif "stochastic" in text:
             roles[sp.getId()] = "stochastic"
-        else:
-            roles[sp.getId()] = "stochastic"
     return roles
+
+
+def _infer_role_from_name(name: str) -> str:
+    """Heuristic for partitioned models without role annotations."""
+    n = name.lower()
+    if any(
+        tok in n
+        for tok in (
+            "mrna",
+            "gene",
+            "transcript",
+            "nuc_gene",
+            "cyt_mrna",
+        )
+    ):
+        return "stochastic"
+    return "deterministic"
+
+
+def resolve_ownership(
+    name: str,
+    *,
+    annotated: dict[str, str],
+    det_ids: set[str],
+    stoch_ids: set[str],
+) -> str:
+    """Decide which process may write ``name``."""
+    if name in annotated:
+        return annotated[name]
+    in_det = name in det_ids
+    in_stoch = name in stoch_ids
+    if in_stoch and not in_det:
+        return "stochastic"
+    if in_det and not in_stoch:
+        return "deterministic"
+    # Present in both partitions (or neither — shouldn't happen): name heuristic.
+    return _infer_role_from_name(name)
 
 
 def build_species_index(
     *sbml_paths: str | Path,
     ownership_sbml: str | Path | None = None,
+    deterministic_sbml: str | Path | None = None,
+    stochastic_sbml: str | Path | None = None,
 ) -> SpeciesIndex:
     """Build a dense index from the ordered union of species across SBML files.
 
-    Species order: first occurrence across ``sbml_paths`` (stable).
-    Ownership is read from ``ownership_sbml`` (default: first path).
+    Ownership priority:
+    1. Explicit Deterministic/Stochastic annotation (from ``ownership_sbml`` files)
+    2. Membership: only-in-stochastic → stochastic; only-in-deterministic → deterministic
+    3. Name heuristic for species present in both models
     """
     if not sbml_paths:
         raise ValueError("At least one SBML path is required")
@@ -92,12 +130,32 @@ def build_species_index(
                 seen.append(sid)
                 seen_set.add(sid)
 
-    roles = ownership_from_sbml(ownership_sbml or sbml_paths[0])
+    # Membership sets for fallback ownership
+    if deterministic_sbml is None or stochastic_sbml is None:
+        # Infer from call order used by Rover: (stochastic, deterministic)
+        if len(sbml_paths) >= 2:
+            stochastic_sbml = stochastic_sbml or sbml_paths[0]
+            deterministic_sbml = deterministic_sbml or sbml_paths[1]
+        else:
+            stochastic_sbml = stochastic_sbml or sbml_paths[0]
+            deterministic_sbml = deterministic_sbml or sbml_paths[0]
+
+    det_ids = set(_species_ids_from_sbml(deterministic_sbml))
+    stoch_ids = set(_species_ids_from_sbml(stochastic_sbml))
+
+    annotated: dict[str, str] = {}
+    for path in (ownership_sbml, deterministic_sbml, stochastic_sbml):
+        if path is None:
+            continue
+        annotated.update(ownership_from_sbml(path))
+
     n = len(seen)
     det = np.zeros(n, dtype=bool)
     stoch = np.zeros(n, dtype=bool)
     for i, name in enumerate(seen):
-        role = roles.get(name, "stochastic")
+        role = resolve_ownership(
+            name, annotated=annotated, det_ids=det_ids, stoch_ids=stoch_ids
+        )
         if role == "deterministic":
             det[i] = True
         else:

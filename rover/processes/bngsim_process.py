@@ -53,6 +53,10 @@ def build_reaction_kernel(
     model = bngsim.Model.from_sbml(str(path))
     kwargs = dict(simulator_kwargs or {})
     want_codegen = bool(kwargs.pop("codegen", True))
+    # Not Simulator ctor args — applied to the live simulator after build.
+    rtol = float(kwargs.pop("rtol", 1e-4))
+    atol = float(kwargs.pop("atol", 1e-6))
+    max_steps = int(kwargs.pop("max_steps", 100_000))
 
     kernel = None
     codegen_active = False
@@ -92,6 +96,18 @@ def build_reaction_kernel(
             method,
             len(kernel.state_names),
         )
+
+    sim = kernel.simulator
+    sim._rtol = rtol
+    sim._atol = atol
+    sim._max_steps = max_steps
+    logger.info(
+        "BNGsim ODE opts: rtol=%g atol=%g max_steps=%d jacobian=%s",
+        rtol,
+        atol,
+        max_steps,
+        getattr(sim, "_jacobian", "?"),
+    )
 
     # Kernel construction is done — drop BNGsim to WARNING so advance() does
     # not emit thousands of "Running ODE simulation" INFO lines.

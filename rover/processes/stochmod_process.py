@@ -11,6 +11,7 @@ import numpy as np
 from process_bigraph import Process
 
 from rover.species_index import gather, scatter_delta
+from rover.units import stochmod_to_molecule_scales
 
 logger = logging.getLogger("rover.stochmod")
 
@@ -21,13 +22,13 @@ class StochModProcess(Process):
     Config
     ------
     sbml_path : str
-        Path to the stochastic SBML file (used if ``module`` is not given).
+        Path to the stochastic SBML file (used for unit scales / load).
     module : object, optional
-        Pre-built ``stochmod.StochasticModule`` (avoids rebuild/reload).
+        Pre-built ``stochmod.StochasticModule``.
     local_indices : list[int]
         Global dense indices for this module's ``species_names`` order.
     ownership_mask : list[bool] | None
-        Global mask of species this process may write (genes + mRNA).
+        Global mask of species this process may write.
     n_species : int
         Global store length.
     time_step : float
@@ -46,9 +47,9 @@ class StochModProcess(Process):
     def initialize(self, config: dict[str, Any] | None = None) -> None:
         from stochmod import StochasticModule
 
+        path = self.config.get("sbml_path") or ""
         module = self.config.get("module")
         if module is None:
-            path = self.config.get("sbml_path") or ""
             if not path:
                 raise ValueError("StochModProcess requires 'module' or 'sbml_path'")
             module = StochasticModule(path)
@@ -80,6 +81,24 @@ class StochModProcess(Process):
                 f"module species {len(self._local_names)}"
             )
 
+        if not path:
+            raise ValueError("StochModProcess requires sbml_path for unit scales")
+        scales = stochmod_to_molecule_scales(path)
+        if scales.shape[0] != len(self._local_names):
+            raise ValueError(
+                f"StochMod unit scales length {scales.shape[0]} != "
+                f"module species {len(self._local_names)}"
+            )
+        self._to_molecules = scales
+        self._to_stochmod = np.where(scales != 0.0, 1.0 / scales, 0.0)
+        n_scaled = int(np.sum(scales != 1.0))
+        if n_scaled:
+            logger.info(
+                "StochMod unit bridge: %d/%d species scaled nanomole→molecule",
+                n_scaled,
+                len(scales),
+            )
+
     def inputs(self) -> dict[str, Any]:
         return {
             "counts": {
@@ -101,8 +120,10 @@ class StochModProcess(Process):
     def update(self, state: dict[str, Any], interval: float) -> dict[str, Any]:
         global_counts = np.asarray(state["counts"], dtype=np.float64)
         local_counts = gather(global_counts, self._local_indices)
-        self._module.set_state(local_counts)
-        new_counts = np.asarray(self._module.advance(float(interval)), dtype=np.float64)
+        stoch_state = local_counts * self._to_stochmod
+        self._module.set_state(stoch_state)
+        new_stoch = np.asarray(self._module.advance(float(interval)), dtype=np.float64)
+        new_counts = new_stoch * self._to_molecules
         local_delta = new_counts - local_counts
         if self._owned_local is not None:
             local_delta = np.where(self._owned_local, local_delta, 0.0)
@@ -117,8 +138,10 @@ class StochModProcess(Process):
     def apply_inplace(self, counts: np.ndarray, interval: float) -> None:
         """Operator-split step that mutates ``counts`` in place (lean runner)."""
         local_counts = counts[self._local_indices].copy()
-        self._module.set_state(local_counts)
-        new_counts = np.asarray(self._module.advance(float(interval)), dtype=np.float64)
+        stoch_state = local_counts * self._to_stochmod
+        self._module.set_state(stoch_state)
+        new_stoch = np.asarray(self._module.advance(float(interval)), dtype=np.float64)
+        new_counts = new_stoch * self._to_molecules
         local_delta = new_counts - local_counts
         if self._owned_local is not None:
             local_delta = np.where(self._owned_local, local_delta, 0.0)

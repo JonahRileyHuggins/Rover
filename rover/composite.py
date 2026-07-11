@@ -14,7 +14,7 @@ from process_bigraph import Composite, allocate_core, register_types
 from rover.processes.bngsim_process import BngsimProcess, build_reaction_kernel
 from rover.processes.stochmod_process import StochModProcess
 from rover.species_index import SpeciesIndex, build_species_index, local_to_global
-from rover.units import CountConverter, counts_from_bngsim_storage
+from rover.units import counts_from_bngsim_storage, stochmod_to_molecule_scales
 
 logger = logging.getLogger("rover")
 
@@ -69,12 +69,22 @@ def build_hybrid_composite(
 
     deterministic_sbml = Path(deterministic_sbml)
     stochastic_sbml = Path(stochastic_sbml)
-    sim_kwargs = dict(bngsim_kwargs) if bngsim_kwargs is not None else {"codegen": True}
+    sim_kwargs = {
+        "codegen": True,
+        "jacobian": "fd",
+        "rtol": 1e-4,
+        "atol": 1e-6,
+        "max_steps": 100_000,
+    }
+    if bngsim_kwargs:
+        sim_kwargs.update(bngsim_kwargs)
 
     index = build_species_index(
         stochastic_sbml,
         deterministic_sbml,
         ownership_sbml=stochastic_sbml,
+        deterministic_sbml=deterministic_sbml,
+        stochastic_sbml=stochastic_sbml,
     )
 
     # --- single load of each simulator ---
@@ -97,24 +107,31 @@ def build_hybrid_composite(
         len(kernel.state_names),
     )
 
-    # Initial counts from the already-loaded models
+    # Initial counts: BNGsim ICs for all det species, then StochMod amounts
+    # overwrite for stoch species. BNGsim-only species must not stay at 0.
     if initial_counts is None:
-        counts = np.zeros(index.n_species, dtype=np.float64)
-        stoch_state = stoch_module.get_state()
-        for i, name in enumerate(stoch_module.species_names):
-            gi = index.name_to_index[name]
-            if index.stochastic_mask[gi]:
-                counts[gi] = float(stoch_state[i])
-
         import bngsim
 
+        counts = np.zeros(index.n_species, dtype=np.float64)
         uc = bngsim.UnitConverter.from_model(kernel.model)
         det_counts = counts_from_bngsim_storage(kernel.get_state(), uc)
         for i, name in enumerate(kernel.state_names):
-            gi = index.name_to_index[name]
-            if index.deterministic_mask[gi]:
-                counts[gi] = float(det_counts[i])
+            counts[index.name_to_index[name]] = float(det_counts[i])
+
+        stoch_state = stoch_module.get_state()
+        stoch_scales = stochmod_to_molecule_scales(stochastic_sbml)
+        if stoch_scales.shape[0] != len(stoch_module.species_names):
+            raise ValueError("StochMod unit scales do not match species_names")
+        stoch_molecules = np.asarray(stoch_state, dtype=np.float64) * stoch_scales
+        for i, name in enumerate(stoch_module.species_names):
+            counts[index.name_to_index[name]] = float(stoch_molecules[i])
         initial_counts = counts
+        logger.info(
+            "Ownership: %d deterministic / %d stochastic writers (N=%d)",
+            int(index.deterministic_mask.sum()),
+            int(index.stochastic_mask.sum()),
+            index.n_species,
+        )
     else:
         initial_counts = np.asarray(initial_counts, dtype=np.float64)
         if initial_counts.shape != (index.n_species,):
@@ -150,6 +167,7 @@ def build_hybrid_composite(
             "_type": "process",
             "address": "local:!rover.processes.stochmod_process.StochModProcess",
             "config": {
+                "sbml_path": str(stochastic_sbml.resolve()),
                 "module": stoch_module,
                 "local_indices": stoch_indices,
                 "ownership_mask": index.stochastic_mask.tolist(),
