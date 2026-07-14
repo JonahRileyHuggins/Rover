@@ -1,19 +1,23 @@
-"""Build and run a hybrid BNGsim + StochMod process-bigraph composite."""
+"""Build and run a hybrid BNGsim + StochMod engine (plain Python orchestrator)."""
 
 from __future__ import annotations
 
 import logging
 import time
+from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
 import numpy as np
 
-from process_bigraph import Composite, allocate_core, register_types
-
-from rover.processes.bngsim_process import BngsimProcess, build_reaction_kernel
-from rover.processes.stochmod_process import StochModProcess
-from rover.species_index import SpeciesIndex, build_species_index, local_to_global
+from rover.modules.bngsim_module import BngsimModule, build_reaction_kernel
+from rover.modules.stochmod_module import StochModModule
+from rover.species_index import (
+    SpeciesIndex,
+    build_species_index,
+    exchange_counts,
+    local_to_global,
+)
 from rover.units import counts_from_bngsim_storage, stochmod_to_molecule_scales
 
 logger = logging.getLogger("rover")
@@ -28,41 +32,29 @@ def _ensure_rover_logging() -> None:
         )
 
 
-def make_core(extra_top: dict[str, Any] | None = None):
-    """Allocate a process-bigraph core with Rover process classes in scope."""
-    top = {
-        "BngsimProcess": BngsimProcess,
-        "StochModProcess": StochModProcess,
-    }
-    if extra_top:
-        top.update(extra_top)
-    return register_types(allocate_core(top=top))
+@dataclass
+class HybridEngine:
+    """Shared counts + both simulator modules (SingleCell-shaped)."""
+
+    counts: np.ndarray
+    index: SpeciesIndex
+    bng: BngsimModule
+    stoch: StochModModule
+    codegen_active: bool
 
 
-def _get_process_instance(composite: Composite, name: str):
-    node = composite.state[name]
-    if isinstance(node, dict) and "instance" in node:
-        return node["instance"]
-    raise KeyError(f"No process instance at '{name}'")
-
-
-def build_hybrid_composite(
+def build_hybrid_engine(
     deterministic_sbml: str | Path,
     stochastic_sbml: str | Path,
     *,
     dt: float = 1.0,
     initial_counts: np.ndarray | None = None,
-    core=None,
     bngsim_kwargs: dict[str, Any] | None = None,
-) -> tuple[Composite, SpeciesIndex]:
-    """Wire BNGsim + StochMod processes to a shared molecule-count array store.
+) -> HybridEngine:
+    """Load BNGsim + StochMod once and wire them to a shared molecule-count vector.
 
-    Models are loaded **once** and passed into the process configs so Composite
-    realization does not rebuild StochMod / BNGsim a second (or third) time.
-
-    Returns
-    -------
-    composite, species_index
+    ``dt`` is recorded only for logging; each :func:`run_steps` call passes its
+    own coupling interval into ``advance_from``.
     """
     _ensure_rover_logging()
     t_build0 = time.perf_counter()
@@ -71,10 +63,10 @@ def build_hybrid_composite(
     stochastic_sbml = Path(stochastic_sbml)
     sim_kwargs = {
         "codegen": True,
-        "jacobian": "fd",
+        "jacobian": "analytical",
         "rtol": 1e-4,
         "atol": 1e-6,
-        "max_steps": 100_000,
+        "max_steps": 100_000_000,
     }
     if bngsim_kwargs:
         sim_kwargs.update(bngsim_kwargs)
@@ -82,17 +74,19 @@ def build_hybrid_composite(
     index = build_species_index(
         stochastic_sbml,
         deterministic_sbml,
-        ownership_sbml=stochastic_sbml,
         deterministic_sbml=deterministic_sbml,
         stochastic_sbml=stochastic_sbml,
     )
 
-    # --- single load of each simulator ---
     from stochmod import StochasticModule
 
     t0 = time.perf_counter()
-    stoch_module = StochasticModule(stochastic_sbml)
-    logger.info("StochMod load: %.3fs (%d species)", time.perf_counter() - t0, len(stoch_module.species_names))
+    stoch_raw = StochasticModule(stochastic_sbml)
+    logger.info(
+        "StochMod load: %.3fs (%d species)",
+        time.perf_counter() - t0,
+        len(stoch_raw.species_names),
+    )
 
     t0 = time.perf_counter()
     kernel, codegen_active = build_reaction_kernel(
@@ -107,8 +101,6 @@ def build_hybrid_composite(
         len(kernel.state_names),
     )
 
-    # Initial counts: BNGsim ICs for all det species, then StochMod amounts
-    # overwrite for stoch species. BNGsim-only species must not stay at 0.
     if initial_counts is None:
         import bngsim
 
@@ -118,18 +110,39 @@ def build_hybrid_composite(
         for i, name in enumerate(kernel.state_names):
             counts[index.name_to_index[name]] = float(det_counts[i])
 
-        stoch_state = stoch_module.get_state()
-        stoch_scales = stochmod_to_molecule_scales(stochastic_sbml)
-        if stoch_scales.shape[0] != len(stoch_module.species_names):
+        stoch_state = stoch_raw.get_state()
+        stoch_scales = stochmod_to_molecule_scales(
+            stochastic_sbml,
+            companion_deterministic_sbml=deterministic_sbml,
+        )
+        if stoch_scales.shape[0] != len(stoch_raw.species_names):
             raise ValueError("StochMod unit scales do not match species_names")
         stoch_molecules = np.asarray(stoch_state, dtype=np.float64) * stoch_scales
-        for i, name in enumerate(stoch_module.species_names):
-            counts[index.name_to_index[name]] = float(stoch_molecules[i])
+        # Stoch-only: take StochMod ICs. Overlap already seeded from BNGsim;
+        # warn if StochMod disagrees (model inconsistency).
+        mismatch = 0
+        for i, name in enumerate(stoch_raw.species_names):
+            gi = index.name_to_index[name]
+            sm = float(stoch_molecules[i])
+            if index.stochastic_only_mask[gi]:
+                counts[gi] = sm
+            elif index.overlap_mask[gi]:
+                bng_v = float(counts[gi])
+                scale = max(abs(bng_v), abs(sm), 1.0)
+                if abs(bng_v - sm) > 1e-3 * scale + 1e-6:
+                    mismatch += 1
+        if mismatch:
+            logger.warning(
+                "Overlap IC mismatch on %d species (BNGsim vs StochMod); "
+                "using BNGsim values for overlap",
+                mismatch,
+            )
         initial_counts = counts
         logger.info(
-            "Ownership: %d deterministic / %d stochastic writers (N=%d)",
-            int(index.deterministic_mask.sum()),
-            int(index.stochastic_mask.sum()),
+            "Membership: %d det-only / %d stoch-only / %d overlap (N=%d)",
+            int(index.deterministic_only_mask.sum()),
+            int(index.stochastic_only_mask.sum()),
+            int(index.overlap_mask.sum()),
             index.n_species,
         )
     else:
@@ -140,77 +153,65 @@ def build_hybrid_composite(
             )
 
     det_indices = local_to_global(list(kernel.state_names), index).tolist()
-    stoch_indices = local_to_global(stoch_module.species_names, index).tolist()
+    stoch_indices = local_to_global(stoch_raw.species_names, index).tolist()
 
-    if core is None:
-        core = make_core()
+    bng = BngsimModule(
+        kernel=kernel,
+        local_indices=det_indices,
+        n_species=index.n_species,
+        codegen_active=codegen_active,
+    )
+    stoch = StochModModule(
+        module=stoch_raw,
+        sbml_path=stochastic_sbml,
+        local_indices=stoch_indices,
+        n_species=index.n_species,
+        companion_deterministic_sbml=deterministic_sbml,
+    )
 
-    state = {
-        "counts": np.asarray(initial_counts, dtype=np.float64).copy(),
-        "bngsim": {
-            "_type": "process",
-            "address": "local:!rover.processes.bngsim_process.BngsimProcess",
-            "config": {
-                "kernel": kernel,
-                "local_indices": det_indices,
-                "ownership_mask": index.deterministic_mask.tolist(),
-                "n_species": index.n_species,
-                "method": "ode",
-                "simulator_kwargs": sim_kwargs,
-                "time_step": float(dt),
-            },
-            "interval": float(dt),
-            "inputs": {"counts": ["counts"]},
-            "outputs": {"counts": ["counts"]},
-        },
-        "stochmod": {
-            "_type": "process",
-            "address": "local:!rover.processes.stochmod_process.StochModProcess",
-            "config": {
-                "sbml_path": str(stochastic_sbml.resolve()),
-                "module": stoch_module,
-                "local_indices": stoch_indices,
-                "ownership_mask": index.stochastic_mask.tolist(),
-                "n_species": index.n_species,
-                "time_step": float(dt),
-            },
-            "interval": float(dt),
-            "inputs": {"counts": ["counts"]},
-            "outputs": {"counts": ["counts"]},
-        },
-    }
-
-    composite = Composite({"state": state}, core=core)
+    engine = HybridEngine(
+        counts=np.asarray(initial_counts, dtype=np.float64).copy(),
+        index=index,
+        bng=bng,
+        stoch=stoch,
+        codegen_active=codegen_active,
+    )
     logger.info(
-        "Hybrid composite ready in %.3fs (N=%d, dt=%g, codegen=%s)",
+        "Hybrid engine ready in %.3fs (N=%d, dt=%g, codegen=%s)",
         time.perf_counter() - t_build0,
         index.n_species,
         dt,
         codegen_active,
     )
-    return composite, index
+    return engine
 
 
-def run_operator_split(
-    composite: Composite,
+def run_steps(
+    engine: HybridEngine,
     *,
     t_end: float,
     dt: float,
     progress_every: int | None = None,
     trajectory=None,
     t0_abs: float = 0.0,
+    counts: np.ndarray | None = None,
 ) -> np.ndarray:
-    """Tight operator-split loop — bypasses per-step process-bigraph scheduling.
+    """Advance both modules from the same pre-step state, then exchange.
 
-    Live state is a 1-D ``counts`` vector in RAM. If ``trajectory`` is given
-    (a :class:`~rover.trajectory.TrajectoryStore`), each coupling step writes
-    one row into that pre-sized buffer (memory or memmap) — the kernels never
-    touch disk themselves.
+    Per coupling step (SingleCell-shaped)::
+
+        s0 = counts
+        s_stoch = stoch.advance_from(s0, dt)
+        s_bng   = bng.advance_from(s0, dt)
+        counts  = exchange(s0, s_stoch, s_bng)   # exclusive copy + overlap deltas
+
+    Absolute times written to ``trajectory`` are ``t0_abs + step * dt``.
     """
     _ensure_rover_logging()
-    bng = _get_process_instance(composite, "bngsim")
-    stoch = _get_process_instance(composite, "stochmod")
-    counts = np.asarray(composite.state["counts"], dtype=np.float64).copy()
+    if counts is None:
+        counts = np.asarray(engine.counts, dtype=np.float64).copy()
+    else:
+        counts = np.asarray(counts, dtype=np.float64)
 
     n_steps = int(np.floor(float(t_end) / float(dt)))
     if n_steps < 1:
@@ -220,11 +221,11 @@ def run_operator_split(
         progress_every = max(1, n_steps // 10)
 
     logger.info(
-        "Operator-split run: t_end=%g, dt=%g, steps=%d (codegen=%s)",
+        "Coupled run: t_end=%g, dt=%g, steps=%d (codegen=%s)",
         t_end,
         dt,
         n_steps,
-        getattr(bng, "codegen_active", "?"),
+        engine.codegen_active,
     )
 
     if trajectory is not None:
@@ -238,13 +239,23 @@ def run_operator_split(
     t_bng = 0.0
     t_stoch = 0.0
     for step in range(1, n_steps + 1):
+        s0 = counts
         t_a = time.perf_counter()
-        stoch.apply_inplace(counts, dt)
+        local_stoch = engine.stoch.advance_from(s0, dt)
         t_b = time.perf_counter()
-        bng.apply_inplace(counts, dt)
+        local_bng = engine.bng.advance_from(s0, dt)
         t_c = time.perf_counter()
         t_stoch += t_b - t_a
         t_bng += t_c - t_b
+
+        counts = exchange_counts(
+            s0,
+            stoch_local=local_stoch,
+            stoch_indices=engine.stoch.local_indices,
+            bng_local=local_bng,
+            bng_indices=engine.bng.local_indices,
+            index=engine.index,
+        )
 
         if trajectory is not None:
             trajectory.record(step, float(t0_abs + step * dt), counts)
@@ -266,10 +277,10 @@ def run_operator_split(
     if trajectory is not None:
         trajectory.flush()
 
-    composite.state["counts"] = counts
+    engine.counts = counts
     total = time.perf_counter() - wall0
     logger.info(
-        "Operator-split done in %.3fs (%.1f us/step; stoch=%.1f%% bng=%.1f%%)",
+        "Coupled run done in %.3fs (%.1f us/step; stoch=%.1f%% bng=%.1f%%)",
         total,
         1e6 * total / n_steps,
         100.0 * t_stoch / total if total else 0.0,
@@ -286,7 +297,6 @@ def run_hybrid(
     dt: float = 1.0,
     initial_counts: np.ndarray | None = None,
     bngsim_kwargs: dict[str, Any] | None = None,
-    engine: str = "split",
     results_path: str | Path | None = None,
 ) -> tuple[np.ndarray, SpeciesIndex]:
     """One-shot hybrid run (builds a :class:`~rover.simulator.HybridSimulator`).
@@ -303,5 +313,5 @@ def run_hybrid(
         initial_counts=initial_counts,
         bngsim_kwargs=bngsim_kwargs,
     )
-    traj = sim.run(t_end=t_end, engine=engine, results_path=results_path)
+    traj = sim.run(t_end=t_end, results_path=results_path)
     return traj, sim.index

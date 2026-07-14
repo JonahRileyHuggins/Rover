@@ -39,19 +39,19 @@
       </compartment>
     </listOfCompartments>
     <listOfSpecies>
-      <species id="cyt_abs__ribosome_" compartment="Cytoplasm" initialConcentration="1897.372" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_abs__ribosome_" compartment="Cytoplasm" initialConcentration="5998636" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>GO:0005840</annotation>
       </species>
-      <species id="nuc_prot_i__P53_" compartment="Nucleus" initialConcentration="296.6187" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_prot_i__P53_" compartment="Nucleus" initialConcentration="312592" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P04637</annotation>
       </species>
-      <species id="nuc_prot_a__P53_" compartment="Nucleus" initialConcentration="6.246134" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_prot_a__P53_" compartment="Nucleus" initialConcentration="6582" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P04637</annotation>
       </species>
-      <species id="nuc_prot__MDM2_1_" compartment="Nucleus" initialConcentration="205.6185" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_prot__MDM2_1_" compartment="Nucleus" initialConcentration="216691" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q00987-1</annotation>
       </species>
-      <species id="nuc_prot__PPM1D_1_" compartment="Nucleus" initialConcentration="2.23073" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_prot__PPM1D_1_" compartment="Nucleus" initialConcentration="2351" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>O15297-1</annotation>
       </species>
       <species id="nuc_prot_a__ATM_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
@@ -60,79 +60,79 @@
       <species id="nuc_prot_a__ATR_1_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q13535-1</annotation>
       </species>
-      <species id="nuc_abs__MDM2delay1_" compartment="Nucleus" initialConcentration="6.246134" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_abs__MDM2delay1_" compartment="Nucleus" initialConcentration="6582" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q00987-1</annotation>
       </species>
-      <species id="nuc_abs__MDM2delay2_" compartment="Nucleus" initialConcentration="6.246134" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_abs__MDM2delay2_" compartment="Nucleus" initialConcentration="6582" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q00987-1</annotation>
       </species>
-      <species id="nuc_abs__MDM2delay3_" compartment="Nucleus" initialConcentration="6.246134" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_abs__MDM2delay3_" compartment="Nucleus" initialConcentration="6582" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q00987-1</annotation>
       </species>
-      <species id="nuc_abs__MDM2delay4_" compartment="Nucleus" initialConcentration="6.246134" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_abs__MDM2delay4_" compartment="Nucleus" initialConcentration="6582" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q00987-1</annotation>
       </species>
-      <species id="nuc_abs__MDM2delay5_" compartment="Nucleus" initialConcentration="6.246134" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_abs__MDM2delay5_" compartment="Nucleus" initialConcentration="6582" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q00987-1</annotation>
       </species>
-      <species id="nuc_abs__MDM2delay6_" compartment="Nucleus" initialConcentration="6.246134" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_abs__MDM2delay6_" compartment="Nucleus" initialConcentration="6582" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q00987-1</annotation>
       </species>
-      <species id="nuc_abs__MDM2delay7_" compartment="Nucleus" initialConcentration="6.246134" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_abs__MDM2delay7_" compartment="Nucleus" initialConcentration="6582" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q00987-1</annotation>
       </species>
-      <species id="nuc_abs__MDM2delay8_" compartment="Nucleus" initialConcentration="6.246134" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_abs__MDM2delay8_" compartment="Nucleus" initialConcentration="6582" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q00987-1</annotation>
       </species>
-      <species id="nuc_abs__MDM2delay9_" compartment="Nucleus" initialConcentration="6.246134" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_abs__MDM2delay9_" compartment="Nucleus" initialConcentration="6582" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q00987-1</annotation>
       </species>
-      <species id="nuc_abs__MDM2delay10_" compartment="Nucleus" initialConcentration="6.246134" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_abs__MDM2delay10_" compartment="Nucleus" initialConcentration="6582" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q00987-1</annotation>
       </species>
-      <species id="nuc_abs__WIP1delay1_" compartment="Nucleus" initialConcentration="6.246134" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_abs__WIP1delay1_" compartment="Nucleus" initialConcentration="6582" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>O15297-1</annotation>
       </species>
-      <species id="nuc_abs__WIP1delay2_" compartment="Nucleus" initialConcentration="6.246134" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_abs__WIP1delay2_" compartment="Nucleus" initialConcentration="6582" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>O15297-1</annotation>
       </species>
-      <species id="nuc_abs__WIP1delay3_" compartment="Nucleus" initialConcentration="6.246134" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_abs__WIP1delay3_" compartment="Nucleus" initialConcentration="6582" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>O15297-1</annotation>
       </species>
-      <species id="nuc_abs__WIP1delay4_" compartment="Nucleus" initialConcentration="6.246134" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_abs__WIP1delay4_" compartment="Nucleus" initialConcentration="6582" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>O15297-1</annotation>
       </species>
-      <species id="nuc_abs__WIP1delay5_" compartment="Nucleus" initialConcentration="6.246134" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_abs__WIP1delay5_" compartment="Nucleus" initialConcentration="6582" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>O15297-1</annotation>
       </species>
-      <species id="nuc_abs__WIP1delay6_" compartment="Nucleus" initialConcentration="6.246134" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_abs__WIP1delay6_" compartment="Nucleus" initialConcentration="6582" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>O15297-1</annotation>
       </species>
-      <species id="nuc_abs__WIP1delay7_" compartment="Nucleus" initialConcentration="6.246134" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_abs__WIP1delay7_" compartment="Nucleus" initialConcentration="6582" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>O15297-1</annotation>
       </species>
-      <species id="nuc_abs__WIP1delay8_" compartment="Nucleus" initialConcentration="6.246134" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_abs__WIP1delay8_" compartment="Nucleus" initialConcentration="6582" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>O15297-1</annotation>
       </species>
-      <species id="nuc_abs__WIP1delay9_" compartment="Nucleus" initialConcentration="6.246134" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_abs__WIP1delay9_" compartment="Nucleus" initialConcentration="6582" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>O15297-1</annotation>
       </species>
-      <species id="nuc_abs__WIP1delay10_" compartment="Nucleus" initialConcentration="6.246134" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_abs__WIP1delay10_" compartment="Nucleus" initialConcentration="6582" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>O15297-1</annotation>
       </species>
-      <species id="nuc_prot__BRCA2_" compartment="Nucleus" initialConcentration="0.8217966" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_prot__BRCA2_" compartment="Nucleus" initialConcentration="866" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P51587</annotation>
       </species>
-      <species id="nuc_prot__MSH6_1_" compartment="Nucleus" initialConcentration="45.50366" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_prot__MSH6_1_" compartment="Nucleus" initialConcentration="47954" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P52701-1</annotation>
       </species>
-      <species id="nuc_prot__MGMT_" compartment="Nucleus" initialConcentration="120.2552" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_prot__MGMT_" compartment="Nucleus" initialConcentration="126731" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P16455</annotation>
       </species>
-      <species id="nuc_abs__DNADoubleStrandBreak_" compartment="Nucleus" initialConcentration="0.0002439507" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_abs__DNADoubleStrandBreak_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>CHEMBL454708</annotation>
       </species>
-      <species id="nuc_abs__DNASingleStrandBreak_" compartment="Nucleus" initialConcentration="6.05e-06" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_abs__DNASingleStrandBreak_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>GO:0000012</annotation>
       </species>
       <species id="nuc_cong__p_p_AKT__MDM2_1_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
@@ -144,154 +144,154 @@
       <species id="nuc_prot__ARF_1_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q8N726-1</annotation>
       </species>
-      <species id="nuc_prot__MDM4_1_" compartment="Nucleus" initialConcentration="0.02721569" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_prot__MDM4_1_" compartment="Nucleus" initialConcentration="29" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>O15151-1</annotation>
       </species>
       <species id="nuc_prot_a__P53__MDM4_1_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P04637 O15151-1</annotation>
       </species>
-      <species id="nuc_prot_i__ATM_" compartment="Nucleus" initialConcentration="1.50376" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_prot_i__ATM_" compartment="Nucleus" initialConcentration="1585" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q13315</annotation>
       </species>
-      <species id="nuc_prot_i__ATR_1_" compartment="Nucleus" initialConcentration="2.400324" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_prot_i__ATR_1_" compartment="Nucleus" initialConcentration="2530" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q13535-1</annotation>
       </species>
-      <species id="nuc_prot__RB_" compartment="Nucleus" initialConcentration="7983.14" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_prot__RB_" compartment="Nucleus" initialConcentration="8413032" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P06400</annotation>
       </species>
-      <species id="nuc_prot__pT373_RB_" compartment="Nucleus" initialConcentration="0.5354929" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_prot__pT373_RB_" compartment="Nucleus" initialConcentration="564" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P06400</annotation>
       </species>
-      <species id="nuc_prot__pT373_pS807_pS811_RB_" compartment="Nucleus" initialConcentration="0.006971196" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_prot__pT373_pS807_pS811_RB_" compartment="Nucleus" initialConcentration="7" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P06400</annotation>
       </species>
-      <species id="nuc_cong__E2F_" compartment="Nucleus" initialConcentration="1117.208" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_cong__E2F_" compartment="Nucleus" initialConcentration="1177370" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q01094 Q14209 O00716</annotation>
       </species>
-      <species id="nuc_cong__CCND_" compartment="Nucleus" initialConcentration="0.2333116" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_cong__CCND_" compartment="Nucleus" initialConcentration="246" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P24385 P30279 P30281</annotation>
       </species>
-      <species id="nuc_cong_i__CCND__CDK4_" compartment="Nucleus" initialConcentration="0.5891172" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_cong_i__CCND__CDK4_" compartment="Nucleus" initialConcentration="621" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P24385 P30279 P30281 P11802 Q00534</annotation>
       </species>
-      <species id="nuc_cong__CCND__CDK4_" compartment="Nucleus" initialConcentration="3.853698" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_cong__CCND__CDK4_" compartment="Nucleus" initialConcentration="4061" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P24385 P30279 P30281 P11802 Q00534</annotation>
       </species>
-      <species id="nuc_cong__CCND__CDK4__CDN1B_" compartment="Nucleus" initialConcentration="0.7875221" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_cong__CCND__CDK4__CDN1B_" compartment="Nucleus" initialConcentration="830" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P24385 P30279 P30281 P11802 Q00534 P46527</annotation>
       </species>
-      <species id="nuc_cong__CCNE_" compartment="Nucleus" initialConcentration="0.2553392" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_cong__CCNE_" compartment="Nucleus" initialConcentration="269" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P24864 O96020</annotation>
       </species>
-      <species id="nuc_cong_i__CCNE__CDK2_" compartment="Nucleus" initialConcentration="0.8895689" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_cong_i__CCNE__CDK2_" compartment="Nucleus" initialConcentration="937" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P24864 O96020 P24941</annotation>
       </species>
-      <species id="nuc_cong__CCNE__CDK2_" compartment="Nucleus" initialConcentration="2.746655" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_cong__CCNE__CDK2_" compartment="Nucleus" initialConcentration="2895" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P24864 O96020 P24941</annotation>
       </species>
-      <species id="nuc_prot__SKP2_1_" compartment="Nucleus" initialConcentration="11.40896" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_prot__SKP2_1_" compartment="Nucleus" initialConcentration="12023" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q13309-1</annotation>
       </species>
-      <species id="nuc_cong__CCNE__CDK2__CDN1B_" compartment="Nucleus" initialConcentration="1.122585" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_cong__CCNE__CDK2__CDN1B_" compartment="Nucleus" initialConcentration="1183" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P24864 O96020 P24941 P46527</annotation>
       </species>
-      <species id="nuc_prot__MPIP1_1_" compartment="Nucleus" initialConcentration="141.2881" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_prot__MPIP1_1_" compartment="Nucleus" initialConcentration="148896" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P30304-1</annotation>
       </species>
-      <species id="nuc_prot_i__MPIP2_1_" compartment="Nucleus" initialConcentration="49.175" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_prot_i__MPIP2_1_" compartment="Nucleus" initialConcentration="51823" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P30305-1</annotation>
       </species>
-      <species id="nuc_prot_i__MPIP1_1_" compartment="Nucleus" initialConcentration="16.02257" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_prot_i__MPIP1_1_" compartment="Nucleus" initialConcentration="16885" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P30304-1</annotation>
       </species>
-      <species id="nuc_prot_i__MPIP3_1_" compartment="Nucleus" initialConcentration="55.29821" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_prot_i__MPIP3_1_" compartment="Nucleus" initialConcentration="58276" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P30307-1</annotation>
       </species>
-      <species id="nuc_prot__CCNA2_" compartment="Nucleus" initialConcentration="4.029093" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_prot__CCNA2_" compartment="Nucleus" initialConcentration="4246" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P20248</annotation>
       </species>
-      <species id="nuc_prot_i__CCNA__CDK2_" compartment="Nucleus" initialConcentration="14.03684" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_prot_i__CCNA__CDK2_" compartment="Nucleus" initialConcentration="14793" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P20248 P24941</annotation>
       </species>
-      <species id="nuc_prot__CCNA__CDK2_" compartment="Nucleus" initialConcentration="5.235356" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_prot__CCNA__CDK2_" compartment="Nucleus" initialConcentration="5517" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P20248 P24941</annotation>
       </species>
-      <species id="nuc_prot__CCNA__CDK2__CDN1B_" compartment="Nucleus" initialConcentration="1.283845" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_prot__CCNA__CDK2__CDN1B_" compartment="Nucleus" initialConcentration="1353" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P20248 P24941 P46527</annotation>
       </species>
-      <species id="nuc_prot__CDN1B_" compartment="Nucleus" initialConcentration="20.43549" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_prot__CDN1B_" compartment="Nucleus" initialConcentration="21536" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P46527</annotation>
       </species>
-      <species id="nuc_prot_i__CADH1_1_" compartment="Nucleus" initialConcentration="0.5985885" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_prot_i__CADH1_1_" compartment="Nucleus" initialConcentration="631" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P12830-1</annotation>
       </species>
-      <species id="nuc_prot_a__CADH1_1_" compartment="Nucleus" initialConcentration="108.8029" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_prot_a__CADH1_1_" compartment="Nucleus" initialConcentration="114662" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P12830-1</annotation>
       </species>
-      <species id="nuc_cong__p_E2F_" compartment="Nucleus" initialConcentration="11.60508" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_cong__p_E2F_" compartment="Nucleus" initialConcentration="12230" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q01094 Q14209 O00716</annotation>
       </species>
-      <species id="nuc_prot__pT187_CDN1B_" compartment="Nucleus" initialConcentration="4.204626" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_prot__pT187_CDN1B_" compartment="Nucleus" initialConcentration="4431" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P46527</annotation>
       </species>
-      <species id="nuc_prot__MPIP2_1_" compartment="Nucleus" initialConcentration="41.64972" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_prot__MPIP2_1_" compartment="Nucleus" initialConcentration="43893" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P30305-1</annotation>
       </species>
-      <species id="nuc_cong__CCNB_" compartment="Nucleus" initialConcentration="3.443669" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_cong__CCNB_" compartment="Nucleus" initialConcentration="3629" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P14635</annotation>
       </species>
-      <species id="nuc_cong_i__CCNB__CDK1_" compartment="Nucleus" initialConcentration="3.901125" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_cong_i__CCNB__CDK1_" compartment="Nucleus" initialConcentration="4111" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P14635 Q8WWL7 P06493</annotation>
       </species>
-      <species id="nuc_cong__CCNB__CDK1_" compartment="Nucleus" initialConcentration="0.684272" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_cong__CCNB__CDK1_" compartment="Nucleus" initialConcentration="721" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P14635 P06493</annotation>
       </species>
-      <species id="nuc_prot_i__CDC20_" compartment="Nucleus" initialConcentration="71.16747" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_prot_i__CDC20_" compartment="Nucleus" initialConcentration="75000" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q12834</annotation>
       </species>
-      <species id="nuc_prot_a__CDC20_" compartment="Nucleus" initialConcentration="0.7301463" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_prot_a__CDC20_" compartment="Nucleus" initialConcentration="769" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q12834</annotation>
       </species>
-      <species id="nuc_prot__MPIP3_1_" compartment="Nucleus" initialConcentration="9.403017" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_prot__MPIP3_1_" compartment="Nucleus" initialConcentration="9909" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P30307-1</annotation>
       </species>
-      <species id="nuc_prot__WEE1_1_" compartment="Nucleus" initialConcentration="26.51889" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_prot__WEE1_1_" compartment="Nucleus" initialConcentration="27947" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P30291-1</annotation>
       </species>
-      <species id="nuc_prot__pS123_WEE1_1_" compartment="Nucleus" initialConcentration="16.74042" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_prot__pS123_WEE1_1_" compartment="Nucleus" initialConcentration="17642" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P30291-1</annotation>
       </species>
-      <species id="nuc_cong__CCNB__CDK1__CDN1B_" compartment="Nucleus" initialConcentration="0.08390062" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_cong__CCNB__CDK1__CDN1B_" compartment="Nucleus" initialConcentration="88" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P14635 P06493 P46527</annotation>
       </species>
-      <species id="nuc_prot__CHK1_1_" compartment="Nucleus" initialConcentration="0.149772" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_prot__CHK1_1_" compartment="Nucleus" initialConcentration="158" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>O14757-1</annotation>
       </species>
-      <species id="nuc_cong__RB__E2F_" compartment="Nucleus" initialConcentration="8918.824" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_cong__RB__E2F_" compartment="Nucleus" initialConcentration="9399103" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P06400 Q01094 Q14209 O00716</annotation>
       </species>
-      <species id="nuc_cong__pT373_RB__E2F_" compartment="Nucleus" initialConcentration="0.2991285" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_cong__pT373_RB__E2F_" compartment="Nucleus" initialConcentration="315" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P06400 Q01094 Q14209 O00716</annotation>
       </species>
-      <species id="nuc_prot__CDN1A_" compartment="Nucleus" initialConcentration="20.87341" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_prot__CDN1A_" compartment="Nucleus" initialConcentration="21997" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P38936</annotation>
       </species>
-      <species id="nuc_cong__CCND__CDK4__CDN1A_" compartment="Nucleus" initialConcentration="0.482639" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_cong__CCND__CDK4__CDN1A_" compartment="Nucleus" initialConcentration="509" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P24385 P30279 P30281 P11802 Q00534 P38936</annotation>
       </species>
-      <species id="nuc_cong__CCNE__CDK2__CDN1A_" compartment="Nucleus" initialConcentration="0.2293283" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_cong__CCNE__CDK2__CDN1A_" compartment="Nucleus" initialConcentration="242" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P24864 O96020 P46527 P38936</annotation>
       </species>
-      <species id="nuc_cong__CCNA__CDK2__CDN1A_" compartment="Nucleus" initialConcentration="0.2622714" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_cong__CCNA__CDK2__CDN1A_" compartment="Nucleus" initialConcentration="276" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P20248 P24941 P38936</annotation>
       </species>
-      <species id="nuc_cong__CCNB__CDK1__CDN1A_" compartment="Nucleus" initialConcentration="0.0171397" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_cong__CCNB__CDK1__CDN1A_" compartment="Nucleus" initialConcentration="18" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P14635 P06493 P38936</annotation>
       </species>
       <species id="exc_prot__TNF10_1_" compartment="Extracellular" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P50591-1</annotation>
       </species>
-      <species id="cyt_cong__TNFRSF10_" compartment="Cytoplasm" initialConcentration="8.031118" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_cong__TNFRSF10_" compartment="Cytoplasm" initialConcentration="25391" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>O00220 O14763</annotation>
       </species>
       <species id="cyt_cong__TNF10_1__TNFRSF10_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
@@ -300,208 +300,208 @@
       <species id="cyt_cong_a__TNF10_1__TNFRSF10_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>O00220 O14763</annotation>
       </species>
-      <species id="cyt_prot__CFLAR_1_" compartment="Cytoplasm" initialConcentration="0.5259204" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__CFLAR_1_" compartment="Cytoplasm" initialConcentration="1663" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>O15519-1</annotation>
       </species>
       <species id="cyt_cong_a__TNF10_1__TNFRSF10__CFLAR_1_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>O00220 O14763 O15519-1</annotation>
       </species>
-      <species id="cyt_cong_i__CASP8_" compartment="Cytoplasm" initialConcentration="26.52638" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_cong_i__CASP8_" compartment="Cytoplasm" initialConcentration="83864" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q14790 Q92851</annotation>
       </species>
       <species id="cyt_cong_a__TNF10_1__TNFRSF10__CASP8_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>O00220 O14763 Q14790 Q92851</annotation>
       </species>
-      <species id="cyt_cong_a__CASP8_" compartment="Cytoplasm" initialConcentration="0.0005051866" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_cong_a__CASP8_" compartment="Cytoplasm" initialConcentration="2" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q14790 Q92851</annotation>
       </species>
-      <species id="cyt_prot__BFAR_1_" compartment="Cytoplasm" initialConcentration="0.841154" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__BFAR_1_" compartment="Cytoplasm" initialConcentration="2659" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q9NZS9-1</annotation>
       </species>
-      <species id="cyt_cong__CASP8__BFAR_1_" compartment="Cytoplasm" initialConcentration="0.001306372" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_cong__CASP8__BFAR_1_" compartment="Cytoplasm" initialConcentration="4" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q14790 Q92851 Q9NZS9-1</annotation>
       </species>
-      <species id="cyt_cong__CASP3_" compartment="Cytoplasm" initialConcentration="79.93287" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_cong__CASP3_" compartment="Cytoplasm" initialConcentration="252712" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P42574 P55210</annotation>
       </species>
-      <species id="cyt_cong__CASP8__CASP3_" compartment="Cytoplasm" initialConcentration="0.00637693" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_cong__CASP8__CASP3_" compartment="Cytoplasm" initialConcentration="20" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q14790 Q92851 P42574 P55210</annotation>
       </species>
-      <species id="cyt_cong__cl_CASP3_" compartment="Cytoplasm" initialConcentration="0.0002025658" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_cong__cl_CASP3_" compartment="Cytoplasm" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P42574 P55210</annotation>
       </species>
-      <species id="cyt_cong_i__CASP6_" compartment="Cytoplasm" initialConcentration="47.67663" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_cong_i__CASP6_" compartment="Cytoplasm" initialConcentration="150732" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P55212</annotation>
       </species>
-      <species id="cyt_cong__CASP3__CASP6_" compartment="Cytoplasm" initialConcentration="3.05e-08" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_cong__CASP3__CASP6_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P42574 P55210 P55212</annotation>
       </species>
-      <species id="cyt_prot_a__CASP6_" compartment="Cytoplasm" initialConcentration="0.0005733206" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot_a__CASP6_" compartment="Cytoplasm" initialConcentration="2" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P55212</annotation>
       </species>
-      <species id="cyt_cong__CASP6__CASP8_" compartment="Cytoplasm" initialConcentration="1.44e-07" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_cong__CASP6__CASP8_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P55212 Q14790 Q92851</annotation>
       </species>
-      <species id="cyt_prot__XIAP_" compartment="Cytoplasm" initialConcentration="5.269689" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__XIAP_" compartment="Cytoplasm" initialConcentration="16660" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P98170</annotation>
       </species>
-      <species id="cyt_prot__CASP3__XIAP_" compartment="Cytoplasm" initialConcentration="6.68e-05" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__CASP3__XIAP_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P42574 P55210 P98170</annotation>
       </species>
-      <species id="cyt_prot__PARP1_" compartment="Cytoplasm" initialConcentration="639.6158" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__PARP1_" compartment="Cytoplasm" initialConcentration="2022177" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P09874</annotation>
       </species>
-      <species id="cyt_cong__CASP3__PARP1_" compartment="Cytoplasm" initialConcentration="4.06e-06" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_cong__CASP3__PARP1_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P42574 P55210 P09874</annotation>
       </species>
-      <species id="cyt_prot__cl_PARP1_" compartment="Cytoplasm" initialConcentration="1.619666" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__cl_PARP1_" compartment="Cytoplasm" initialConcentration="5121" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P09874</annotation>
       </species>
-      <species id="cyt_prot__BID_1_" compartment="Cytoplasm" initialConcentration="50.47541" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__BID_1_" compartment="Cytoplasm" initialConcentration="159581" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P55957-1</annotation>
       </species>
-      <species id="cyt_cong__CASP8__BID_1_" compartment="Cytoplasm" initialConcentration="7.31e-05" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_cong__CASP8__BID_1_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q14790 Q92851 P55957-1</annotation>
       </species>
-      <species id="cyt_prot__cl_BID_1_" compartment="Cytoplasm" initialConcentration="1.6e-06" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__cl_BID_1_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P55957-1</annotation>
       </species>
-      <species id="cyt_cong__BCL2_" compartment="Cytoplasm" initialConcentration="12.48062" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_cong__BCL2_" compartment="Cytoplasm" initialConcentration="39458" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P10415 Q07817 Q07820</annotation>
       </species>
-      <species id="cyt_cong__cl_BID_1__BCL2_" compartment="Cytoplasm" initialConcentration="5.62e-05" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_cong__cl_BID_1__BCL2_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P55957-1 P10415 Q07817 Q07820</annotation>
       </species>
-      <species id="cyt_prot_i__BAX_1_" compartment="Cytoplasm" initialConcentration="88.22686" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot_i__BAX_1_" compartment="Cytoplasm" initialConcentration="278934" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q07812-1</annotation>
       </species>
-      <species id="cyt_prot__cl_BID_1__BAX_1_" compartment="Cytoplasm" initialConcentration="4.46e-08" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__cl_BID_1__BAX_1_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P55957-1 Q07812-1</annotation>
       </species>
-      <species id="cyt_prot_a__BAX_1_" compartment="Cytoplasm" initialConcentration="0.0001441807" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot_a__BAX_1_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q07812-1</annotation>
       </species>
-      <species id="mit_prot_a__BAX_1_" compartment="Mitochondria" initialConcentration="0.001926774" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="mit_prot_a__BAX_1_" compartment="Mitochondria" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q07812-1</annotation>
       </species>
-      <species id="mit_cong__BCL2_" compartment="Mitochondria" initialConcentration="1.780762" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="mit_cong__BCL2_" compartment="Mitochondria" initialConcentration="395" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P10415 Q07817 Q07820</annotation>
       </species>
-      <species id="mit_cong__BAX_1__BCL2_" compartment="Mitochondria" initialConcentration="0.009670088" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="mit_cong__BAX_1__BCL2_" compartment="Mitochondria" initialConcentration="2" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q07812-1 P10415 Q07817 Q07820</annotation>
       </species>
-      <species id="mit_prot_a__BAX_1__BAX_1_" compartment="Mitochondria" initialConcentration="0.0001173835" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="mit_prot_a__BAX_1__BAX_1_" compartment="Mitochondria" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q07812-1</annotation>
       </species>
-      <species id="mit_cong__BAX_1__BAX_1__BCL2_" compartment="Mitochondria" initialConcentration="0.0005891238" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="mit_cong__BAX_1__BAX_1__BCL2_" compartment="Mitochondria" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q07812-1 P10415 Q07817 Q07820</annotation>
       </species>
-      <species id="mit_prot_a__BAX_1__BAX_1__BAX_1__BAX_1_" compartment="Mitochondria" initialConcentration="4.36e-07" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="mit_prot_a__BAX_1__BAX_1__BAX_1__BAX_1_" compartment="Mitochondria" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q07812-1</annotation>
       </species>
-      <species id="mit_cong__BAX_1__BAX_1__BAX_1__BAX_1__BCL2_" compartment="Mitochondria" initialConcentration="2.19e-06" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="mit_cong__BAX_1__BAX_1__BAX_1__BAX_1__BCL2_" compartment="Mitochondria" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q07812-1 P10415 Q07817 Q07820</annotation>
       </species>
-      <species id="mit_abs_i__pore_" compartment="Mitochondria" initialConcentration="2259.969" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="mit_abs_i__pore_" compartment="Mitochondria" initialConcentration="500831" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>GO:0005739</annotation>
       </species>
-      <species id="mit_abs__BAX_1__BAX_1__BAX_1__BAX_1__pore_" compartment="Mitochondria" initialConcentration="3.11e-06" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="mit_abs__BAX_1__BAX_1__BAX_1__BAX_1__pore_" compartment="Mitochondria" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>GO:0005739 Q07812-1</annotation>
       </species>
-      <species id="mit_abs_a__pore_" compartment="Mitochondria" initialConcentration="0.0003110284" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="mit_abs_a__pore_" compartment="Mitochondria" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>GO:0005739</annotation>
       </species>
-      <species id="mit_prot__CY1_" compartment="Mitochondria" initialConcentration="15542.59" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="mit_prot__CY1_" compartment="Mitochondria" initialConcentration="3444387" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>GO:0005739 P08574</annotation>
       </species>
-      <species id="mit_abs__pore__CY1_" compartment="Mitochondria" initialConcentration="0.02779284" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="mit_abs__pore__CY1_" compartment="Mitochondria" initialConcentration="6" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>GO:0005739 P08574</annotation>
       </species>
-      <species id="mit_prot_i__CY1_" compartment="Mitochondria" initialConcentration="0.277855" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="mit_prot_i__CY1_" compartment="Mitochondria" initialConcentration="62" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P08574</annotation>
       </species>
-      <species id="mit_prot__DBLOH_1_" compartment="Mitochondria" initialConcentration="1450.94" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="mit_prot__DBLOH_1_" compartment="Mitochondria" initialConcentration="321542" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q9NR28-1</annotation>
       </species>
-      <species id="mit_abs__pore__DBLOH_1_" compartment="Mitochondria" initialConcentration="0.002594532" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="mit_abs__pore__DBLOH_1_" compartment="Mitochondria" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>GO:0005739 Q9NR28-1</annotation>
       </species>
-      <species id="mit_prot_i__DBLOH_1_" compartment="Mitochondria" initialConcentration="0.02083932" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="mit_prot_i__DBLOH_1_" compartment="Mitochondria" initialConcentration="5" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q9NR28-1</annotation>
       </species>
-      <species id="cyt_prot__CY1_" compartment="Cytoplasm" initialConcentration="0.01944728" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__CY1_" compartment="Cytoplasm" initialConcentration="61" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P08574</annotation>
       </species>
-      <species id="cyt_prot__APAF_1_" compartment="Cytoplasm" initialConcentration="0.09689042" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__APAF_1_" compartment="Cytoplasm" initialConcentration="306" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>O14727-1</annotation>
       </species>
-      <species id="cyt_prot__CY1__APAF_1_" compartment="Cytoplasm" initialConcentration="2.98e-06" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__CY1__APAF_1_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P08574 O14727-1</annotation>
       </species>
-      <species id="cyt_prot_a__APAF_1_" compartment="Cytoplasm" initialConcentration="0.01099339" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot_a__APAF_1_" compartment="Cytoplasm" initialConcentration="35" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>O14727-1</annotation>
       </species>
-      <species id="cyt_prot__PCSK9_1_" compartment="Cytoplasm" initialConcentration="3.457424" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__PCSK9_1_" compartment="Cytoplasm" initialConcentration="10931" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q8NBP7-1</annotation>
       </species>
-      <species id="cyt_prot_a__APAF_1__PCSK9_1_" compartment="Cytoplasm" initialConcentration="0.003099874" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot_a__APAF_1__PCSK9_1_" compartment="Cytoplasm" initialConcentration="10" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>O14727-1 Q8NBP7-1</annotation>
       </species>
-      <species id="cyt_prot_a__APAF_1__PCSK9_1__CASP3_" compartment="Cytoplasm" initialConcentration="0.003541869" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot_a__APAF_1__PCSK9_1__CASP3_" compartment="Cytoplasm" initialConcentration="11" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>O14727-1 Q8NBP7-1 P42574 P55210</annotation>
       </species>
-      <species id="cyt_prot__DBLOH_1_" compartment="Cytoplasm" initialConcentration="0.001101639" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__DBLOH_1_" compartment="Cytoplasm" initialConcentration="3" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q9NR28-1</annotation>
       </species>
-      <species id="cyt_prot_a__APAF_1__PCSK9_1__XIAP_" compartment="Cytoplasm" initialConcentration="0.1004381" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot_a__APAF_1__PCSK9_1__XIAP_" compartment="Cytoplasm" initialConcentration="318" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>O14727-1 Q8NBP7-1 P98170</annotation>
       </species>
-      <species id="cyt_prot__DBLOH_1__XIAP_" compartment="Cytoplasm" initialConcentration="0.1249286" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__DBLOH_1__XIAP_" compartment="Cytoplasm" initialConcentration="395" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q9NR28-1 P98170</annotation>
       </species>
-      <species id="cyt_cong__u_CASP3_" compartment="Cytoplasm" initialConcentration="2.870305" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_cong__u_CASP3_" compartment="Cytoplasm" initialConcentration="9075" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P42574 P55210</annotation>
       </species>
-      <species id="cyt_prot__BAD_" compartment="Cytoplasm" initialConcentration="0.0950796" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__BAD_" compartment="Cytoplasm" initialConcentration="301" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q92934</annotation>
       </species>
-      <species id="cyt_prot__BBC3_1_" compartment="Cytoplasm" initialConcentration="0.02909907" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__BBC3_1_" compartment="Cytoplasm" initialConcentration="92" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q9BXH1-1</annotation>
       </species>
-      <species id="cyt_prot__APR_1_" compartment="Cytoplasm" initialConcentration="0.00555714" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__APR_1_" compartment="Cytoplasm" initialConcentration="18" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q13794-1</annotation>
       </species>
-      <species id="cyt_cong__BCL2__BAD_" compartment="Cytoplasm" initialConcentration="3.344393" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_cong__BCL2__BAD_" compartment="Cytoplasm" initialConcentration="10573" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P10415 Q07817 Q07820 Q92934</annotation>
       </species>
-      <species id="cyt_cong__BCL2__BBC3_1_" compartment="Cytoplasm" initialConcentration="1.02355" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_cong__BCL2__BBC3_1_" compartment="Cytoplasm" initialConcentration="3236" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P10415 Q07817 Q07820 Q9BXH1-1</annotation>
       </species>
-      <species id="cyt_cong__BCL2__APR_1_" compartment="Cytoplasm" initialConcentration="0.1943622" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_cong__BCL2__APR_1_" compartment="Cytoplasm" initialConcentration="614" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P10415 Q07817 Q07820 Q13794-1</annotation>
       </species>
-      <species id="cyt_prot__B2L11_1_" compartment="Cytoplasm" initialConcentration="0.06038535" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__B2L11_1_" compartment="Cytoplasm" initialConcentration="191" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>O43521-1</annotation>
       </species>
-      <species id="cyt_prot__B2L11_1__BAX_1_" compartment="Cytoplasm" initialConcentration="8.41e-08" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__B2L11_1__BAX_1_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>O43521-1 Q07812-1</annotation>
       </species>
-      <species id="cyt_cong__BCL2__B2L11_1_" compartment="Cytoplasm" initialConcentration="2.124035" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_cong__BCL2__B2L11_1_" compartment="Cytoplasm" initialConcentration="6715" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P10415 Q07817 Q07820 O43521-1</annotation>
       </species>
-      <species id="cyt_cong__p_p_MAPK__B2L11_1_" compartment="Cytoplasm" initialConcentration="0.0005970032" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_cong__p_p_MAPK__B2L11_1_" compartment="Cytoplasm" initialConcentration="2" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P28482 P27361 P27361 O43521-1</annotation>
       </species>
-      <species id="cyt_prot__pS69_B2L11_1_" compartment="Cytoplasm" initialConcentration="0.1058178" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__pS69_B2L11_1_" compartment="Cytoplasm" initialConcentration="335" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>O43521-1</annotation>
       </species>
-      <species id="cyt_cong__p_p_AKT__BAD_" compartment="Cytoplasm" initialConcentration="3.36e-05" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_cong__p_p_AKT__BAD_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P31749 P31751 Q9Y243 Q92934</annotation>
       </species>
-      <species id="cyt_prot__p_BAD_" compartment="Cytoplasm" initialConcentration="0.8912809" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__p_BAD_" compartment="Cytoplasm" initialConcentration="2818" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q92934</annotation>
       </species>
-      <species id="cyt_cong__p_p_MAPK__BAD_" compartment="Cytoplasm" initialConcentration="0.0009400569" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_cong__p_p_MAPK__BAD_" compartment="Cytoplasm" initialConcentration="3" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P28482 P27361 P27361 Q92934</annotation>
       </species>
       <species id="exc_prot__EGF_1_" compartment="Extracellular" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
@@ -525,19 +525,19 @@
       <species id="exc_prot__INS_1_" compartment="Extracellular" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P01308-1</annotation>
       </species>
-      <species id="cyt_prot__EGFR_1_" compartment="Cytoplasm" initialConcentration="50.12196" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__EGFR_1_" compartment="Cytoplasm" initialConcentration="158463" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P00533-1</annotation>
       </species>
-      <species id="cyt_prot__pT693_EGFR_1_" compartment="Cytoplasm" initialConcentration="4.954807" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__pT693_EGFR_1_" compartment="Cytoplasm" initialConcentration="15665" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P00533-1</annotation>
       </species>
-      <species id="cyt_prot__ERBB2_1_" compartment="Cytoplasm" initialConcentration="3.80508" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__ERBB2_1_" compartment="Cytoplasm" initialConcentration="12030" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P04626-1</annotation>
       </species>
-      <species id="cyt_prot__pT701_ERBB2_1_" compartment="Cytoplasm" initialConcentration="0.3761707" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__pT701_ERBB2_1_" compartment="Cytoplasm" initialConcentration="1189" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P04626-1</annotation>
       </species>
-      <species id="cyt_prot__ERBB3_1_" compartment="Cytoplasm" initialConcentration="1.739751" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__ERBB3_1_" compartment="Cytoplasm" initialConcentration="5500" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P21860-1</annotation>
       </species>
       <species id="cyt_prot__ERBB4_1_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
@@ -546,37 +546,37 @@
       <species id="cyt_prot__pT699_ERBB4_1_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q15303-1</annotation>
       </species>
-      <species id="cyt_prot__MET_1_" compartment="Cytoplasm" initialConcentration="8.573223" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__MET_1_" compartment="Cytoplasm" initialConcentration="27105" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P08581-1</annotation>
       </species>
-      <species id="cyt_cong__PGFRB_" compartment="Cytoplasm" initialConcentration="0.229676" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_cong__PGFRB_" compartment="Cytoplasm" initialConcentration="726" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P09619</annotation>
       </species>
-      <species id="cyt_cong__FGFR_" compartment="Cytoplasm" initialConcentration="0.186713" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_cong__FGFR_" compartment="Cytoplasm" initialConcentration="590" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P11362 P21802</annotation>
       </species>
-      <species id="cyt_prot__IGF1R_" compartment="Cytoplasm" initialConcentration="0.02181479" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__IGF1R_" compartment="Cytoplasm" initialConcentration="69" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P08069</annotation>
       </species>
-      <species id="cyt_prot__INSR_1_" compartment="Cytoplasm" initialConcentration="0.02979621" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__INSR_1_" compartment="Cytoplasm" initialConcentration="94" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P06213-1</annotation>
       </species>
-      <species id="cyt_prot__EGFR_1__EGFR_1_" compartment="Cytoplasm" initialConcentration="2.512173" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__EGFR_1__EGFR_1_" compartment="Cytoplasm" initialConcentration="7942" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P00533-1</annotation>
       </species>
-      <species id="cyt_prot__EGFR_1__ERBB2_1_" compartment="Cytoplasm" initialConcentration="0.1907152" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__EGFR_1__ERBB2_1_" compartment="Cytoplasm" initialConcentration="603" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P00533-1 P04626-1</annotation>
       </species>
-      <species id="cyt_prot__EGFR_1__ERBB3_1_" compartment="Cytoplasm" initialConcentration="0.08719839" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__EGFR_1__ERBB3_1_" compartment="Cytoplasm" initialConcentration="276" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P00533-1 P21860-1</annotation>
       </species>
       <species id="cyt_prot__EGFR_1__ERBB4_1_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P00533-1 Q15303-1</annotation>
       </species>
-      <species id="cyt_prot__ERBB2_1__ERBB2_1_" compartment="Cytoplasm" initialConcentration="0.01447848" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__ERBB2_1__ERBB2_1_" compartment="Cytoplasm" initialConcentration="46" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P04626-1</annotation>
       </species>
-      <species id="cyt_prot__ERBB2_1__ERBB3_1_" compartment="Cytoplasm" initialConcentration="0.006619809" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__ERBB2_1__ERBB3_1_" compartment="Cytoplasm" initialConcentration="21" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P04626-1 P21860-1</annotation>
       </species>
       <species id="cyt_prot__ERBB2_1__ERBB4_1_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
@@ -588,16 +588,16 @@
       <species id="cyt_prot__ERBB4_1__ERBB4_1_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q15303-1</annotation>
       </species>
-      <species id="cyt_prot__MET_1__MET_1_" compartment="Cytoplasm" initialConcentration="0.07349968" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__MET_1__MET_1_" compartment="Cytoplasm" initialConcentration="232" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P08581-1</annotation>
       </species>
-      <species id="cyt_cong__FGFR__FGFR_" compartment="Cytoplasm" initialConcentration="3.49e-05" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_cong__FGFR__FGFR_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P11362 P21802</annotation>
       </species>
-      <species id="cyt_prot__IGF1R__IGF1R_" compartment="Cytoplasm" initialConcentration="0.7268991" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__IGF1R__IGF1R_" compartment="Cytoplasm" initialConcentration="2298" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P08069</annotation>
       </species>
-      <species id="cyt_prot__INSR_1__INSR_1_" compartment="Cytoplasm" initialConcentration="0.3089399" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__INSR_1__INSR_1_" compartment="Cytoplasm" initialConcentration="977" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P06213-1</annotation>
       </species>
       <species id="cyt_prot__EGF_1__EGFR_1_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
@@ -702,10 +702,10 @@
       <species id="cyt_prot__INS_1__INSR_1__INS_1__INSR_1_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P01308-1 P06213-1</annotation>
       </species>
-      <species id="cyt_cong__EGFR_1__p_p_MAPK_" compartment="Cytoplasm" initialConcentration="0.4955558" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_cong__EGFR_1__p_p_MAPK_" compartment="Cytoplasm" initialConcentration="1567" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P00533-1 P28482 P27361</annotation>
       </species>
-      <species id="cyt_cong__ERBB2_1__p_p_MAPK_" compartment="Cytoplasm" initialConcentration="0.03762099" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_cong__ERBB2_1__p_p_MAPK_" compartment="Cytoplasm" initialConcentration="119" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P04626-1 P28482 P27361</annotation>
       </species>
       <species id="cyt_cong__ERBB4_1__p_p_MAPK_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
@@ -1821,46 +1821,46 @@
       <species id="cyt_cong__INS_1__pY992_pY999_pY1011_pY1185_pY1189_pY1190_pY1314_pY1348_pY1355_pY992_pY999_pY1011_pY1185_pY1189_pY1190_pY1314_pY1348_pY1355_INSR_1__pY992_pY999_pY1011_pY1185_pY1189_pY1190_pY1314_pY1348_pY1355_pY992_pY999_pY1011_pY1185_pY1189_pY1190_pY1314_pY1348_pY1355_INSR_1__INS_1__IRS__P3C2A__PIP_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P35568 P06213-1 Q9Y4H2 P01308-1</annotation>
       </species>
-      <species id="cyt_cong__IRS_" compartment="Cytoplasm" initialConcentration="0.9354614" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_cong__IRS_" compartment="Cytoplasm" initialConcentration="2958" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P35568 Q9Y4H2</annotation>
       </species>
-      <species id="cyt_prot__SPY2_" compartment="Cytoplasm" initialConcentration="0.01808573" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__SPY2_" compartment="Cytoplasm" initialConcentration="57" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>O43597</annotation>
       </species>
-      <species id="cyt_prot__CBL_" compartment="Cytoplasm" initialConcentration="5.299369" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__CBL_" compartment="Cytoplasm" initialConcentration="16754" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P22681</annotation>
       </species>
-      <species id="cyt_prot__GRB2_" compartment="Cytoplasm" initialConcentration="60.84451" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__GRB2_" compartment="Cytoplasm" initialConcentration="192363" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P62993-1</annotation>
       </species>
-      <species id="cyt_prot__GRB2__SOS1_1_" compartment="Cytoplasm" initialConcentration="0.2810204" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__GRB2__SOS1_1_" compartment="Cytoplasm" initialConcentration="888" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P62993-1 Q07889-1</annotation>
       </species>
-      <species id="nuc_prot__GRB2__p_SOS1_1_" compartment="Cytoplasm" initialConcentration="0.2775355" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_prot__GRB2__p_SOS1_1_" compartment="Cytoplasm" initialConcentration="877" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P62993-1 Q07889-1</annotation>
       </species>
-      <species id="cyt_cong__PLCG_" compartment="Cytoplasm" initialConcentration="2.214052" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_cong__PLCG_" compartment="Cytoplasm" initialConcentration="7000" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P19174 P16885</annotation>
       </species>
-      <species id="cyt_cong__PIK3C_" compartment="Cytoplasm" initialConcentration="0.02369597" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_cong__PIK3C_" compartment="Cytoplasm" initialConcentration="75" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P42336 P42338 P48736 O00329</annotation>
       </species>
-      <species id="cyt_cong__PIK3R_" compartment="Cytoplasm" initialConcentration="8.962088" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_cong__PIK3R_" compartment="Cytoplasm" initialConcentration="28334" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P27986 O00459 Q92569 Q99570</annotation>
       </species>
-      <species id="cyt_cong__PIK3C__PIK3R_" compartment="Cytoplasm" initialConcentration="2.010578" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_cong__PIK3C__PIK3R_" compartment="Cytoplasm" initialConcentration="6357" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P42336 P42338 P48736 O00329 P27986 O00459 Q92569 Q99570</annotation>
       </species>
-      <species id="cyt_cong__p_PIK3C__PIK3R_" compartment="Cytoplasm" initialConcentration="0.3385136" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_cong__p_PIK3C__PIK3R_" compartment="Cytoplasm" initialConcentration="1070" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P42336 P42338 P48736 O00329 P27986 O00459 Q92569 Q99570</annotation>
       </species>
-      <species id="cyt_prot__P3C2A_" compartment="Cytoplasm" initialConcentration="1.723236" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__P3C2A_" compartment="Cytoplasm" initialConcentration="5448" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>O00443-1</annotation>
       </species>
-      <species id="cyt_prot__MTORC1_" compartment="Cytoplasm" initialConcentration="2.742882" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__MTORC1_" compartment="Cytoplasm" initialConcentration="8672" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P42345 Q8N122-1</annotation>
       </species>
-      <species id="cyt_prot_a__MTORC1_" compartment="Cytoplasm" initialConcentration="0.186098" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot_a__MTORC1_" compartment="Cytoplasm" initialConcentration="588" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P42345 Q8N122-1</annotation>
       </species>
       <species id="cyt_comp__PIP_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
@@ -1872,328 +1872,328 @@
       <species id="cyt_comp__CDP_DAG_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>CHEBI:17962</annotation>
       </species>
-      <species id="cyt_prot__GRP_1_" compartment="Cytoplasm" initialConcentration="9.676786" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__GRP_1_" compartment="Cytoplasm" initialConcentration="30594" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P07492-1</annotation>
       </species>
       <species id="cyt_mixed__CDP_DAG__GRP_1_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>CHEBI:17962 P07492-1</annotation>
       </species>
-      <species id="cyt_mixed__RAS__GTP_" compartment="Cytoplasm" initialConcentration="2.800105" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mixed__RAS__GTP_" compartment="Cytoplasm" initialConcentration="8853" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P01111 CHEBI:15996 P01116 P01112</annotation>
       </species>
-      <species id="cyt_mixed__RAS__GDP_" compartment="Cytoplasm" initialConcentration="161.2777" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mixed__RAS__GDP_" compartment="Cytoplasm" initialConcentration="509888" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P01111 P01116 CHEBI:17522 P01112</annotation>
       </species>
-      <species id="cyt_prot__NF1_1_" compartment="Cytoplasm" initialConcentration="0.7812814" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__NF1_1_" compartment="Cytoplasm" initialConcentration="2470" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P21359-1</annotation>
       </species>
       <species id="cyt_prot__p_NF1_1_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P21359-1</annotation>
       </species>
-      <species id="nuc_prot___pS29_pS43_pS289_pS296_pS301_pS642_RAF1_1_" compartment="Cytoplasm" initialConcentration="3.22364" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_prot___pS29_pS43_pS289_pS296_pS301_pS642_RAF1_1_" compartment="Cytoplasm" initialConcentration="10192" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P04049-1</annotation>
       </species>
-      <species id="cyt_prot__RAF1_1_" compartment="Cytoplasm" initialConcentration="3.263605" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__RAF1_1_" compartment="Cytoplasm" initialConcentration="10318" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P04049-1</annotation>
       </species>
-      <species id="cyt_mixed__RAS__GTP__RAF1_1_" compartment="Cytoplasm" initialConcentration="0.911338" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mixed__RAS__GTP__RAF1_1_" compartment="Cytoplasm" initialConcentration="2881" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P01111 CHEBI:15996 P01116 P01112</annotation>
       </species>
-      <species id="cyt_prot__BRAF_" compartment="Cytoplasm" initialConcentration="0.4164322" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__BRAF_" compartment="Cytoplasm" initialConcentration="1317" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P15056</annotation>
       </species>
-      <species id="cyt_mixed__RAS__GTP__RAF1_1__BRAF_" compartment="Cytoplasm" initialConcentration="0.1058145" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mixed__RAS__GTP__RAF1_1__BRAF_" compartment="Cytoplasm" initialConcentration="335" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>CHEBI:15996 P15056 P04049-1</annotation>
       </species>
-      <species id="cyt_prot__MAP2K_" compartment="Cytoplasm" initialConcentration="124.7699" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__MAP2K_" compartment="Cytoplasm" initialConcentration="394466" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q02750 P36507</annotation>
       </species>
-      <species id="cyt_prot__p_MAP2K_" compartment="Cytoplasm" initialConcentration="16.33498" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__p_MAP2K_" compartment="Cytoplasm" initialConcentration="51644" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q02750 P36507</annotation>
       </species>
-      <species id="cyt_prot__p_p_MAP2K_" compartment="Cytoplasm" initialConcentration="21.3815" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__p_p_MAP2K_" compartment="Cytoplasm" initialConcentration="67599" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q02750 P36507</annotation>
       </species>
-      <species id="cyt_prot__DUS6_1_" compartment="Cytoplasm" initialConcentration="0.001983584" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__DUS6_1_" compartment="Cytoplasm" initialConcentration="6" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q16828-1</annotation>
       </species>
-      <species id="nuc_cong__MAPK_" compartment="Nucleus" initialConcentration="0.3987466" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_cong__MAPK_" compartment="Nucleus" initialConcentration="420" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P28482 P27361</annotation>
       </species>
-      <species id="nuc_cong__p_p_MAPK_" compartment="Nucleus" initialConcentration="7.175144" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_cong__p_p_MAPK_" compartment="Nucleus" initialConcentration="7562" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P28482 P27361</annotation>
       </species>
-      <species id="cyt_prot__RPS6KA_" compartment="Cytoplasm" initialConcentration="69.65112" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__RPS6KA_" compartment="Cytoplasm" initialConcentration="220205" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q15418 Q15349 P51812 O75676</annotation>
       </species>
-      <species id="cyt_prot__p_RPS6KA_" compartment="Cytoplasm" initialConcentration="0.6886434" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__p_RPS6KA_" compartment="Cytoplasm" initialConcentration="2177" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q15418 Q15349 P51812 O75676</annotation>
       </species>
-      <species id="nuc_prot__p_RPS6KA_" compartment="Nucleus" initialConcentration="1.747567" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_prot__p_RPS6KA_" compartment="Nucleus" initialConcentration="1842" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q15418 Q15349 P51812 O75676</annotation>
       </species>
-      <species id="nuc_prot__DUS1_" compartment="Nucleus" initialConcentration="0.002047146" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_prot__DUS1_" compartment="Nucleus" initialConcentration="2" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P28562</annotation>
       </species>
-      <species id="nuc_prot__p_DUS1_" compartment="Nucleus" initialConcentration="0.01576521" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_prot__p_DUS1_" compartment="Nucleus" initialConcentration="17" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P28562</annotation>
       </species>
-      <species id="nuc_prot__FOS_1_" compartment="Nucleus" initialConcentration="2.985524" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_prot__FOS_1_" compartment="Nucleus" initialConcentration="3146" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P01100-1</annotation>
       </species>
-      <species id="nuc_prot__p_FOS_1_" compartment="Nucleus" initialConcentration="0.2419662" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_prot__p_FOS_1_" compartment="Nucleus" initialConcentration="255" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P01100-1</annotation>
       </species>
-      <species id="nuc_prot__JUN_" compartment="Nucleus" initialConcentration="2.871228" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_prot__JUN_" compartment="Nucleus" initialConcentration="3026" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P05412</annotation>
       </species>
-      <species id="nuc_prot__p_FOS_1__JUN_" compartment="Nucleus" initialConcentration="0.0691412" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_prot__p_FOS_1__JUN_" compartment="Nucleus" initialConcentration="73" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P01100-1 P05412</annotation>
       </species>
-      <species id="nuc_prot__MYC_2_" compartment="Nucleus" initialConcentration="45.43934" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_prot__MYC_2_" compartment="Nucleus" initialConcentration="47886" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P01106-2</annotation>
       </species>
-      <species id="nuc_prot__CTNB1_" compartment="Nucleus" initialConcentration="35.4867" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_prot__CTNB1_" compartment="Nucleus" initialConcentration="37398" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P35222</annotation>
       </species>
-      <species id="cyt_prot__CTNB1_" compartment="Cytoplasm" initialConcentration="17.75651" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__CTNB1_" compartment="Cytoplasm" initialConcentration="56138" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P35222</annotation>
       </species>
-      <species id="cyt_prot__pS33_pS37_T41_CTNB1_" compartment="Cytoplasm" initialConcentration="179.7919" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__pS33_pS37_T41_CTNB1_" compartment="Cytoplasm" initialConcentration="568421" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P35222</annotation>
       </species>
       <species id="cyt_comp__IP3_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>CHEBI:16595 P27987 Q96DU7</annotation>
       </species>
-      <species id="cyt_comp__PIP2_" compartment="Cytoplasm" initialConcentration="9998.27" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_comp__PIP2_" compartment="Cytoplasm" initialConcentration="31610031" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>CHEBI:18348</annotation>
       </species>
-      <species id="cyt_comp__PIP3_" compartment="Cytoplasm" initialConcentration="1.607259" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_comp__PIP3_" compartment="Cytoplasm" initialConcentration="5081" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>CHEBI:16618</annotation>
       </species>
-      <species id="cyt_prot__PTEN_" compartment="Cytoplasm" initialConcentration="2.315664" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__PTEN_" compartment="Cytoplasm" initialConcentration="7321" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P60484-1</annotation>
       </species>
-      <species id="cyt_mixed__PIP3__AKT_" compartment="Cytoplasm" initialConcentration="0.7350984" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mixed__PIP3__AKT_" compartment="Cytoplasm" initialConcentration="2324" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P31749 P31751 CHEBI:16618</annotation>
       </species>
-      <species id="cyt_cong__AKT_" compartment="Cytoplasm" initialConcentration="48.16256" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_cong__AKT_" compartment="Cytoplasm" initialConcentration="152268" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P31749 P31751</annotation>
       </species>
-      <species id="cyt_cong__p_AKT_" compartment="Cytoplasm" initialConcentration="0.03892695" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_cong__p_AKT_" compartment="Cytoplasm" initialConcentration="123" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P31749 P31751</annotation>
       </species>
-      <species id="cyt_cong__p_p_AKT_" compartment="Cytoplasm" initialConcentration="0.3892919" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_cong__p_p_AKT_" compartment="Cytoplasm" initialConcentration="1231" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P31749 P31751</annotation>
       </species>
-      <species id="cyt_prot__PDPK1_1_" compartment="Cytoplasm" initialConcentration="11.50725" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__PDPK1_1_" compartment="Cytoplasm" initialConcentration="36381" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>O15530-1</annotation>
       </species>
-      <species id="cyt_mixed__PIP3__PDK1_" compartment="Cytoplasm" initialConcentration="0.1849383" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mixed__PIP3__PDK1_" compartment="Cytoplasm" initialConcentration="585" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>CHEBI:16618 O15530-1</annotation>
       </species>
-      <species id="cyt_mixed__PIP3__p_AKT_" compartment="Cytoplasm" initialConcentration="0.06359507" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mixed__PIP3__p_AKT_" compartment="Cytoplasm" initialConcentration="201" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P31749 P31751 Q9Y243 CHEBI:16618</annotation>
       </species>
-      <species id="cyt_prot_RICTR_1_" compartment="Cytoplasm" initialConcentration="0.1671167" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot_RICTR_1_" compartment="Cytoplasm" initialConcentration="528" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q6R327-1</annotation>
       </species>
-      <species id="cyt_prot__MTOR_" compartment="Cytoplasm" initialConcentration="1.180388" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__MTOR_" compartment="Cytoplasm" initialConcentration="3732" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P42345</annotation>
       </species>
-      <species id="cyt_prot__MTORC2_" compartment="Cytoplasm" initialConcentration="1.839404" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__MTORC2_" compartment="Cytoplasm" initialConcentration="5815" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P42345 Q6R327-1</annotation>
       </species>
-      <species id="cyt_mixed__PIP3__p_p_AKT_" compartment="Cytoplasm" initialConcentration="0.00395782" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mixed__PIP3__p_p_AKT_" compartment="Cytoplasm" initialConcentration="13" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P31749 P31751 Q9Y243 CHEBI:16618</annotation>
       </species>
-      <species id="cyt_prot__GSK3B_1_" compartment="Cytoplasm" initialConcentration="40.76507" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__GSK3B_1_" compartment="Cytoplasm" initialConcentration="128881" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P49841-1</annotation>
       </species>
-      <species id="cyt_prot__pS9_GSK3B_1_" compartment="Cytoplasm" initialConcentration="1.441831" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__pS9_GSK3B_1_" compartment="Cytoplasm" initialConcentration="4558" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P49841-1</annotation>
       </species>
-      <species id="cyt_prot__TSC1_1_" compartment="Cytoplasm" initialConcentration="0.05639547" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__TSC1_1_" compartment="Cytoplasm" initialConcentration="178" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q92574-1</annotation>
       </species>
-      <species id="cyt_prot__TSC2_1_" compartment="Cytoplasm" initialConcentration="0.3487556" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__TSC2_1_" compartment="Cytoplasm" initialConcentration="1103" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P49815-1</annotation>
       </species>
-      <species id="cyt_prot__p_TSC2_1_" compartment="Cytoplasm" initialConcentration="0.08680177" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__p_TSC2_1_" compartment="Cytoplasm" initialConcentration="274" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P49815-1</annotation>
       </species>
-      <species id="cyt_prot__TSC1_1__TSC2_1_" compartment="Cytoplasm" initialConcentration="0.1965771" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__TSC1_1__TSC2_1_" compartment="Cytoplasm" initialConcentration="621" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q92574-1 P49815-1</annotation>
       </species>
-      <species id="cyt_cong__KPC_" compartment="Cytoplasm" initialConcentration="20.1529" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_cong__KPC_" compartment="Cytoplasm" initialConcentration="63714" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P17252 P05771 P05129 Q05655</annotation>
       </species>
       <species id="cyt_mixed__CDP_DAG__PRKC_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>CHEBI:17962 P17252 P05771 P05129 Q05655</annotation>
       </species>
-      <species id="cyt_prot__pS153_PEBP1_" compartment="Cytoplasm" initialConcentration="1.47e-09" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__pS153_PEBP1_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P30086</annotation>
       </species>
-      <species id="cyt_prot__PEBP1_" compartment="Cytoplasm" initialConcentration="1039.045" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__PEBP1_" compartment="Cytoplasm" initialConcentration="3284993" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P30086</annotation>
       </species>
       <species id="cyt_prot__PEBP1__RAF1_1_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P30086 P04049-1</annotation>
       </species>
-      <species id="cyt_cong__MAPK_" compartment="Cytoplasm" initialConcentration="220.5971" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_cong__MAPK_" compartment="Cytoplasm" initialConcentration="697429" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P28482 P27361</annotation>
       </species>
-      <species id="cyt_cong__p_MAPK_" compartment="Cytoplasm" initialConcentration="22.38544" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_cong__p_MAPK_" compartment="Cytoplasm" initialConcentration="70773" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P28482 P27361</annotation>
       </species>
-      <species id="cyt_cong__p_p_MAPK_" compartment="Cytoplasm" initialConcentration="10.87585" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_cong__p_p_MAPK_" compartment="Cytoplasm" initialConcentration="34385" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P28482 P27361</annotation>
       </species>
-      <species id="cyt_prot__FOXO3_1_" compartment="Cytoplasm" initialConcentration="0.301139" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__FOXO3_1_" compartment="Cytoplasm" initialConcentration="952" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>O43524-1</annotation>
       </species>
-      <species id="cyt_prot__pT32_pS253_FOXO3_1_" compartment="Cytoplasm" initialConcentration="0.5116565" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__pT32_pS253_FOXO3_1_" compartment="Cytoplasm" initialConcentration="1618" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>O43524-1</annotation>
       </species>
-      <species id="cyt_mixed__RHEB__GDP_" compartment="Cytoplasm" initialConcentration="105.3075" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mixed__RHEB__GDP_" compartment="Cytoplasm" initialConcentration="332935" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q15382 CHEBI:17522</annotation>
       </species>
       <species id="cyt_mixed__RHEB__GTP_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q15382 CHEBI:15996</annotation>
       </species>
-      <species id="cyt_prot__RPTOR_1_" compartment="Cytoplasm" initialConcentration="0.2956705" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__RPTOR_1_" compartment="Cytoplasm" initialConcentration="935" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q8N122-1</annotation>
       </species>
-      <species id="cyt_prot__KS6B1_1_" compartment="Cytoplasm" initialConcentration="18.41546" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__KS6B1_1_" compartment="Cytoplasm" initialConcentration="58221" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P23443-1</annotation>
       </species>
-      <species id="cyt_prot__pT412_KS6B1_1_" compartment="Cytoplasm" initialConcentration="1.038285" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__pT412_KS6B1_1_" compartment="Cytoplasm" initialConcentration="3283" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P23443-1</annotation>
       </species>
-      <species id="cyt_prot__4EBP1_" compartment="Cytoplasm" initialConcentration="0.6519863" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__4EBP1_" compartment="Cytoplasm" initialConcentration="2061" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q13541</annotation>
       </species>
-      <species id="cyt_prot__pT37_pT46_4EBP1_" compartment="Cytoplasm" initialConcentration="1.099698" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__pT37_pT46_4EBP1_" compartment="Cytoplasm" initialConcentration="3477" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q13541</annotation>
       </species>
-      <species id="cyt_prot__SOS1_1_" compartment="Cytoplasm" initialConcentration="0.0005650215" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__SOS1_1_" compartment="Cytoplasm" initialConcentration="2" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q07889-1</annotation>
       </species>
-      <species id="cyt_cong__GRB2__SOS1_1__p_p_MAPK_" compartment="Cytoplasm" initialConcentration="0.002778459" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_cong__GRB2__SOS1_1__p_p_MAPK_" compartment="Cytoplasm" initialConcentration="9" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P62993-1 Q07889-1 P28482 P27361</annotation>
       </species>
-      <species id="cyt_cong__RAF1_1__p_p_MAPK_" compartment="Cytoplasm" initialConcentration="0.03226742" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_cong__RAF1_1__p_p_MAPK_" compartment="Cytoplasm" initialConcentration="102" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P04049-1 P28482 P27361</annotation>
       </species>
       <species id="cyt_mixed__RAS__GDP__CDP_DAG__GRP_1_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P01111 P01116 P01112 CHEBI:17522 CHEBI:17962 P07492-1</annotation>
       </species>
-      <species id="cyt_mixed__RAS__GTP__NF1_1_" compartment="Cytoplasm" initialConcentration="0.003646115" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mixed__RAS__GTP__NF1_1_" compartment="Cytoplasm" initialConcentration="12" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P01111 CHEBI:15996 P01116 P01112 P21359-1</annotation>
       </species>
       <species id="cyt_cong__NF1_1__p_p_MAPK_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P21359-1 P28482 P27361</annotation>
       </species>
-      <species id="cyt_mixed__MAP2K__RAS__GTP__RAF1_1__BRAF_" compartment="Cytoplasm" initialConcentration="0.2200407" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mixed__MAP2K__RAS__GTP__RAF1_1__BRAF_" compartment="Cytoplasm" initialConcentration="696" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q02750 P36507 CHEBI:15996 P15056 P04049-1</annotation>
       </species>
-      <species id="cyt_mixed__p_MAP2K__RAS__GTP__RAF1_1__BRAF_" compartment="Cytoplasm" initialConcentration="0.02880793" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mixed__p_MAP2K__RAS__GTP__RAF1_1__BRAF_" compartment="Cytoplasm" initialConcentration="91" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q02750 P36507 CHEBI:15996 P15056 P04049-1</annotation>
       </species>
-      <species id="cyt_cong__MAPK__p_p_MAP2K_" compartment="Cytoplasm" initialConcentration="2.358344" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_cong__MAPK__p_p_MAP2K_" compartment="Cytoplasm" initialConcentration="7456" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P27361 P28482 Q02750 P36507</annotation>
       </species>
-      <species id="cyt_cong__p_MAPK__p_p_MAP2K_" compartment="Cytoplasm" initialConcentration="0.2393166" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_cong__p_MAPK__p_p_MAP2K_" compartment="Cytoplasm" initialConcentration="757" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P27362 P28483 Q02751 P36508</annotation>
       </species>
-      <species id="cyt_cong__RPS6KA__p_p_MAPK_" compartment="Cytoplasm" initialConcentration="0.6886479" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_cong__RPS6KA__p_p_MAPK_" compartment="Cytoplasm" initialConcentration="2177" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q15418 Q15349 P51812 O75676 P27361 P28482</annotation>
       </species>
-      <species id="nuc_prot__p_RPS6KA__DUS1_" compartment="Nucleus" initialConcentration="3.25e-06" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_prot__p_RPS6KA__DUS1_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q15418 Q15349 P51812 O75676 P28562</annotation>
       </species>
-      <species id="nuc_cong__p_p_MAPK__DUS1_" compartment="Nucleus" initialConcentration="1.34e-05" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_cong__p_p_MAPK__DUS1_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P27361 P28482 P28562</annotation>
       </species>
-      <species id="nuc_prot__FOS_1__p_RPS6KA_" compartment="Nucleus" initialConcentration="0.004741987" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_prot__FOS_1__p_RPS6KA_" compartment="Nucleus" initialConcentration="5" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P01100-1 Q15418 Q15349 P51812 O75676</annotation>
       </species>
-      <species id="nuc_cong__FOS_1__p_p_MAPK_" compartment="Nucleus" initialConcentration="0.01946961" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_cong__FOS_1__p_p_MAPK_" compartment="Nucleus" initialConcentration="21" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P01100-1 P27361 P28482</annotation>
       </species>
       <species id="cyt_cong__PEBP1__CDP_DAG__KPC_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P30086 CHEBI:17962 P17252 P05771 P05129 Q05655</annotation>
       </species>
-      <species id="cyt_mixed__PIP3__PTEN_" compartment="Cytoplasm" initialConcentration="0.00338352" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mixed__PIP3__PTEN_" compartment="Cytoplasm" initialConcentration="11" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>CHEBI:16618 P60484-1</annotation>
       </species>
-      <species id="cyt_mixed__PIP3__AKT__PIP3__PDK1_" compartment="Cytoplasm" initialConcentration="0.0004531593" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mixed__PIP3__AKT__PIP3__PDK1_" compartment="Cytoplasm" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>CHEBI:16618 P31751 P31749 O15530-1 Q9Y243</annotation>
       </species>
-      <species id="cyt_mixed__PIP3__p_AKT__MTORC2_" compartment="Cytoplasm" initialConcentration="0.0003899231" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mixed__PIP3__p_AKT__MTORC2_" compartment="Cytoplasm" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P31749 Q9Y243 CHEBI:16618 P31751</annotation>
       </species>
-      <species id="cyt_cong__GSK3B_1__p_p_AKT_" compartment="Cytoplasm" initialConcentration="0.01442675" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_cong__GSK3B_1__p_p_AKT_" compartment="Cytoplasm" initialConcentration="46" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P31749 P31751 Q9Y243</annotation>
       </species>
-      <species id="cyt_cong__TSC2_1__p_p_AKT_" compartment="Cytoplasm" initialConcentration="0.0006788368" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_cong__TSC2_1__p_p_AKT_" compartment="Cytoplasm" initialConcentration="2" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q9Y243 P31751 P31749 P49815-1</annotation>
       </species>
-      <species id="cyt_cong__TSC2_1__p_p_MAPK_" compartment="Cytoplasm" initialConcentration="0.001896456" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_cong__TSC2_1__p_p_MAPK_" compartment="Cytoplasm" initialConcentration="6" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P49815-1 P28482 P27361</annotation>
       </species>
       <species id="cyt_mixed__RHEB__GTP__TSC_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q15382 CHEBI:15996 Q92574-1 P49815-1</annotation>
       </species>
-      <species id="cyt_prot_a__4EBP1__MTORC1_" compartment="Cytoplasm" initialConcentration="0.001103028" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot_a__4EBP1__MTORC1_" compartment="Cytoplasm" initialConcentration="3" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q13541 P42345 Q8N122-1</annotation>
       </species>
-      <species id="cyt_prot_a__KS6B1_1__MTORC1_" compartment="Cytoplasm" initialConcentration="0.003115522" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot_a__KS6B1_1__MTORC1_" compartment="Cytoplasm" initialConcentration="10" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P23443-1 P42345 Q8N122-1</annotation>
       </species>
-      <species id="cyt_prot__FOXO3_1__p_p_AKT_" compartment="Cytoplasm" initialConcentration="0.0005328653" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__FOXO3_1__p_p_AKT_" compartment="Cytoplasm" initialConcentration="2" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P31749 P31751 Q9Y243</annotation>
       </species>
-      <species id="cyt_prot_a__PIK3C__PIK3R__MTORC1_" compartment="Cytoplasm" initialConcentration="0.0003401418" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot_a__PIK3C__PIK3R__MTORC1_" compartment="Cytoplasm" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P42336 P42338 P48736 O00329 P27986 O00459 Q92569 Q99570 P42345 Q8N122-1</annotation>
       </species>
-      <species id="cyt_cong__p_MAPK__DUS6_1_" compartment="Cytoplasm" initialConcentration="4.04e-05" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_cong__p_MAPK__DUS6_1_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P28482 P27361 Q16828-1</annotation>
       </species>
       <species id="cyt_cong__p_p_MAPK__DUS6_1_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P28482 P27361 Q16828-1</annotation>
       </species>
-      <species id="cyt_cong__p_p_MAPK__p_DUS1_" compartment="Cytoplasm" initialConcentration="0.0001027623" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_cong__p_p_MAPK__p_DUS1_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P28482 P27361 P28562</annotation>
       </species>
-      <species id="cyt_mixed__RAS__GTP__BRAF_" compartment="Cytoplasm" initialConcentration="0.1161464" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mixed__RAS__GTP__BRAF_" compartment="Cytoplasm" initialConcentration="367" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P01111 CHEBI:15996 P01116 P01112 P15056</annotation>
       </species>
-      <species id="cyt_mixed__RAS__GTP__BRAF__BRAF_" compartment="Cytoplasm" initialConcentration="0.00134897" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mixed__RAS__GTP__BRAF__BRAF_" compartment="Cytoplasm" initialConcentration="4" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P01111 CHEBI:15996 P01116 P01112 P15056</annotation>
       </species>
-      <species id="cyt_mixed__MAP2K__RAS__GTP__BRAF__BRAF_" compartment="Cytoplasm" initialConcentration="0.001530097" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mixed__MAP2K__RAS__GTP__BRAF__BRAF_" compartment="Cytoplasm" initialConcentration="5" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q02750 P36507 P01111 P01116 P01112 CHEBI:15996 P15056</annotation>
       </species>
-      <species id="cyt_mixed__p_MAP2K__RAS__GTP__BRAF__BRAF_" compartment="Cytoplasm" initialConcentration="0.0002003216" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mixed__p_MAP2K__RAS__GTP__BRAF__BRAF_" compartment="Cytoplasm" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q02750 P36507 P01111 P01116 P01112 CHEBI:15996 P15056</annotation>
       </species>
-      <species id="cyt_prot__IF4E_1_" compartment="Cytoplasm" initialConcentration="235.6398" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__IF4E_1_" compartment="Cytoplasm" initialConcentration="744987" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P06730-1</annotation>
       </species>
-      <species id="cyt_prot__4EBP1__IF4E_1_" compartment="Cytoplasm" initialConcentration="15.31702" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__4EBP1__IF4E_1_" compartment="Cytoplasm" initialConcentration="48426" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q13541 P06730-1</annotation>
       </species>
-      <species id="cyt_mixed__RAS__GTP__RAF1_1__RAF1_1_" compartment="Cytoplasm" initialConcentration="0.08304726" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mixed__RAS__GTP__RAF1_1__RAF1_1_" compartment="Cytoplasm" initialConcentration="263" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P01111 CHEBI:15996 P01116 P01112 P04049-1</annotation>
       </species>
-      <species id="cyt_mixed__MAP2K__RAS__GTP__RAF1_1__RAF1_1_" compartment="Cytoplasm" initialConcentration="0.5180873" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mixed__MAP2K__RAS__GTP__RAF1_1__RAF1_1_" compartment="Cytoplasm" initialConcentration="1638" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q02750 P36507 P01111 CHEBI:15996 P01116 P01112 P04049-1</annotation>
       </species>
-      <species id="cyt_mixed__p_MAP2K__RAS__GTP__RAF1_1__RAF1_1_" compartment="Cytoplasm" initialConcentration="0.06782845" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mixed__p_MAP2K__RAS__GTP__RAF1_1__RAF1_1_" compartment="Cytoplasm" initialConcentration="214" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q02750 P36507 P01111 P01116 P01112 CHEBI:15996 P04049-1</annotation>
       </species>
-      <species id="nuc_prot__FOXO3_1_" compartment="Nucleus" initialConcentration="9.030427" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_prot__FOXO3_1_" compartment="Nucleus" initialConcentration="9517" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>O43524-1</annotation>
       </species>
       <species id="cyt_comp__MAP2Kinhibitor_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
@@ -2208,19 +2208,19 @@
       <species id="cyt_cong__AKTinhibitor__AKT_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P31749 P31751</annotation>
       </species>
-      <species id="cyt_abs__TotalmRNA_" compartment="Cytoplasm" initialConcentration="37.68942" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_abs__TotalmRNA_" compartment="Cytoplasm" initialConcentration="119157" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ChEBI:33699</annotation>
       </species>
-      <species id="cyt_abs__IF4E_1__TotalmRNA_" compartment="Cytoplasm" initialConcentration="88.80981" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_abs__IF4E_1__TotalmRNA_" compartment="Cytoplasm" initialConcentration="280777" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ChEBI:33699 P06730-1</annotation>
       </species>
-      <species id="cyt_prot__INGR2_" compartment="Cytoplasm" initialConcentration="0.7885016" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__INGR2_" compartment="Cytoplasm" initialConcentration="2493" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P38484</annotation>
       </species>
-      <species id="cyt_cong__JAK_" compartment="Cytoplasm" initialConcentration="12.90983" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_cong__JAK_" compartment="Cytoplasm" initialConcentration="40815" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P23458 O60674</annotation>
       </species>
-      <species id="cyt_cong__INGR2__JAK_" compartment="Cytoplasm" initialConcentration="20.35698" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_cong__INGR2__JAK_" compartment="Cytoplasm" initialConcentration="64360" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P38484 P23458 O60674</annotation>
       </species>
       <species id="cyt_cong__IFNG__INGR2__JAK_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
@@ -2232,7 +2232,7 @@
       <species id="cyt_cong__p_IFNG__INGR2__JAK__INGR2__JAK_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P01579 P38484 P23458 O60674</annotation>
       </species>
-      <species id="cyt_prot__STAT1_" compartment="Cytoplasm" initialConcentration="27.33331" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__STAT1_" compartment="Cytoplasm" initialConcentration="86416" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P42224</annotation>
       </species>
       <species id="cyt_cong__p_IFNG__INGR2__JAK__INGR2__JAK__STAT1_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
@@ -2247,13 +2247,13 @@
       <species id="cyt_prot__p_STAT1__p_STAT1_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P42224</annotation>
       </species>
-      <species id="cyt_prot__PTN11_" compartment="Cytoplasm" initialConcentration="56.22284" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__PTN11_" compartment="Cytoplasm" initialConcentration="177751" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q06124-2</annotation>
       </species>
       <species id="cyt_cong__p_IFNG__INGR2__JAK__INGR2__JAK__PTN11_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P01579 P38484 P23458 O60674 Q06124-2</annotation>
       </species>
-      <species id="cyt_prot__PTN1_" compartment="Cytoplasm" initialConcentration="28.11142" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__PTN1_" compartment="Cytoplasm" initialConcentration="88876" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P18031</annotation>
       </species>
       <species id="cyt_prot__p_STAT1__PTN1_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
@@ -2268,7 +2268,7 @@
       <species id="nuc_prot__p_STAT1_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P42224</annotation>
       </species>
-      <species id="nuc_prot__PTN2_" compartment="Nucleus" initialConcentration="28.11142" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_prot__PTN2_" compartment="Nucleus" initialConcentration="29625" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P17706-2</annotation>
       </species>
       <species id="nuc_prot__p_STAT1__PTN2_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
@@ -2310,157 +2310,157 @@
       <species id="cyt_prot__IFNG__INGR2_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P01579 P38484</annotation>
       </species>
-      <species id="cyt_mrna__TP53_201_" compartment="Cytoplasm" initialConcentration="0.002529984" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__TP53_201_" compartment="Cytoplasm" initialConcentration="8" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000269305.9</annotation>
       </species>
-      <species id="cyt_mrna__MDM2_202_" compartment="Cytoplasm" initialConcentration="0.0158124" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__MDM2_202_" compartment="Cytoplasm" initialConcentration="50" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000258149.11</annotation>
       </species>
-      <species id="cyt_mrna__PPM1D_201_" compartment="Cytoplasm" initialConcentration="0.0006324961" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__PPM1D_201_" compartment="Cytoplasm" initialConcentration="2" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000305921.8</annotation>
       </species>
-      <species id="cyt_mrna__ATM_229_" compartment="Cytoplasm" initialConcentration="0.0009487441" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__ATM_229_" compartment="Cytoplasm" initialConcentration="3" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000675843.1</annotation>
       </species>
-      <species id="cyt_mrna__ATR_201_" compartment="Cytoplasm" initialConcentration="0.0006324961" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__ATR_201_" compartment="Cytoplasm" initialConcentration="2" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000350721.9</annotation>
       </species>
-      <species id="cyt_mrna__RB1_201_" compartment="Cytoplasm" initialConcentration="0.005376217" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__RB1_201_" compartment="Cytoplasm" initialConcentration="17" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000267163.6</annotation>
       </species>
-      <species id="cyt_mrna__E2F1_201_" compartment="Cytoplasm" initialConcentration="0.005376217" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__E2F1_201_" compartment="Cytoplasm" initialConcentration="17" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000343380.6</annotation>
       </species>
-      <species id="cyt_mrna__E2F2_201_" compartment="Cytoplasm" initialConcentration="0.005376217" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__E2F2_201_" compartment="Cytoplasm" initialConcentration="17" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000634683.2</annotation>
       </species>
-      <species id="cyt_mrna__E2F3_201_" compartment="Cytoplasm" initialConcentration="0.005376217" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__E2F3_201_" compartment="Cytoplasm" initialConcentration="17" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000346618.8</annotation>
       </species>
-      <species id="cyt_mrna__CCND1_201_" compartment="Cytoplasm" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__CCND1_201_" compartment="Cytoplasm" initialConcentration="6" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000227507.3</annotation>
       </species>
-      <species id="cyt_mrna__CCND2_201_" compartment="Cytoplasm" initialConcentration="0.000316248" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__CCND2_201_" compartment="Cytoplasm" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000261254.8</annotation>
       </species>
-      <species id="cyt_mrna__CCND3_203_" compartment="Cytoplasm" initialConcentration="0.0006324961" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__CCND3_203_" compartment="Cytoplasm" initialConcentration="2" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000372991.9</annotation>
       </species>
-      <species id="cyt_mrna__CCNE1_201_" compartment="Cytoplasm" initialConcentration="0.005376217" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__CCNE1_201_" compartment="Cytoplasm" initialConcentration="17" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000262643.8</annotation>
       </species>
-      <species id="cyt_mrna__CCNE2_201_" compartment="Cytoplasm" initialConcentration="0.005376217" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__CCNE2_201_" compartment="Cytoplasm" initialConcentration="17" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000308108.9</annotation>
       </species>
-      <species id="cyt_mrna__SKP2_202_" compartment="Cytoplasm" initialConcentration="0.005376217" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__SKP2_202_" compartment="Cytoplasm" initialConcentration="17" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000274255.11</annotation>
       </species>
-      <species id="cyt_mrna__CDC25A_201_" compartment="Cytoplasm" initialConcentration="0.005376217" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__CDC25A_201_" compartment="Cytoplasm" initialConcentration="17" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000302506.8</annotation>
       </species>
-      <species id="cyt_mrna__CDC25B_201_" compartment="Cytoplasm" initialConcentration="0.005376217" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__CDC25B_201_" compartment="Cytoplasm" initialConcentration="17" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000245960.10</annotation>
       </species>
-      <species id="cyt_mrna__CDC25C_201_" compartment="Cytoplasm" initialConcentration="0.005376217" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__CDC25C_201_" compartment="Cytoplasm" initialConcentration="17" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000323760.11</annotation>
       </species>
-      <species id="cyt_mrna__CCNA2_201_" compartment="Cytoplasm" initialConcentration="0.005376217" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__CCNA2_201_" compartment="Cytoplasm" initialConcentration="17" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000274026.10</annotation>
       </species>
-      <species id="cyt_mrna__CDKN1B_201_" compartment="Cytoplasm" initialConcentration="0.005376217" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__CDKN1B_201_" compartment="Cytoplasm" initialConcentration="17" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000228872.9</annotation>
       </species>
-      <species id="cyt_mrna__CDH1_201_" compartment="Cytoplasm" initialConcentration="0.005376217" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__CDH1_201_" compartment="Cytoplasm" initialConcentration="17" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000261769.10</annotation>
       </species>
-      <species id="cyt_mrna__CCNB1_201_" compartment="Cytoplasm" initialConcentration="0.005376217" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__CCNB1_201_" compartment="Cytoplasm" initialConcentration="17" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000256442.10</annotation>
       </species>
-      <species id="cyt_mrna__CDC20_201_" compartment="Cytoplasm" initialConcentration="0.005376217" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__CDC20_201_" compartment="Cytoplasm" initialConcentration="17" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000310955.11</annotation>
       </species>
-      <species id="cyt_mrna__WEE1_202_" compartment="Cytoplasm" initialConcentration="0.005376217" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__WEE1_202_" compartment="Cytoplasm" initialConcentration="17" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000450114.7</annotation>
       </species>
-      <species id="cyt_mrna__CHEK1_204_" compartment="Cytoplasm" initialConcentration="0.005376217" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__CHEK1_204_" compartment="Cytoplasm" initialConcentration="17" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000438015.7</annotation>
       </species>
-      <species id="cyt_mrna__CDKN1A_201_" compartment="Cytoplasm" initialConcentration="0.003794976" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__CDKN1A_201_" compartment="Cytoplasm" initialConcentration="12" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000244741.10</annotation>
       </species>
       <species id="cyt_mrna__TNFSF10_201_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000241261.7</annotation>
       </species>
-      <species id="cyt_mrna__TNFRSF10A_201_" compartment="Cytoplasm" initialConcentration="0.000316248" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__TNFRSF10A_201_" compartment="Cytoplasm" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000221132.8</annotation>
       </species>
-      <species id="cyt_mrna__TNFRSF10B_201_" compartment="Cytoplasm" initialConcentration="0.004111224" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__TNFRSF10B_201_" compartment="Cytoplasm" initialConcentration="13" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000276431.9</annotation>
       </species>
-      <species id="cyt_mrna__CFLAR_201_" compartment="Cytoplasm" initialConcentration="0.00316248" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__CFLAR_201_" compartment="Cytoplasm" initialConcentration="10" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000309955.8</annotation>
       </species>
-      <species id="cyt_mrna__CASP8_218_" compartment="Cytoplasm" initialConcentration="0.002529984" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__CASP8_218_" compartment="Cytoplasm" initialConcentration="8" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000673742.1</annotation>
       </species>
-      <species id="cyt_mrna__CASP10_202_" compartment="Cytoplasm" initialConcentration="0.00158124" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__CASP10_202_" compartment="Cytoplasm" initialConcentration="5" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000286186.11</annotation>
       </species>
-      <species id="cyt_mrna__BFAR_201_" compartment="Cytoplasm" initialConcentration="0.01138493" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__BFAR_201_" compartment="Cytoplasm" initialConcentration="36" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000261658.7</annotation>
       </species>
-      <species id="cyt_mrna__CASP3_201_" compartment="Cytoplasm" initialConcentration="0.004111224" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__CASP3_201_" compartment="Cytoplasm" initialConcentration="13" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000308394.9</annotation>
       </species>
-      <species id="cyt_mrna__CASP7_203_" compartment="Cytoplasm" initialConcentration="0.007273705" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__CASP7_203_" compartment="Cytoplasm" initialConcentration="23" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000369318.8</annotation>
       </species>
-      <species id="cyt_mrna__CASP6_201_" compartment="Cytoplasm" initialConcentration="0.008538697" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__CASP6_201_" compartment="Cytoplasm" initialConcentration="27" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000265164.7</annotation>
       </species>
-      <species id="cyt_mrna__XIAP_202_" compartment="Cytoplasm" initialConcentration="0.00158124" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__XIAP_202_" compartment="Cytoplasm" initialConcentration="5" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000371199.8</annotation>
       </species>
-      <species id="cyt_mrna__PARP1_203_" compartment="Cytoplasm" initialConcentration="0.006641209" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__PARP1_203_" compartment="Cytoplasm" initialConcentration="21" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000366794.10</annotation>
       </species>
-      <species id="cyt_mrna__BID_211_" compartment="Cytoplasm" initialConcentration="0.00474372" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__BID_211_" compartment="Cytoplasm" initialConcentration="15" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000622694.5</annotation>
       </species>
       <species id="cyt_mrna__BCL2_201_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000333681.5</annotation>
       </species>
-      <species id="cyt_mrna__BCL2L1_201_" compartment="Cytoplasm" initialConcentration="0.0009487441" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__BCL2L1_201_" compartment="Cytoplasm" initialConcentration="3" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000307677.5</annotation>
       </species>
-      <species id="cyt_mrna__MCL1_202_" compartment="Cytoplasm" initialConcentration="0.006641209" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__MCL1_202_" compartment="Cytoplasm" initialConcentration="21" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000369026.3</annotation>
       </species>
-      <species id="cyt_mrna__BAX_202_" compartment="Cytoplasm" initialConcentration="0.0009487441" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__BAX_202_" compartment="Cytoplasm" initialConcentration="3" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000345358.12</annotation>
       </species>
-      <species id="cyt_mrna__CYC1_201_" compartment="Cytoplasm" initialConcentration="0.02909482" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__CYC1_201_" compartment="Cytoplasm" initialConcentration="92" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000305786.7</annotation>
       </species>
-      <species id="cyt_mrna__DIABLO_206_" compartment="Cytoplasm" initialConcentration="0.002846232" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__DIABLO_206_" compartment="Cytoplasm" initialConcentration="9" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000464942.7</annotation>
       </species>
-      <species id="cyt_mrna__APAF1_210_" compartment="Cytoplasm" initialConcentration="0.0006324961" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__APAF1_210_" compartment="Cytoplasm" initialConcentration="2" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000551964.6</annotation>
       </species>
-      <species id="cyt_mrna__CASP9_201_" compartment="Cytoplasm" initialConcentration="0.0006324961" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__CASP9_201_" compartment="Cytoplasm" initialConcentration="2" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000333868.10</annotation>
       </species>
-      <species id="cyt_mrna__BAD_201_" compartment="Cytoplasm" initialConcentration="0.004111224" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__BAD_201_" compartment="Cytoplasm" initialConcentration="13" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000309032.8</annotation>
       </species>
-      <species id="cyt_mrna__BBC3_203_" compartment="Cytoplasm" initialConcentration="0.000316248" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__BBC3_203_" compartment="Cytoplasm" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000439096.3</annotation>
       </species>
-      <species id="cyt_mrna__PMAIP1_202_" compartment="Cytoplasm" initialConcentration="0.001264992" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__PMAIP1_202_" compartment="Cytoplasm" initialConcentration="4" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000316660.7</annotation>
       </species>
-      <species id="cyt_mrna__BCL2L11_204_" compartment="Cytoplasm" initialConcentration="0.0009487441" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__BCL2L11_204_" compartment="Cytoplasm" initialConcentration="3" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000393256.8</annotation>
       </species>
       <species id="cyt_mrna__EGF_201_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
@@ -2469,52 +2469,52 @@
       <species id="cyt_mrna__NRG1_203_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000405005.8</annotation>
       </species>
-      <species id="cyt_mrna__EGFR_201_" compartment="Cytoplasm" initialConcentration="0.002529984" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__EGFR_201_" compartment="Cytoplasm" initialConcentration="8" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000275493.7</annotation>
       </species>
-      <species id="cyt_mrna__ERBB2_201_" compartment="Cytoplasm" initialConcentration="0.001264992" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__ERBB2_201_" compartment="Cytoplasm" initialConcentration="4" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000269571.10</annotation>
       </species>
-      <species id="cyt_mrna__ERBB3_201_" compartment="Cytoplasm" initialConcentration="0.005376217" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__ERBB3_201_" compartment="Cytoplasm" initialConcentration="17" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000267101.8</annotation>
       </species>
       <species id="cyt_mrna__ERBB4_202_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000342788.9</annotation>
       </species>
-      <species id="cyt_mrna__MET_202_" compartment="Cytoplasm" initialConcentration="0.005692465" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__MET_202_" compartment="Cytoplasm" initialConcentration="18" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000397752.8</annotation>
       </species>
       <species id="cyt_mrna__HGF_201_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000222390.11</annotation>
       </species>
-      <species id="cyt_mrna__PDGFRA_201_" compartment="Cytoplasm" initialConcentration="0.000316248" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__PDGFRA_201_" compartment="Cytoplasm" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000257290.10</annotation>
       </species>
-      <species id="cyt_mrna__PDGFRB_201_" compartment="Cytoplasm" initialConcentration="0.000316248" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__PDGFRB_201_" compartment="Cytoplasm" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000261799.9</annotation>
       </species>
       <species id="cyt_mrna__PDGFB_201_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000331163.11</annotation>
       </species>
-      <species id="cyt_mrna__SPRY2_202_" compartment="Cytoplasm" initialConcentration="0.0006324961" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__SPRY2_202_" compartment="Cytoplasm" initialConcentration="2" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000377104.4</annotation>
       </species>
-      <species id="cyt_mrna__CBL_201_" compartment="Cytoplasm" initialConcentration="0.0009487441" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__CBL_201_" compartment="Cytoplasm" initialConcentration="3" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000264033.6</annotation>
       </species>
-      <species id="cyt_mrna__GRB2_202_" compartment="Cytoplasm" initialConcentration="0.00158124" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__GRB2_202_" compartment="Cytoplasm" initialConcentration="5" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000316804.10</annotation>
       </species>
-      <species id="cyt_mrna__PLCG1_223_" compartment="Cytoplasm" initialConcentration="0.000316248" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__PLCG1_223_" compartment="Cytoplasm" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000685551.1</annotation>
       </species>
-      <species id="cyt_mrna__PLCG2_208_" compartment="Cytoplasm" initialConcentration="0.000316248" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__PLCG2_208_" compartment="Cytoplasm" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000564138.6</annotation>
       </species>
-      <species id="cyt_mrna__PIK3CA_201_" compartment="Cytoplasm" initialConcentration="0.0006324961" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__PIK3CA_201_" compartment="Cytoplasm" initialConcentration="2" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000263967.4</annotation>
       </species>
-      <species id="cyt_mrna__PTPN2_201_" compartment="Cytoplasm" initialConcentration="0.0006324961" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__PTPN2_201_" compartment="Cytoplasm" initialConcentration="2" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000674063.1</annotation>
       </species>
       <species id="cyt_mrna__PIK3CG_205_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
@@ -2523,160 +2523,160 @@
       <species id="cyt_mrna__PIK3CD_202_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000377346.9</annotation>
       </species>
-      <species id="cyt_mrna__PIK3R1_211_" compartment="Cytoplasm" initialConcentration="0.0006324961" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__PIK3R1_211_" compartment="Cytoplasm" initialConcentration="2" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000521381.6</annotation>
       </species>
-      <species id="cyt_mrna__PIK3R2_201_" compartment="Cytoplasm" initialConcentration="0.000316248" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__PIK3R2_201_" compartment="Cytoplasm" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000222254.13</annotation>
       </species>
-      <species id="cyt_mrna__PIK3R3_201_" compartment="Cytoplasm" initialConcentration="0.002846232" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__PIK3R3_201_" compartment="Cytoplasm" initialConcentration="9" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000262741.10</annotation>
       </species>
-      <species id="cyt_mrna__PIK3R4_201_" compartment="Cytoplasm" initialConcentration="0.000316248" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__PIK3R4_201_" compartment="Cytoplasm" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000356763.8</annotation>
       </species>
-      <species id="cyt_mrna__PIK3C2A_206_" compartment="Cytoplasm" initialConcentration="0.00158124" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__PIK3C2A_206_" compartment="Cytoplasm" initialConcentration="5" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000691414.1</annotation>
       </species>
       <species id="cyt_mrna__RASGRP1_201_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000310803.10</annotation>
       </species>
-      <species id="cyt_mrna__RASGRP3_202_" compartment="Cytoplasm" initialConcentration="0.000316248" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__RASGRP3_202_" compartment="Cytoplasm" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000403687.8</annotation>
       </species>
-      <species id="cyt_mrna__NRAS_201_" compartment="Cytoplasm" initialConcentration="0.004427472" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__NRAS_201_" compartment="Cytoplasm" initialConcentration="14" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000369535.5</annotation>
       </species>
-      <species id="cyt_mrna__KRAS_202_" compartment="Cytoplasm" initialConcentration="0.002529984" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__KRAS_202_" compartment="Cytoplasm" initialConcentration="8" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000311936.8</annotation>
       </species>
-      <species id="cyt_mrna__HRAS_201_" compartment="Cytoplasm" initialConcentration="0.0009487441" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__HRAS_201_" compartment="Cytoplasm" initialConcentration="3" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000311189.8</annotation>
       </species>
-      <species id="cyt_mrna__NF1_202_" compartment="Cytoplasm" initialConcentration="0.001264992" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__NF1_202_" compartment="Cytoplasm" initialConcentration="4" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000358273.9</annotation>
       </species>
-      <species id="cyt_mrna__RAF1_201_" compartment="Cytoplasm" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__RAF1_201_" compartment="Cytoplasm" initialConcentration="6" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000251849.9</annotation>
       </species>
-      <species id="cyt_mrna__BRAF_220_" compartment="Cytoplasm" initialConcentration="0.000316248" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__BRAF_220_" compartment="Cytoplasm" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000646891.2</annotation>
       </species>
-      <species id="cyt_mrna__MAP2K1_201_" compartment="Cytoplasm" initialConcentration="0.0006324961" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__MAP2K1_201_" compartment="Cytoplasm" initialConcentration="2" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000307102.10</annotation>
       </species>
-      <species id="cyt_mrna__MAP2K2_201_" compartment="Cytoplasm" initialConcentration="0.0009487441" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__MAP2K2_201_" compartment="Cytoplasm" initialConcentration="3" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000262948.10</annotation>
       </species>
-      <species id="cyt_mrna__DUSP6_201_" compartment="Cytoplasm" initialConcentration="0.000316248" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__DUSP6_201_" compartment="Cytoplasm" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000279488.8</annotation>
       </species>
-      <species id="cyt_mrna__RPS6KA1_204_" compartment="Cytoplasm" initialConcentration="0.000316248" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__RPS6KA1_204_" compartment="Cytoplasm" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000374168.7</annotation>
       </species>
-      <species id="cyt_mrna__RPS6KA2_201_" compartment="Cytoplasm" initialConcentration="0.0006324961" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__RPS6KA2_201_" compartment="Cytoplasm" initialConcentration="2" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000265678.9</annotation>
       </species>
-      <species id="cyt_mrna__RPS6KA3_201_" compartment="Cytoplasm" initialConcentration="0.001264992" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__RPS6KA3_201_" compartment="Cytoplasm" initialConcentration="4" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000379565.9</annotation>
       </species>
-      <species id="cyt_mrna__RPS6KA4_201_" compartment="Cytoplasm" initialConcentration="0.000316248" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__RPS6KA4_201_" compartment="Cytoplasm" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000334205.9</annotation>
       </species>
-      <species id="cyt_mrna__DUSP1_201_" compartment="Cytoplasm" initialConcentration="0.0009487441" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__DUSP1_201_" compartment="Cytoplasm" initialConcentration="3" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000239223.4</annotation>
       </species>
-      <species id="cyt_mrna__FOS_201_" compartment="Cytoplasm" initialConcentration="0.0009487441" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__FOS_201_" compartment="Cytoplasm" initialConcentration="3" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000303562.9</annotation>
       </species>
-      <species id="cyt_mrna__JUN_201_" compartment="Cytoplasm" initialConcentration="0.002213736" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__JUN_201_" compartment="Cytoplasm" initialConcentration="7" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000371222.4</annotation>
       </species>
-      <species id="cyt_mrna__MYC_206_" compartment="Cytoplasm" initialConcentration="0.0006324961" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__MYC_206_" compartment="Cytoplasm" initialConcentration="2" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000621592.8</annotation>
       </species>
-      <species id="cyt_mrna__CTNNB1_201_" compartment="Cytoplasm" initialConcentration="0.01043619" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__CTNNB1_201_" compartment="Cytoplasm" initialConcentration="33" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000349496.11</annotation>
       </species>
-      <species id="cyt_mrna__PTEN_201_" compartment="Cytoplasm" initialConcentration="0.007273705" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__PTEN_201_" compartment="Cytoplasm" initialConcentration="23" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000371953.8</annotation>
       </species>
-      <species id="cyt_mrna__AKT1_218_" compartment="Cytoplasm" initialConcentration="0.000316248" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__AKT1_218_" compartment="Cytoplasm" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000649815.2</annotation>
       </species>
-      <species id="cyt_mrna__AKT2_206_" compartment="Cytoplasm" initialConcentration="0.0009487441" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__AKT2_206_" compartment="Cytoplasm" initialConcentration="3" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000392038.7</annotation>
       </species>
-      <species id="cyt_mrna__PDPK1_202_" compartment="Cytoplasm" initialConcentration="0.0009487441" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__PDPK1_202_" compartment="Cytoplasm" initialConcentration="3" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000342085.9</annotation>
       </species>
-      <species id="cyt_mrna__RICTOR_202_" compartment="Cytoplasm" initialConcentration="0.001264992" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__RICTOR_202_" compartment="Cytoplasm" initialConcentration="4" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000357387.8</annotation>
       </species>
-      <species id="cyt_mrna__MTOR_201_" compartment="Cytoplasm" initialConcentration="0.000316248" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__MTOR_201_" compartment="Cytoplasm" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000361445.9</annotation>
       </species>
-      <species id="cyt_mrna__GSK3B_201_" compartment="Cytoplasm" initialConcentration="0.0009487441" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__GSK3B_201_" compartment="Cytoplasm" initialConcentration="3" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000264235.13</annotation>
       </species>
-      <species id="cyt_mrna__TSC1_201_" compartment="Cytoplasm" initialConcentration="0.001264992" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__TSC1_201_" compartment="Cytoplasm" initialConcentration="4" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000298552.9</annotation>
       </species>
-      <species id="cyt_mrna__TSC2_201_" compartment="Cytoplasm" initialConcentration="0.000316248" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__TSC2_201_" compartment="Cytoplasm" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000219476.9</annotation>
       </species>
-      <species id="cyt_mrna__PRKCA_202_" compartment="Cytoplasm" initialConcentration="0.0006324961" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__PRKCA_202_" compartment="Cytoplasm" initialConcentration="2" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000413366.8</annotation>
       </species>
-      <species id="cyt_mrna__PRKCB_210_" compartment="Cytoplasm" initialConcentration="0.000316248" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__PRKCB_210_" compartment="Cytoplasm" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000643927.1</annotation>
       </species>
       <species id="cyt_mrna__PRKCG_201_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000263431.4</annotation>
       </species>
-      <species id="cyt_mrna__PRKCD_201_" compartment="Cytoplasm" initialConcentration="0.0009487441" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__PRKCD_201_" compartment="Cytoplasm" initialConcentration="3" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000330452.8</annotation>
       </species>
-      <species id="cyt_mrna__PEBP1_201_" compartment="Cytoplasm" initialConcentration="0.01170118" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__PEBP1_201_" compartment="Cytoplasm" initialConcentration="37" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000261313.3</annotation>
       </species>
-      <species id="cyt_mrna__MAPK1_201_" compartment="Cytoplasm" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__MAPK1_201_" compartment="Cytoplasm" initialConcentration="6" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000215832.11</annotation>
       </species>
-      <species id="cyt_mrna__MAPK3_201_" compartment="Cytoplasm" initialConcentration="0.0006324961" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__MAPK3_201_" compartment="Cytoplasm" initialConcentration="2" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000263025.9</annotation>
       </species>
-      <species id="cyt_mrna__FOXO3_202_" compartment="Cytoplasm" initialConcentration="0.001264992" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__FOXO3_202_" compartment="Cytoplasm" initialConcentration="4" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000406360.2</annotation>
       </species>
-      <species id="cyt_mrna__RHEB_201_" compartment="Cytoplasm" initialConcentration="0.009803689" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__RHEB_201_" compartment="Cytoplasm" initialConcentration="31" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000262187.10</annotation>
       </species>
-      <species id="cyt_mrna__RPTOR_201_" compartment="Cytoplasm" initialConcentration="0.000316248" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__RPTOR_201_" compartment="Cytoplasm" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000306801.8</annotation>
       </species>
-      <species id="cyt_mrna__RPS6KB1_201_" compartment="Cytoplasm" initialConcentration="0.0009487441" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__RPS6KB1_201_" compartment="Cytoplasm" initialConcentration="3" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000225577.9</annotation>
       </species>
-      <species id="cyt_mrna__RPS6KB2_201_" compartment="Cytoplasm" initialConcentration="0.0006324961" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__RPS6KB2_201_" compartment="Cytoplasm" initialConcentration="2" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000312629.10</annotation>
       </species>
-      <species id="cyt_mrna__EIF4EBP1_201_" compartment="Cytoplasm" initialConcentration="0.01201743" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__EIF4EBP1_201_" compartment="Cytoplasm" initialConcentration="38" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000338825.5</annotation>
       </species>
-      <species id="cyt_mrna__SOS1_202_" compartment="Cytoplasm" initialConcentration="0.0009487441" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__SOS1_202_" compartment="Cytoplasm" initialConcentration="3" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000402219.8</annotation>
       </species>
       <species id="cyt_mrna__CDKN2A_214_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000304494.10</annotation>
       </species>
-      <species id="cyt_mrna__MDM4_203_" compartment="Cytoplasm" initialConcentration="0.002213736" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__MDM4_203_" compartment="Cytoplasm" initialConcentration="7" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000367182.8</annotation>
       </species>
-      <species id="cyt_mrna__FGFR1_214_" compartment="Cytoplasm" initialConcentration="0.000316248" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__FGFR1_214_" compartment="Cytoplasm" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000447712.7</annotation>
       </species>
-      <species id="cyt_mrna__FGFR2_206_" compartment="Cytoplasm" initialConcentration="0.0006324961" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__FGFR2_206_" compartment="Cytoplasm" initialConcentration="2" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000358487.10</annotation>
       </species>
       <species id="cyt_mrna__FGF1_201_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
@@ -2685,13 +2685,13 @@
       <species id="cyt_mrna__FGF2_203_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000644866.2</annotation>
       </species>
-      <species id="cyt_mrna__EIF4E_203_" compartment="Cytoplasm" initialConcentration="0.01201743" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__EIF4E_203_" compartment="Cytoplasm" initialConcentration="38" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000450253.7</annotation>
       </species>
-      <species id="cyt_mrna__IRS1_201_" compartment="Cytoplasm" initialConcentration="0.0009487441" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__IRS1_201_" compartment="Cytoplasm" initialConcentration="3" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000305123.6</annotation>
       </species>
-      <species id="cyt_mrna__IRS2_201_" compartment="Cytoplasm" initialConcentration="0.0006324961" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__IRS2_201_" compartment="Cytoplasm" initialConcentration="2" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000375856.5</annotation>
       </species>
       <species id="cyt_mrna__IGF1_202_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
@@ -2700,19 +2700,19 @@
       <species id="cyt_mrna__IGF2_205_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000416167.7</annotation>
       </species>
-      <species id="cyt_mrna__IGF1R_217_" compartment="Cytoplasm" initialConcentration="0.0009487441" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__IGF1R_217_" compartment="Cytoplasm" initialConcentration="3" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000650285.1</annotation>
       </species>
-      <species id="cyt_mrna__MSH6_201_" compartment="Cytoplasm" initialConcentration="0.00158124" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__MSH6_201_" compartment="Cytoplasm" initialConcentration="5" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000234420.11</annotation>
       </species>
-      <species id="cyt_mrna__BRCA2_201_" compartment="Cytoplasm" initialConcentration="0.0006324961" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__BRCA2_201_" compartment="Cytoplasm" initialConcentration="2" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000380152.8</annotation>
       </species>
-      <species id="cyt_mrna__MGMT_205_" compartment="Cytoplasm" initialConcentration="0.00158124" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__MGMT_205_" compartment="Cytoplasm" initialConcentration="5" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000651593.1</annotation>
       </species>
-      <species id="cyt_mrna__INSR_201_" compartment="Cytoplasm" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__INSR_201_" compartment="Cytoplasm" initialConcentration="6" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000302850.10</annotation>
       </species>
       <species id="cyt_mrna__INS_202_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
@@ -2721,22 +2721,22 @@
       <species id="cyt_mrna__IFNG_201_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000229135.4</annotation>
       </species>
-      <species id="cyt_mrna__IFNGR2_201_" compartment="Cytoplasm" initialConcentration="0.001944966" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__IFNGR2_201_" compartment="Cytoplasm" initialConcentration="6" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000290219.11</annotation>
       </species>
-      <species id="cyt_mrna__JAK1_201_" compartment="Cytoplasm" initialConcentration="0.003059889" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__JAK1_201_" compartment="Cytoplasm" initialConcentration="10" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000342505.5</annotation>
       </species>
-      <species id="cyt_mrna__STAT1_201_" compartment="Cytoplasm" initialConcentration="0.002514124" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__STAT1_201_" compartment="Cytoplasm" initialConcentration="8" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000361099.8</annotation>
       </species>
-      <species id="cyt_mrna__PTPN11_201_" compartment="Cytoplasm" initialConcentration="0.00517139" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__PTPN11_201_" compartment="Cytoplasm" initialConcentration="16" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000351677.7</annotation>
       </species>
-      <species id="cyt_mrna__PIK3CB_212_" compartment="Cytoplasm" initialConcentration="0.002585695" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__PIK3CB_212_" compartment="Cytoplasm" initialConcentration="8" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000327283.7</annotation>
       </species>
-      <species id="cyt_mrna__PTPN1_201_" compartment="Cytoplasm" initialConcentration="0.002585695" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__PTPN1_201_" compartment="Cytoplasm" initialConcentration="8" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000371621.5</annotation>
       </species>
       <species id="cyt_mrna__SOCS1_201_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">

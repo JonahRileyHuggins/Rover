@@ -14,8 +14,10 @@ from rover.units import (
     nM_to_counts,
 )
 
-DATA = Path(__file__).resolve().parent / "data"
+DATA = Path(__file__).resolve().parent / "data" / "LR"
 DET = DATA / "deterministic-interactions.xml"
+
+pytestmark = pytest.mark.skipif(not DET.exists(), reason="LR fixtures not present")
 
 CYTO_V = 5.25e-12
 NUC_V = 1.75e-12
@@ -47,3 +49,12 @@ def test_bngsim_storage_round_trip():
 
     storage1 = bngsim_storage_from_counts(counts, uc)
     np.testing.assert_allclose(storage1, storage0, rtol=1e-6, atol=1e-12)
+
+
+def test_lr_stochmod_scales_stay_molecule_counts_with_companion():
+    from rover.units import stochmod_to_molecule_scales
+
+    stoch = DATA / "stochastic-gene-expression.xml"
+    scales = stochmod_to_molecule_scales(stoch, companion_deterministic_sbml=DET)
+    assert scales.shape[0] == 9
+    assert np.all(scales == 1.0)

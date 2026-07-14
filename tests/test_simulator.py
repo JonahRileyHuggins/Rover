@@ -8,13 +8,33 @@ import pytest
 from rover import HybridSimulator
 
 DATA = Path(__file__).resolve().parent / "data"
-DET = DATA / "deterministic-interactions.xml"
-STOCH = DATA / "stochastic-gene-expression.xml"
+_LR = DATA / "LR"
+_SPARCED = DATA / "SPARCED"
+DET = (
+    _LR / "deterministic-interactions.xml"
+    if (_LR / "deterministic-interactions.xml").exists()
+    else _SPARCED / "deterministic-interactions.xml"
+)
+STOCH = (
+    _LR / "stochastic-gene-expression.xml"
+    if (_LR / "stochastic-gene-expression.xml").exists()
+    else _SPARCED / "stochastic-gene-expression.xml"
+)
+
+pytestmark = pytest.mark.skipif(
+    not DET.exists() or not STOCH.exists(),
+    reason="hybrid SBML fixtures not present",
+)
 
 
 @pytest.fixture(scope="module")
 def sim() -> HybridSimulator:
-    return HybridSimulator(DET, STOCH, dt=1.0)
+    return HybridSimulator(
+        DET,
+        STOCH,
+        dt=1.0,
+        bngsim_kwargs={"codegen": False, "jacobian": "fd"},
+    )
 
 
 def test_update_species_by_name(sim: HybridSimulator):
@@ -60,7 +80,6 @@ def test_run_records_full_trajectory(sim: HybridSimulator):
     assert sim.times is not None
     assert sim.times.shape == (11,)
     np.testing.assert_allclose(sim.times, np.arange(0.0, 11.0, 1.0))
-    # Final live state matches last trajectory row
     np.testing.assert_allclose(sim.counts, traj[-1])
     assert sim.time == pytest.approx(10.0)
     assert sim.get("cyt_prot__LIGAND_") > 0.0
@@ -72,6 +91,18 @@ def test_run_records_full_trajectory(sim: HybridSimulator):
     assert float(df["cyt_prot__LIGAND_"].iloc[-1]) == pytest.approx(
         sim.get("cyt_prot__LIGAND_")
     )
+
+
+def test_bngsim_clock_stays_local_per_coupling_step(sim: HybridSimulator):
+    """Each BNGsim advance is a local [0, dt] window, not accumulating wall time."""
+    sim.reset()
+    dt = float(sim.dt)
+    n_steps = 10
+    traj = sim.run(t_end=n_steps * dt, dt=dt)
+    assert traj.shape == (n_steps + 1, sim.index.n_species)
+    assert sim.time == pytest.approx(n_steps * dt)
+    assert sim._bng.kernel.time == pytest.approx(dt, rel=1e-9, abs=1e-12)
+    assert np.all(np.isfinite(traj))
 
 
 def test_run_memmap_trajectory(sim: HybridSimulator, tmp_path: Path):

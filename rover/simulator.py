@@ -8,12 +8,7 @@ from typing import Any, Literal, Mapping
 
 import numpy as np
 
-from rover.composite import (
-    build_hybrid_composite,
-    run_operator_split,
-    _ensure_rover_logging,
-    _get_process_instance,
-)
+from rover.engine import build_hybrid_engine, run_steps, _ensure_rover_logging
 from rover.trajectory import TrajectoryStore
 
 logger = logging.getLogger("rover")
@@ -26,6 +21,9 @@ class HybridSimulator:
     Trajectories are recorded separately into a pre-sized matrix — either in
     memory or a memory-mapped ``.npy`` file for large runs.
 
+    Coupling is a plain loop: each step calls ``stoch.step`` then ``bng.step``
+    (see :func:`rover.engine.run_steps`).
+
     Parameters
     ----------
     deterministic_sbml, stochastic_sbml :
@@ -33,7 +31,7 @@ class HybridSimulator:
     dt :
         Default coupling step for ``run``.
     bngsim_kwargs :
-        Forwarded to BNGsim (default ``{"codegen": True}``).
+        Forwarded to BNGsim (default codegen + analytical Jacobian).
     initial_counts :
         Optional length-N molecule-count vector; otherwise seeded from SBMLs.
 
@@ -60,21 +58,20 @@ class HybridSimulator:
         self.deterministic_sbml = Path(deterministic_sbml)
         self.stochastic_sbml = Path(stochastic_sbml)
 
-        self.composite, self.index = build_hybrid_composite(
+        self._engine = build_hybrid_engine(
             self.deterministic_sbml,
             self.stochastic_sbml,
             dt=self.dt,
             initial_counts=initial_counts,
             bngsim_kwargs=bngsim_kwargs,
         )
-        self._bng = _get_process_instance(self.composite, "bngsim")
-        self._stoch = _get_process_instance(self.composite, "stochmod")
-        # Live coupling state — always 1-D, always in RAM.
-        self._counts = np.asarray(self.composite.state["counts"], dtype=np.float64).copy()
+        self.index = self._engine.index
+        self._bng = self._engine.bng
+        self._stoch = self._engine.stoch
+        self._counts = np.asarray(self._engine.counts, dtype=np.float64).copy()
         self._t = 0.0
         self._trajectory: TrajectoryStore | None = None
 
-        # Snapshot for reset() + parameter membership sets
         self._initial_counts = self._counts.copy()
         self._bng_param_names = {str(n) for n in self._bng.kernel.model.param_names}
         self._stoch_param_names = {str(n) for n in self._stoch.module.parameter_ids}
@@ -95,10 +92,6 @@ class HybridSimulator:
             len(self._initial_bng_params),
             len(self._initial_stoch_params),
         )
-
-    # ------------------------------------------------------------------
-    # Introspection
-    # ------------------------------------------------------------------
 
     @property
     def species_names(self) -> tuple[str, ...]:
@@ -170,10 +163,6 @@ class HybridSimulator:
             [{"time": self._t, **{n: float(self._counts[i]) for i, n in enumerate(self.index.names)}}]
         )
 
-    # ------------------------------------------------------------------
-    # Mutation
-    # ------------------------------------------------------------------
-
     def update(
         self,
         key: str | Mapping[str, float] | None = None,
@@ -189,8 +178,7 @@ class HybridSimulator:
             sim.update({"kTL1_1": 2.0, "cyt_prot__LIGAND_": 100.0})
             sim.update(kTL1_1=2.0, cyt_mrna__LIGAND_=10.0)
 
-        Species writes go to the shared count store (and sync into both
-        kernels' local state on the next ``run`` step). Parameter writes are
+        Species writes go to the shared count store. Parameter writes are
         routed to BNGsim and/or StochMod by id; if both models define the same
         id, both are updated.
         """
@@ -218,7 +206,6 @@ class HybridSimulator:
 
         if is_species:
             self._counts[self.index.name_to_index[name]] = value
-            self.composite.state["counts"] = self._counts
 
         if in_bng:
             self._bng.kernel.model.set_param(name, value)
@@ -239,11 +226,6 @@ class HybridSimulator:
                     f"counts shape {arr.shape} != ({self.index.n_species},)"
                 )
             self._counts[:] = arr
-        self.composite.state["counts"] = self._counts
-
-    # ------------------------------------------------------------------
-    # Simulation
-    # ------------------------------------------------------------------
 
     def run(
         self,
@@ -251,7 +233,6 @@ class HybridSimulator:
         *,
         dt: float | None = None,
         t_span: tuple[float, float] | None = None,
-        engine: str = "split",
         progress_every: int | None = None,
         record: bool = True,
         results_path: str | Path | None = None,
@@ -267,8 +248,6 @@ class HybridSimulator:
             ``(t0, t1)`` absolute window for step count ``(t1 - t0) / dt``.
         dt :
             Coupling step (default: constructor ``dt``).
-        engine :
-            ``"split"`` (default) or ``"composite"``.
         record :
             If True (default), allocate a trajectory buffer and write every
             timepoint. Live ``_counts`` stays a 1-D RAM vector either way.
@@ -303,9 +282,6 @@ class HybridSimulator:
         else:
             raise TypeError("run() requires t_end=... or t_span=(t0, t1)")
 
-        # Sync shared counts into the composite store before stepping
-        self.composite.state["counts"] = self._counts
-
         n_steps = int(np.floor(duration / step))
         if n_steps < 1:
             raise ValueError(f"duration={duration} / dt={step} yields no steps")
@@ -324,39 +300,22 @@ class HybridSimulator:
             )
             self._trajectory = traj
 
-        if engine == "split":
-            if n_steps > 1000:
-                logger.warning(
-                    "Running %d coupling steps at dt=%g. Prefer a larger dt when possible.",
-                    n_steps,
-                    step,
-                )
-            self._counts = run_operator_split(
-                self.composite,
-                t_end=duration,
-                dt=step,
-                progress_every=progress_every,
-                trajectory=traj,
-                t0_abs=t0_abs,
+        if n_steps > 1000:
+            logger.warning(
+                "Running %d coupling steps at dt=%g. Prefer a larger dt when possible.",
+                n_steps,
+                step,
             )
-        elif engine == "composite":
-            if record:
-                # Composite engine has no per-step hook; fall back to split
-                # recording path for trajectories.
-                logger.warning(
-                    "engine='composite' cannot record per-step trajectories; "
-                    "using engine='split' for this run"
-                )
-            self._counts = run_operator_split(
-                self.composite,
-                t_end=duration,
-                dt=step,
-                progress_every=progress_every,
-                trajectory=traj,
-                t0_abs=t0_abs,
-            )
-        else:
-            raise ValueError(f"Unknown engine={engine!r}; use 'split' or 'composite'")
+
+        self._counts = run_steps(
+            self._engine,
+            t_end=duration,
+            dt=step,
+            progress_every=progress_every,
+            trajectory=traj,
+            t0_abs=t0_abs,
+            counts=self._counts,
+        )
 
         self._t = float(t1)
         if traj is not None:
@@ -366,7 +325,6 @@ class HybridSimulator:
     def reset(self) -> None:
         """Restore initial counts and parameters; set time to 0."""
         self._counts[:] = self._initial_counts
-        self.composite.state["counts"] = self._counts
         for name, val in self._initial_bng_params.items():
             self._bng.kernel.model.set_param(name, val)
         for name, val in self._initial_stoch_params.items():

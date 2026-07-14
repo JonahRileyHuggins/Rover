@@ -1,11 +1,12 @@
-"""Rover: hybrid BNGsim + StochMod process-bigraph engine."""
+"""Rover: hybrid BNGsim + StochMod orchestrator."""
 
-from rover.composite import build_hybrid_composite, run_hybrid, run_operator_split
+from rover.engine import HybridEngine, build_hybrid_engine, run_hybrid, run_steps
 from rover.simulator import HybridSimulator
 
 __all__ = [
     "HybridSimulator",
-    "build_hybrid_composite",
+    "HybridEngine",
+    "build_hybrid_engine",
     "run_hybrid",
-    "run_operator_split",
+    "run_steps",
 ]

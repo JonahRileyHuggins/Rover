@@ -39,1360 +39,1360 @@
       </compartment>
     </listOfCompartments>
     <listOfSpecies>
-      <species id="nuc_prot_a__P53_" compartment="Nucleus" initialConcentration="6.246134" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_prot_a__P53_" compartment="Nucleus" initialAmount="6582" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>P04637</annotation>
       </species>
-      <species id="nuc_cong__p_p_MAPK_" compartment="Nucleus" initialConcentration="7.175144" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_cong__p_p_MAPK_" compartment="Nucleus" initialAmount="7562" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>P28482 P27361</annotation>
       </species>
-      <species id="nuc_prot__p_RPS6KA_" compartment="Nucleus" initialConcentration="1.747567" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_prot__p_RPS6KA_" compartment="Nucleus" initialAmount="1842" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>Q15418 Q15349 P51812 O75676</annotation>
       </species>
-      <species id="nuc_prot__p_FOS_1__JUN_" compartment="Nucleus" initialConcentration="0.0691412" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_prot__p_FOS_1__JUN_" compartment="Nucleus" initialAmount="73" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>P01100-1 P05412</annotation>
       </species>
-      <species id="nuc_prot__MYC_2_" compartment="Nucleus" initialConcentration="45.43934" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_prot__MYC_2_" compartment="Nucleus" initialAmount="47886" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>P01106-2</annotation>
       </species>
-      <species id="nuc_prot__CTNB1_" compartment="Nucleus" initialConcentration="35.4867" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_prot__CTNB1_" compartment="Nucleus" initialAmount="37398" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>P35222</annotation>
       </species>
-      <species id="nuc_prot__FOXO3_1_" compartment="Nucleus" initialConcentration="9.030427" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_prot__FOXO3_1_" compartment="Nucleus" initialAmount="9517" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>O43524-1</annotation>
       </species>
-      <species id="nuc_prot__p_STAT1__p_STAT1_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_prot__p_STAT1__p_STAT1_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>P42224</annotation>
       </species>
-      <species id="cyt_mrna__TP53_201_" compartment="Cytoplasm" initialConcentration="0.002529984" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__TP53_201_" compartment="Cytoplasm" initialAmount="8" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000269305.9</annotation>
       </species>
-      <species id="cyt_mrna__MDM2_202_" compartment="Cytoplasm" initialConcentration="0.0158124" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__MDM2_202_" compartment="Cytoplasm" initialAmount="50" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000258149.11</annotation>
       </species>
-      <species id="cyt_mrna__PPM1D_201_" compartment="Cytoplasm" initialConcentration="0.0006324961" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__PPM1D_201_" compartment="Cytoplasm" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000305921.8</annotation>
       </species>
-      <species id="cyt_mrna__ATM_229_" compartment="Cytoplasm" initialConcentration="0.0009487441" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__ATM_229_" compartment="Cytoplasm" initialAmount="3" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000675843.1</annotation>
       </species>
-      <species id="cyt_mrna__ATR_201_" compartment="Cytoplasm" initialConcentration="0.0006324961" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__ATR_201_" compartment="Cytoplasm" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000350721.9</annotation>
       </species>
-      <species id="cyt_mrna__RB1_201_" compartment="Cytoplasm" initialConcentration="0.005376217" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__RB1_201_" compartment="Cytoplasm" initialAmount="17" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000267163.6</annotation>
       </species>
-      <species id="cyt_mrna__E2F1_201_" compartment="Cytoplasm" initialConcentration="0.005376217" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__E2F1_201_" compartment="Cytoplasm" initialAmount="17" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000343380.6</annotation>
       </species>
-      <species id="cyt_mrna__E2F2_201_" compartment="Cytoplasm" initialConcentration="0.005376217" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__E2F2_201_" compartment="Cytoplasm" initialAmount="17" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000634683.2</annotation>
       </species>
-      <species id="cyt_mrna__E2F3_201_" compartment="Cytoplasm" initialConcentration="0.005376217" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__E2F3_201_" compartment="Cytoplasm" initialAmount="17" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000346618.8</annotation>
       </species>
-      <species id="cyt_mrna__CCND1_201_" compartment="Cytoplasm" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__CCND1_201_" compartment="Cytoplasm" initialAmount="6" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000227507.3</annotation>
       </species>
-      <species id="cyt_mrna__CCND2_201_" compartment="Cytoplasm" initialConcentration="0.000316248" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__CCND2_201_" compartment="Cytoplasm" initialAmount="1" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000261254.8</annotation>
       </species>
-      <species id="cyt_mrna__CCND3_203_" compartment="Cytoplasm" initialConcentration="0.0006324961" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__CCND3_203_" compartment="Cytoplasm" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000372991.9</annotation>
       </species>
-      <species id="cyt_mrna__CCNE1_201_" compartment="Cytoplasm" initialConcentration="0.005376217" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__CCNE1_201_" compartment="Cytoplasm" initialAmount="17" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000262643.8</annotation>
       </species>
-      <species id="cyt_mrna__CCNE2_201_" compartment="Cytoplasm" initialConcentration="0.005376217" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__CCNE2_201_" compartment="Cytoplasm" initialAmount="17" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000308108.9</annotation>
       </species>
-      <species id="cyt_mrna__SKP2_202_" compartment="Cytoplasm" initialConcentration="0.005376217" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__SKP2_202_" compartment="Cytoplasm" initialAmount="17" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000274255.11</annotation>
       </species>
-      <species id="cyt_mrna__CDC25A_201_" compartment="Cytoplasm" initialConcentration="0.005376217" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__CDC25A_201_" compartment="Cytoplasm" initialAmount="17" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000302506.8</annotation>
       </species>
-      <species id="cyt_mrna__CDC25B_201_" compartment="Cytoplasm" initialConcentration="0.005376217" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__CDC25B_201_" compartment="Cytoplasm" initialAmount="17" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000245960.10</annotation>
       </species>
-      <species id="cyt_mrna__CDC25C_201_" compartment="Cytoplasm" initialConcentration="0.005376217" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__CDC25C_201_" compartment="Cytoplasm" initialAmount="17" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000323760.11</annotation>
       </species>
-      <species id="cyt_mrna__CCNA2_201_" compartment="Cytoplasm" initialConcentration="0.005376217" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__CCNA2_201_" compartment="Cytoplasm" initialAmount="17" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000274026.10</annotation>
       </species>
-      <species id="cyt_mrna__CDKN1B_201_" compartment="Cytoplasm" initialConcentration="0.005376217" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__CDKN1B_201_" compartment="Cytoplasm" initialAmount="17" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000228872.9</annotation>
       </species>
-      <species id="cyt_mrna__CDH1_201_" compartment="Cytoplasm" initialConcentration="0.005376217" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__CDH1_201_" compartment="Cytoplasm" initialAmount="17" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000261769.10</annotation>
       </species>
-      <species id="cyt_mrna__CCNB1_201_" compartment="Cytoplasm" initialConcentration="0.005376217" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__CCNB1_201_" compartment="Cytoplasm" initialAmount="17" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000256442.10</annotation>
       </species>
-      <species id="cyt_mrna__CDC20_201_" compartment="Cytoplasm" initialConcentration="0.005376217" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__CDC20_201_" compartment="Cytoplasm" initialAmount="17" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000310955.11</annotation>
       </species>
-      <species id="cyt_mrna__WEE1_202_" compartment="Cytoplasm" initialConcentration="0.005376217" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__WEE1_202_" compartment="Cytoplasm" initialAmount="17" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000450114.7</annotation>
       </species>
-      <species id="cyt_mrna__CHEK1_204_" compartment="Cytoplasm" initialConcentration="0.005376217" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__CHEK1_204_" compartment="Cytoplasm" initialAmount="17" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000438015.7</annotation>
       </species>
-      <species id="cyt_mrna__CDKN1A_201_" compartment="Cytoplasm" initialConcentration="0.003794976" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__CDKN1A_201_" compartment="Cytoplasm" initialAmount="12" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000244741.10</annotation>
       </species>
-      <species id="cyt_mrna__CDK1_203_" compartment="Cytoplasm" initialConcentration="0.01391491" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__CDK1_203_" compartment="Cytoplasm" initialAmount="44" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000395284.8</annotation>
       </species>
-      <species id="cyt_mrna__CDK2_201_" compartment="Cytoplasm" initialConcentration="0.0006324961" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__CDK2_201_" compartment="Cytoplasm" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000266970.9</annotation>
       </species>
-      <species id="cyt_mrna__CDK4_201_" compartment="Cytoplasm" initialConcentration="0.003478728" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__CDK4_201_" compartment="Cytoplasm" initialAmount="11" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000257904.11</annotation>
       </species>
-      <species id="cyt_mrna__CDK6_202_" compartment="Cytoplasm" initialConcentration="0.002213736" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__CDK6_202_" compartment="Cytoplasm" initialAmount="7" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000424848.3</annotation>
       </species>
-      <species id="cyt_mrna__TNFSF10_201_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__TNFSF10_201_" compartment="Cytoplasm" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000241261.7</annotation>
       </species>
-      <species id="cyt_mrna__TNFRSF10A_201_" compartment="Cytoplasm" initialConcentration="0.000316248" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__TNFRSF10A_201_" compartment="Cytoplasm" initialAmount="1" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000221132.8</annotation>
       </species>
-      <species id="cyt_mrna__TNFRSF10B_201_" compartment="Cytoplasm" initialConcentration="0.004111224" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__TNFRSF10B_201_" compartment="Cytoplasm" initialAmount="13" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000276431.9</annotation>
       </species>
-      <species id="cyt_mrna__CFLAR_201_" compartment="Cytoplasm" initialConcentration="0.00316248" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__CFLAR_201_" compartment="Cytoplasm" initialAmount="10" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000309955.8</annotation>
       </species>
-      <species id="cyt_mrna__CASP8_218_" compartment="Cytoplasm" initialConcentration="0.002529984" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__CASP8_218_" compartment="Cytoplasm" initialAmount="8" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000673742.1</annotation>
       </species>
-      <species id="cyt_mrna__CASP10_202_" compartment="Cytoplasm" initialConcentration="0.00158124" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__CASP10_202_" compartment="Cytoplasm" initialAmount="5" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000286186.11</annotation>
       </species>
-      <species id="cyt_mrna__BFAR_201_" compartment="Cytoplasm" initialConcentration="0.01138493" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__BFAR_201_" compartment="Cytoplasm" initialAmount="36" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000261658.7</annotation>
       </species>
-      <species id="cyt_mrna__CASP3_201_" compartment="Cytoplasm" initialConcentration="0.004111224" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__CASP3_201_" compartment="Cytoplasm" initialAmount="13" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000308394.9</annotation>
       </species>
-      <species id="cyt_mrna__CASP7_203_" compartment="Cytoplasm" initialConcentration="0.007273705" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__CASP7_203_" compartment="Cytoplasm" initialAmount="23" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000369318.8</annotation>
       </species>
-      <species id="cyt_mrna__CASP6_201_" compartment="Cytoplasm" initialConcentration="0.008538697" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__CASP6_201_" compartment="Cytoplasm" initialAmount="27" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000265164.7</annotation>
       </species>
-      <species id="cyt_mrna__XIAP_202_" compartment="Cytoplasm" initialConcentration="0.00158124" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__XIAP_202_" compartment="Cytoplasm" initialAmount="5" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000371199.8</annotation>
       </species>
-      <species id="cyt_mrna__PARP1_203_" compartment="Cytoplasm" initialConcentration="0.006641209" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__PARP1_203_" compartment="Cytoplasm" initialAmount="21" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000366794.10</annotation>
       </species>
-      <species id="cyt_mrna__BID_211_" compartment="Cytoplasm" initialConcentration="0.00474372" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__BID_211_" compartment="Cytoplasm" initialAmount="15" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000622694.5</annotation>
       </species>
-      <species id="cyt_mrna__BCL2_201_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__BCL2_201_" compartment="Cytoplasm" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000333681.5</annotation>
       </species>
-      <species id="cyt_mrna__BCL2L1_201_" compartment="Cytoplasm" initialConcentration="0.0009487441" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__BCL2L1_201_" compartment="Cytoplasm" initialAmount="3" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000307677.5</annotation>
       </species>
-      <species id="cyt_mrna__MCL1_202_" compartment="Cytoplasm" initialConcentration="0.006641209" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__MCL1_202_" compartment="Cytoplasm" initialAmount="21" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000369026.3</annotation>
       </species>
-      <species id="cyt_mrna__BAX_202_" compartment="Cytoplasm" initialConcentration="0.0009487441" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__BAX_202_" compartment="Cytoplasm" initialAmount="3" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000345358.12</annotation>
       </species>
-      <species id="cyt_mrna__CYC1_201_" compartment="Cytoplasm" initialConcentration="0.02909482" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__CYC1_201_" compartment="Cytoplasm" initialAmount="92" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000305786.7</annotation>
       </species>
-      <species id="cyt_mrna__DIABLO_206_" compartment="Cytoplasm" initialConcentration="0.002846232" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__DIABLO_206_" compartment="Cytoplasm" initialAmount="9" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000464942.7</annotation>
       </species>
-      <species id="cyt_mrna__APAF1_210_" compartment="Cytoplasm" initialConcentration="0.0006324961" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__APAF1_210_" compartment="Cytoplasm" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000551964.6</annotation>
       </species>
-      <species id="cyt_mrna__CASP9_201_" compartment="Cytoplasm" initialConcentration="0.0006324961" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__CASP9_201_" compartment="Cytoplasm" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000333868.10</annotation>
       </species>
-      <species id="cyt_mrna__BAD_201_" compartment="Cytoplasm" initialConcentration="0.004111224" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__BAD_201_" compartment="Cytoplasm" initialAmount="13" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000309032.8</annotation>
       </species>
-      <species id="cyt_mrna__BBC3_203_" compartment="Cytoplasm" initialConcentration="0.000316248" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__BBC3_203_" compartment="Cytoplasm" initialAmount="1" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000439096.3</annotation>
       </species>
-      <species id="cyt_mrna__PMAIP1_202_" compartment="Cytoplasm" initialConcentration="0.001264992" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__PMAIP1_202_" compartment="Cytoplasm" initialAmount="4" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000316660.7</annotation>
       </species>
-      <species id="cyt_mrna__BCL2L11_204_" compartment="Cytoplasm" initialConcentration="0.0009487441" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__BCL2L11_204_" compartment="Cytoplasm" initialAmount="3" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000393256.8</annotation>
       </species>
-      <species id="cyt_mrna__EGF_201_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__EGF_201_" compartment="Cytoplasm" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000265171.10</annotation>
       </species>
-      <species id="cyt_mrna__NRG1_203_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__NRG1_203_" compartment="Cytoplasm" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000405005.8</annotation>
       </species>
-      <species id="cyt_mrna__EGFR_201_" compartment="Cytoplasm" initialConcentration="0.002529984" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__EGFR_201_" compartment="Cytoplasm" initialAmount="8" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000275493.7</annotation>
       </species>
-      <species id="cyt_mrna__ERBB2_201_" compartment="Cytoplasm" initialConcentration="0.001264992" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__ERBB2_201_" compartment="Cytoplasm" initialAmount="4" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000269571.10</annotation>
       </species>
-      <species id="cyt_mrna__ERBB3_201_" compartment="Cytoplasm" initialConcentration="0.005376217" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__ERBB3_201_" compartment="Cytoplasm" initialAmount="17" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000267101.8</annotation>
       </species>
-      <species id="cyt_mrna__ERBB4_202_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__ERBB4_202_" compartment="Cytoplasm" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000342788.9</annotation>
       </species>
-      <species id="cyt_mrna__MET_202_" compartment="Cytoplasm" initialConcentration="0.005692465" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__MET_202_" compartment="Cytoplasm" initialAmount="18" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000397752.8</annotation>
       </species>
-      <species id="cyt_mrna__HGF_201_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__HGF_201_" compartment="Cytoplasm" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000222390.11</annotation>
       </species>
-      <species id="cyt_mrna__PDGFRA_201_" compartment="Cytoplasm" initialConcentration="0.000316248" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__PDGFRA_201_" compartment="Cytoplasm" initialAmount="1" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000257290.10</annotation>
       </species>
-      <species id="cyt_mrna__PDGFRB_201_" compartment="Cytoplasm" initialConcentration="0.000316248" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__PDGFRB_201_" compartment="Cytoplasm" initialAmount="1" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000261799.9</annotation>
       </species>
-      <species id="cyt_mrna__PDGFB_201_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__PDGFB_201_" compartment="Cytoplasm" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000331163.11</annotation>
       </species>
-      <species id="cyt_mrna__SPRY2_202_" compartment="Cytoplasm" initialConcentration="0.0006324961" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__SPRY2_202_" compartment="Cytoplasm" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000377104.4</annotation>
       </species>
-      <species id="cyt_mrna__CBL_201_" compartment="Cytoplasm" initialConcentration="0.0009487441" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__CBL_201_" compartment="Cytoplasm" initialAmount="3" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000264033.6</annotation>
       </species>
-      <species id="cyt_mrna__GRB2_202_" compartment="Cytoplasm" initialConcentration="0.00158124" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__GRB2_202_" compartment="Cytoplasm" initialAmount="5" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000316804.10</annotation>
       </species>
-      <species id="cyt_mrna__PLCG1_223_" compartment="Cytoplasm" initialConcentration="0.000316248" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__PLCG1_223_" compartment="Cytoplasm" initialAmount="1" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000685551.1</annotation>
       </species>
-      <species id="cyt_mrna__PLCG2_208_" compartment="Cytoplasm" initialConcentration="0.000316248" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__PLCG2_208_" compartment="Cytoplasm" initialAmount="1" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000564138.6</annotation>
       </species>
-      <species id="cyt_mrna__PIK3CA_201_" compartment="Cytoplasm" initialConcentration="0.0006324961" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__PIK3CA_201_" compartment="Cytoplasm" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000263967.4</annotation>
       </species>
-      <species id="cyt_mrna__PTPN2_201_" compartment="Cytoplasm" initialConcentration="0.0006324961" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__PTPN2_201_" compartment="Cytoplasm" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000674063.1</annotation>
       </species>
-      <species id="cyt_mrna__PIK3CG_205_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__PIK3CG_205_" compartment="Cytoplasm" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000496166.6</annotation>
       </species>
-      <species id="cyt_mrna__PIK3CD_202_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__PIK3CD_202_" compartment="Cytoplasm" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000377346.9</annotation>
       </species>
-      <species id="cyt_mrna__PIK3R1_211_" compartment="Cytoplasm" initialConcentration="0.0006324961" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__PIK3R1_211_" compartment="Cytoplasm" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000521381.6</annotation>
       </species>
-      <species id="cyt_mrna__PIK3R2_201_" compartment="Cytoplasm" initialConcentration="0.000316248" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__PIK3R2_201_" compartment="Cytoplasm" initialAmount="1" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000222254.13</annotation>
       </species>
-      <species id="cyt_mrna__PIK3R3_201_" compartment="Cytoplasm" initialConcentration="0.002846232" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__PIK3R3_201_" compartment="Cytoplasm" initialAmount="9" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000262741.10</annotation>
       </species>
-      <species id="cyt_mrna__PIK3R4_201_" compartment="Cytoplasm" initialConcentration="0.000316248" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__PIK3R4_201_" compartment="Cytoplasm" initialAmount="1" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000356763.8</annotation>
       </species>
-      <species id="cyt_mrna__PIK3C2A_206_" compartment="Cytoplasm" initialConcentration="0.00158124" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__PIK3C2A_206_" compartment="Cytoplasm" initialAmount="5" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000691414.1</annotation>
       </species>
-      <species id="cyt_mrna__RASGRP1_201_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__RASGRP1_201_" compartment="Cytoplasm" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000310803.10</annotation>
       </species>
-      <species id="cyt_mrna__RASGRP3_202_" compartment="Cytoplasm" initialConcentration="0.000316248" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__RASGRP3_202_" compartment="Cytoplasm" initialAmount="1" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000403687.8</annotation>
       </species>
-      <species id="cyt_mrna__NRAS_201_" compartment="Cytoplasm" initialConcentration="0.004427472" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__NRAS_201_" compartment="Cytoplasm" initialAmount="14" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000369535.5</annotation>
       </species>
-      <species id="cyt_mrna__KRAS_202_" compartment="Cytoplasm" initialConcentration="0.002529984" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__KRAS_202_" compartment="Cytoplasm" initialAmount="8" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000311936.8</annotation>
       </species>
-      <species id="cyt_mrna__HRAS_201_" compartment="Cytoplasm" initialConcentration="0.0009487441" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__HRAS_201_" compartment="Cytoplasm" initialAmount="3" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000311189.8</annotation>
       </species>
-      <species id="cyt_mrna__NF1_202_" compartment="Cytoplasm" initialConcentration="0.001264992" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__NF1_202_" compartment="Cytoplasm" initialAmount="4" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000358273.9</annotation>
       </species>
-      <species id="cyt_mrna__RAF1_201_" compartment="Cytoplasm" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__RAF1_201_" compartment="Cytoplasm" initialAmount="6" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000251849.9</annotation>
       </species>
-      <species id="cyt_mrna__BRAF_220_" compartment="Cytoplasm" initialConcentration="0.000316248" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__BRAF_220_" compartment="Cytoplasm" initialAmount="1" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000646891.2</annotation>
       </species>
-      <species id="cyt_mrna__MAP2K1_201_" compartment="Cytoplasm" initialConcentration="0.0006324961" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__MAP2K1_201_" compartment="Cytoplasm" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000307102.10</annotation>
       </species>
-      <species id="cyt_mrna__MAP2K2_201_" compartment="Cytoplasm" initialConcentration="0.0009487441" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__MAP2K2_201_" compartment="Cytoplasm" initialAmount="3" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000262948.10</annotation>
       </species>
-      <species id="cyt_mrna__DUSP6_201_" compartment="Cytoplasm" initialConcentration="0.000316248" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__DUSP6_201_" compartment="Cytoplasm" initialAmount="1" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000279488.8</annotation>
       </species>
-      <species id="cyt_mrna__RPS6KA1_204_" compartment="Cytoplasm" initialConcentration="0.000316248" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__RPS6KA1_204_" compartment="Cytoplasm" initialAmount="1" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000374168.7</annotation>
       </species>
-      <species id="cyt_mrna__RPS6KA2_201_" compartment="Cytoplasm" initialConcentration="0.0006324961" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__RPS6KA2_201_" compartment="Cytoplasm" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000265678.9</annotation>
       </species>
-      <species id="cyt_mrna__RPS6KA3_201_" compartment="Cytoplasm" initialConcentration="0.001264992" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__RPS6KA3_201_" compartment="Cytoplasm" initialAmount="4" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000379565.9</annotation>
       </species>
-      <species id="cyt_mrna__RPS6KA4_201_" compartment="Cytoplasm" initialConcentration="0.000316248" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__RPS6KA4_201_" compartment="Cytoplasm" initialAmount="1" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000334205.9</annotation>
       </species>
-      <species id="cyt_mrna__DUSP1_201_" compartment="Cytoplasm" initialConcentration="0.0009487441" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__DUSP1_201_" compartment="Cytoplasm" initialAmount="3" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000239223.4</annotation>
       </species>
-      <species id="cyt_mrna__FOS_201_" compartment="Cytoplasm" initialConcentration="0.0009487441" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__FOS_201_" compartment="Cytoplasm" initialAmount="3" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000303562.9</annotation>
       </species>
-      <species id="cyt_mrna__JUN_201_" compartment="Cytoplasm" initialConcentration="0.002213736" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__JUN_201_" compartment="Cytoplasm" initialAmount="7" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000371222.4</annotation>
       </species>
-      <species id="cyt_mrna__MYC_206_" compartment="Cytoplasm" initialConcentration="0.0006324961" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__MYC_206_" compartment="Cytoplasm" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000621592.8</annotation>
       </species>
-      <species id="cyt_mrna__CTNNB1_201_" compartment="Cytoplasm" initialConcentration="0.01043619" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__CTNNB1_201_" compartment="Cytoplasm" initialAmount="33" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000349496.11</annotation>
       </species>
-      <species id="cyt_mrna__PTEN_201_" compartment="Cytoplasm" initialConcentration="0.007273705" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__PTEN_201_" compartment="Cytoplasm" initialAmount="23" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000371953.8</annotation>
       </species>
-      <species id="cyt_mrna__AKT1_218_" compartment="Cytoplasm" initialConcentration="0.000316248" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__AKT1_218_" compartment="Cytoplasm" initialAmount="1" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000649815.2</annotation>
       </species>
-      <species id="cyt_mrna__AKT2_206_" compartment="Cytoplasm" initialConcentration="0.0009487441" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__AKT2_206_" compartment="Cytoplasm" initialAmount="3" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000392038.7</annotation>
       </species>
-      <species id="cyt_mrna__PDPK1_202_" compartment="Cytoplasm" initialConcentration="0.0009487441" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__PDPK1_202_" compartment="Cytoplasm" initialAmount="3" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000342085.9</annotation>
       </species>
-      <species id="cyt_mrna__RICTOR_202_" compartment="Cytoplasm" initialConcentration="0.001264992" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__RICTOR_202_" compartment="Cytoplasm" initialAmount="4" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000357387.8</annotation>
       </species>
-      <species id="cyt_mrna__MTOR_201_" compartment="Cytoplasm" initialConcentration="0.000316248" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__MTOR_201_" compartment="Cytoplasm" initialAmount="1" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000361445.9</annotation>
       </species>
-      <species id="cyt_mrna__GSK3B_201_" compartment="Cytoplasm" initialConcentration="0.0009487441" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__GSK3B_201_" compartment="Cytoplasm" initialAmount="3" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000264235.13</annotation>
       </species>
-      <species id="cyt_mrna__TSC1_201_" compartment="Cytoplasm" initialConcentration="0.001264992" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__TSC1_201_" compartment="Cytoplasm" initialAmount="4" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000298552.9</annotation>
       </species>
-      <species id="cyt_mrna__TSC2_201_" compartment="Cytoplasm" initialConcentration="0.000316248" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__TSC2_201_" compartment="Cytoplasm" initialAmount="1" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000219476.9</annotation>
       </species>
-      <species id="cyt_mrna__PRKCA_202_" compartment="Cytoplasm" initialConcentration="0.0006324961" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__PRKCA_202_" compartment="Cytoplasm" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000413366.8</annotation>
       </species>
-      <species id="cyt_mrna__PRKCB_210_" compartment="Cytoplasm" initialConcentration="0.000316248" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__PRKCB_210_" compartment="Cytoplasm" initialAmount="1" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000643927.1</annotation>
       </species>
-      <species id="cyt_mrna__PRKCG_201_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__PRKCG_201_" compartment="Cytoplasm" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000263431.4</annotation>
       </species>
-      <species id="cyt_mrna__PRKCD_201_" compartment="Cytoplasm" initialConcentration="0.0009487441" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__PRKCD_201_" compartment="Cytoplasm" initialAmount="3" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000330452.8</annotation>
       </species>
-      <species id="cyt_mrna__PEBP1_201_" compartment="Cytoplasm" initialConcentration="0.01170118" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__PEBP1_201_" compartment="Cytoplasm" initialAmount="37" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000261313.3</annotation>
       </species>
-      <species id="cyt_mrna__MAPK1_201_" compartment="Cytoplasm" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__MAPK1_201_" compartment="Cytoplasm" initialAmount="6" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000215832.11</annotation>
       </species>
-      <species id="cyt_mrna__MAPK3_201_" compartment="Cytoplasm" initialConcentration="0.0006324961" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__MAPK3_201_" compartment="Cytoplasm" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000263025.9</annotation>
       </species>
-      <species id="cyt_mrna__FOXO3_202_" compartment="Cytoplasm" initialConcentration="0.001264992" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__FOXO3_202_" compartment="Cytoplasm" initialAmount="4" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000406360.2</annotation>
       </species>
-      <species id="cyt_mrna__RHEB_201_" compartment="Cytoplasm" initialConcentration="0.009803689" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__RHEB_201_" compartment="Cytoplasm" initialAmount="31" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000262187.10</annotation>
       </species>
-      <species id="cyt_mrna__RPTOR_201_" compartment="Cytoplasm" initialConcentration="0.000316248" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__RPTOR_201_" compartment="Cytoplasm" initialAmount="1" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000306801.8</annotation>
       </species>
-      <species id="cyt_mrna__RPS6KB1_201_" compartment="Cytoplasm" initialConcentration="0.0009487441" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__RPS6KB1_201_" compartment="Cytoplasm" initialAmount="3" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000225577.9</annotation>
       </species>
-      <species id="cyt_mrna__RPS6KB2_201_" compartment="Cytoplasm" initialConcentration="0.0006324961" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__RPS6KB2_201_" compartment="Cytoplasm" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000312629.10</annotation>
       </species>
-      <species id="cyt_mrna__EIF4EBP1_201_" compartment="Cytoplasm" initialConcentration="0.01201743" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__EIF4EBP1_201_" compartment="Cytoplasm" initialAmount="38" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000338825.5</annotation>
       </species>
-      <species id="cyt_mrna__SOS1_202_" compartment="Cytoplasm" initialConcentration="0.0009487441" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__SOS1_202_" compartment="Cytoplasm" initialAmount="3" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000402219.8</annotation>
       </species>
-      <species id="cyt_mrna__CDKN2A_214_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__CDKN2A_214_" compartment="Cytoplasm" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000304494.10</annotation>
       </species>
-      <species id="cyt_mrna__MDM4_203_" compartment="Cytoplasm" initialConcentration="0.002213736" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__MDM4_203_" compartment="Cytoplasm" initialAmount="7" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000367182.8</annotation>
       </species>
-      <species id="cyt_mrna__FGFR1_214_" compartment="Cytoplasm" initialConcentration="0.000316248" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__FGFR1_214_" compartment="Cytoplasm" initialAmount="1" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000447712.7</annotation>
       </species>
-      <species id="cyt_mrna__FGFR2_206_" compartment="Cytoplasm" initialConcentration="0.0006324961" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__FGFR2_206_" compartment="Cytoplasm" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000358487.10</annotation>
       </species>
-      <species id="cyt_mrna__FGF1_201_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__FGF1_201_" compartment="Cytoplasm" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000337706.7</annotation>
       </species>
-      <species id="cyt_mrna__FGF2_203_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__FGF2_203_" compartment="Cytoplasm" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000644866.2</annotation>
       </species>
-      <species id="cyt_mrna__EIF4E_203_" compartment="Cytoplasm" initialConcentration="0.01201743" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__EIF4E_203_" compartment="Cytoplasm" initialAmount="38" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000450253.7</annotation>
       </species>
-      <species id="cyt_mrna__IRS1_201_" compartment="Cytoplasm" initialConcentration="0.0009487441" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__IRS1_201_" compartment="Cytoplasm" initialAmount="3" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000305123.6</annotation>
       </species>
-      <species id="cyt_mrna__IRS2_201_" compartment="Cytoplasm" initialConcentration="0.0006324961" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__IRS2_201_" compartment="Cytoplasm" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000375856.5</annotation>
       </species>
-      <species id="cyt_mrna__IGF1_202_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__IGF1_202_" compartment="Cytoplasm" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000337514.11</annotation>
       </species>
-      <species id="cyt_mrna__IGF2_205_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__IGF2_205_" compartment="Cytoplasm" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000416167.7</annotation>
       </species>
-      <species id="cyt_mrna__IGF1R_217_" compartment="Cytoplasm" initialConcentration="0.0009487441" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__IGF1R_217_" compartment="Cytoplasm" initialAmount="3" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000650285.1</annotation>
       </species>
-      <species id="cyt_mrna__MSH6_201_" compartment="Cytoplasm" initialConcentration="0.00158124" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__MSH6_201_" compartment="Cytoplasm" initialAmount="5" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000234420.11</annotation>
       </species>
-      <species id="cyt_mrna__BRCA2_201_" compartment="Cytoplasm" initialConcentration="0.0006324961" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__BRCA2_201_" compartment="Cytoplasm" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000380152.8</annotation>
       </species>
-      <species id="cyt_mrna__MGMT_205_" compartment="Cytoplasm" initialConcentration="0.00158124" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__MGMT_205_" compartment="Cytoplasm" initialAmount="5" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000651593.1</annotation>
       </species>
-      <species id="cyt_mrna__INSR_201_" compartment="Cytoplasm" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__INSR_201_" compartment="Cytoplasm" initialAmount="6" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000302850.10</annotation>
       </species>
-      <species id="cyt_mrna__INS_202_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__INS_202_" compartment="Cytoplasm" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000381330.5</annotation>
       </species>
-      <species id="cyt_mrna__IFNG_201_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__IFNG_201_" compartment="Cytoplasm" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000229135.4</annotation>
       </species>
-      <species id="cyt_mrna__IFNGR2_201_" compartment="Cytoplasm" initialConcentration="0.001944966" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__IFNGR2_201_" compartment="Cytoplasm" initialAmount="6" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000290219.11</annotation>
       </species>
-      <species id="cyt_mrna__JAK1_201_" compartment="Cytoplasm" initialConcentration="0.003059889" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__JAK1_201_" compartment="Cytoplasm" initialAmount="10" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000342505.5</annotation>
       </species>
-      <species id="cyt_mrna__STAT1_201_" compartment="Cytoplasm" initialConcentration="0.002514124" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__STAT1_201_" compartment="Cytoplasm" initialAmount="8" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000361099.8</annotation>
       </species>
-      <species id="cyt_mrna__PTPN11_201_" compartment="Cytoplasm" initialConcentration="0.00517139" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__PTPN11_201_" compartment="Cytoplasm" initialAmount="16" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000351677.7</annotation>
       </species>
-      <species id="cyt_mrna__PIK3CB_212_" compartment="Cytoplasm" initialConcentration="0.002585695" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__PIK3CB_212_" compartment="Cytoplasm" initialAmount="8" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000327283.7</annotation>
       </species>
-      <species id="cyt_mrna__PTPN1_201_" compartment="Cytoplasm" initialConcentration="0.002585695" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__PTPN1_201_" compartment="Cytoplasm" initialAmount="8" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000371621.5</annotation>
       </species>
-      <species id="cyt_mrna__SOCS1_201_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__SOCS1_201_" compartment="Cytoplasm" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENST00000332029.4</annotation>
       </species>
-      <species id="nuc_gene_a__TP53_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__TP53_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000141510</annotation>
       </species>
-      <species id="nuc_gene_a__MDM2_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__MDM2_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000135679</annotation>
       </species>
-      <species id="nuc_gene_a__PPM1D_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__PPM1D_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000170836</annotation>
       </species>
-      <species id="nuc_gene_a__ATM_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__ATM_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000149311</annotation>
       </species>
-      <species id="nuc_gene_a__ATR_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__ATR_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000175054</annotation>
       </species>
-      <species id="nuc_gene_a__RB1_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__RB1_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000139687</annotation>
       </species>
-      <species id="nuc_gene_a__E2F1_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__E2F1_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000101412</annotation>
       </species>
-      <species id="nuc_gene_a__E2F2_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__E2F2_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000007968</annotation>
       </species>
-      <species id="nuc_gene_a__E2F3_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__E2F3_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000112242</annotation>
       </species>
-      <species id="nuc_gene_a__CCND1_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__CCND1_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000110092</annotation>
       </species>
-      <species id="nuc_gene_a__CCND2_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__CCND2_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000118971</annotation>
       </species>
-      <species id="nuc_gene_a__CCND3_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__CCND3_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000112576</annotation>
       </species>
-      <species id="nuc_gene_a__CCNE1_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__CCNE1_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000105173</annotation>
       </species>
-      <species id="nuc_gene_a__CCNE2_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__CCNE2_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000175305</annotation>
       </species>
-      <species id="nuc_gene_a__SKP2_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__SKP2_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000145604</annotation>
       </species>
-      <species id="nuc_gene_a__CDC25A_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__CDC25A_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000164045</annotation>
       </species>
-      <species id="nuc_gene_a__CDC25B_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__CDC25B_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000101224</annotation>
       </species>
-      <species id="nuc_gene_a__CDC25C_" compartment="Nucleus" initialConcentration="0.002846232" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__CDC25C_" compartment="Nucleus" initialAmount="3" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000158402</annotation>
       </species>
-      <species id="nuc_gene_a__CCNA2_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__CCNA2_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000145386</annotation>
       </species>
-      <species id="nuc_gene_a__CDKN1B_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__CDKN1B_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000111276</annotation>
       </species>
-      <species id="nuc_gene_a__CDH1_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__CDH1_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000039068</annotation>
       </species>
-      <species id="nuc_gene_a__CCNB1_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__CCNB1_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000134057</annotation>
       </species>
-      <species id="nuc_gene_a__CDC20_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__CDC20_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000117399</annotation>
       </species>
-      <species id="nuc_gene_a__WEE1_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__WEE1_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000166483</annotation>
       </species>
-      <species id="nuc_gene_a__CHEK1_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__CHEK1_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000149554</annotation>
       </species>
-      <species id="nuc_gene_a__CDKN1A_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__CDKN1A_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000124762</annotation>
       </species>
-      <species id="nuc_gene_a__CDK1_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__CDK1_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000170312</annotation>
       </species>
-      <species id="nuc_gene_a__CDK2_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__CDK2_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000123374</annotation>
       </species>
-      <species id="nuc_gene_a__CDK4_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__CDK4_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000135446</annotation>
       </species>
-      <species id="nuc_gene_a__CDK6_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__CDK6_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000105810</annotation>
       </species>
-      <species id="nuc_gene_a__TNFSF10_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__TNFSF10_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000121858</annotation>
       </species>
-      <species id="nuc_gene_a__TNFRSF10A_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__TNFRSF10A_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000104689</annotation>
       </species>
-      <species id="nuc_gene_a__TNFRSF10B_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__TNFRSF10B_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000120889</annotation>
       </species>
-      <species id="nuc_gene_a__CFLAR_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__CFLAR_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000003402</annotation>
       </species>
-      <species id="nuc_gene_a__CASP8_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__CASP8_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000064012</annotation>
       </species>
-      <species id="nuc_gene_a__CASP10_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__CASP10_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000003400</annotation>
       </species>
-      <species id="nuc_gene_a__BFAR_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__BFAR_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000103429</annotation>
       </species>
-      <species id="nuc_gene_a__CASP3_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__CASP3_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000164305</annotation>
       </species>
-      <species id="nuc_gene_a__CASP7_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__CASP7_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000165806</annotation>
       </species>
-      <species id="nuc_gene_a__CASP6_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__CASP6_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000138794</annotation>
       </species>
-      <species id="nuc_gene_a__XIAP_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__XIAP_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000101966</annotation>
       </species>
-      <species id="nuc_gene_a__PARP1_" compartment="Nucleus" initialConcentration="0.003794976" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__PARP1_" compartment="Nucleus" initialAmount="4" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000143799</annotation>
       </species>
-      <species id="nuc_gene_a__BID_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__BID_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000015475</annotation>
       </species>
-      <species id="nuc_gene_a__BCL2_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__BCL2_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000171791</annotation>
       </species>
-      <species id="nuc_gene_a__BCL2L1_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__BCL2L1_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000171552</annotation>
       </species>
-      <species id="nuc_gene_a__MCL1_" compartment="Nucleus" initialConcentration="0.002846232" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__MCL1_" compartment="Nucleus" initialAmount="3" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000143384</annotation>
       </species>
-      <species id="nuc_gene_a__BAX_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__BAX_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000087088</annotation>
       </species>
-      <species id="nuc_gene_a__CYC1_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__CYC1_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000172115</annotation>
       </species>
-      <species id="nuc_gene_a__DIABLO_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__DIABLO_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000184047</annotation>
       </species>
-      <species id="nuc_gene_a__APAF1_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__APAF1_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000120868</annotation>
       </species>
-      <species id="nuc_gene_a__CASP9_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__CASP9_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000132906</annotation>
       </species>
-      <species id="nuc_gene_a__BAD_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__BAD_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000002330</annotation>
       </species>
-      <species id="nuc_gene_a__BBC3_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__BBC3_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000105327</annotation>
       </species>
-      <species id="nuc_gene_a__PMAIP1_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__PMAIP1_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000141682</annotation>
       </species>
-      <species id="nuc_gene_a__BCL2L11_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__BCL2L11_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000153094</annotation>
       </species>
-      <species id="nuc_gene_a__EGF_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__EGF_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000138798</annotation>
       </species>
-      <species id="nuc_gene_a__NRG1_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__NRG1_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000157168</annotation>
       </species>
-      <species id="nuc_gene_a__EGFR_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__EGFR_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000146648</annotation>
       </species>
-      <species id="nuc_gene_a__ERBB2_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__ERBB2_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000141736</annotation>
       </species>
-      <species id="nuc_gene_a__ERBB3_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__ERBB3_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000065361</annotation>
       </species>
-      <species id="nuc_gene_a__ERBB4_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__ERBB4_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000178568</annotation>
       </species>
-      <species id="nuc_gene_a__MET_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__MET_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000105976</annotation>
       </species>
-      <species id="nuc_gene_a__HGF_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__HGF_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000019991</annotation>
       </species>
-      <species id="nuc_gene_a__PDGFRA_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__PDGFRA_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000134853</annotation>
       </species>
-      <species id="nuc_gene_a__PDGFRB_" compartment="Nucleus" initialConcentration="0.002846232" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__PDGFRB_" compartment="Nucleus" initialAmount="3" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000113721</annotation>
       </species>
-      <species id="nuc_gene_a__PDGFB_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__PDGFB_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000100311</annotation>
       </species>
-      <species id="nuc_gene_a__SPRY2_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__SPRY2_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000136158</annotation>
       </species>
-      <species id="nuc_gene_a__CBL_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__CBL_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000110395</annotation>
       </species>
-      <species id="nuc_gene_a__GRB2_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__GRB2_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000177885</annotation>
       </species>
-      <species id="nuc_gene_a__PLCG1_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__PLCG1_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000124181</annotation>
       </species>
-      <species id="nuc_gene_a__PLCG2_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__PLCG2_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000197943</annotation>
       </species>
-      <species id="nuc_gene_a__PIK3CA_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__PIK3CA_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000121879</annotation>
       </species>
-      <species id="nuc_gene_a__PIK3CB_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__PIK3CB_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000051382</annotation>
       </species>
-      <species id="nuc_gene_a__PIK3CG_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__PIK3CG_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000105851</annotation>
       </species>
-      <species id="nuc_gene_a__PIK3CD_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__PIK3CD_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000171608</annotation>
       </species>
-      <species id="nuc_gene_a__PIK3R1_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__PIK3R1_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000145675</annotation>
       </species>
-      <species id="nuc_gene_a__PIK3R2_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__PIK3R2_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000105647</annotation>
       </species>
-      <species id="nuc_gene_a__PIK3R3_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__PIK3R3_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000117461</annotation>
       </species>
-      <species id="nuc_gene_a__PIK3R4_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__PIK3R4_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000196455</annotation>
       </species>
-      <species id="nuc_gene_a__PIK3C2A_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__PIK3C2A_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000011405</annotation>
       </species>
-      <species id="nuc_gene_a__RASGRP1_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__RASGRP1_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000172575</annotation>
       </species>
-      <species id="nuc_gene_a__RASGRP3_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__RASGRP3_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000152689</annotation>
       </species>
-      <species id="nuc_gene_a__NRAS_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__NRAS_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000213281</annotation>
       </species>
-      <species id="nuc_gene_a__KRAS_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__KRAS_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000133703</annotation>
       </species>
-      <species id="nuc_gene_a__HRAS_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__HRAS_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000174775</annotation>
       </species>
-      <species id="nuc_gene_a__NF1_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__NF1_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000196712</annotation>
       </species>
-      <species id="nuc_gene_a__RAF1_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__RAF1_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000132155</annotation>
       </species>
-      <species id="nuc_gene_a__BRAF_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__BRAF_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000157764</annotation>
       </species>
-      <species id="nuc_gene_a__MAP2K1_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__MAP2K1_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000169032</annotation>
       </species>
-      <species id="nuc_gene_a__MAP2K2_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__MAP2K2_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000126934</annotation>
       </species>
-      <species id="nuc_gene_a__DUSP6_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__DUSP6_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000139318</annotation>
       </species>
-      <species id="nuc_gene_a__RPS6KA1_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__RPS6KA1_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000117676</annotation>
       </species>
-      <species id="nuc_gene_a__RPS6KA2_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__RPS6KA2_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000071242</annotation>
       </species>
-      <species id="nuc_gene_a__RPS6KA3_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__RPS6KA3_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000177189</annotation>
       </species>
-      <species id="nuc_gene_a__RPS6KA4_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__RPS6KA4_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000162302</annotation>
       </species>
-      <species id="nuc_gene_a__DUSP1_" compartment="Nucleus" initialConcentration="0.002846232" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__DUSP1_" compartment="Nucleus" initialAmount="3" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000120129</annotation>
       </species>
-      <species id="nuc_gene_a__FOS_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__FOS_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000170345</annotation>
       </species>
-      <species id="nuc_gene_a__JUN_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__JUN_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000177606</annotation>
       </species>
-      <species id="nuc_gene_a__MYC_" compartment="Nucleus" initialConcentration="0.002846232" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__MYC_" compartment="Nucleus" initialAmount="3" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000136997</annotation>
       </species>
-      <species id="nuc_gene_a__CTNNB1_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__CTNNB1_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000168036</annotation>
       </species>
-      <species id="nuc_gene_a__PTEN_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__PTEN_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000171862</annotation>
       </species>
-      <species id="nuc_gene_a__AKT1_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__AKT1_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000142208</annotation>
       </species>
-      <species id="nuc_gene_a__AKT2_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__AKT2_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000105221</annotation>
       </species>
-      <species id="nuc_gene_a__PDPK1_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__PDPK1_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000140992</annotation>
       </species>
-      <species id="nuc_gene_a__RICTOR_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__RICTOR_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000164327</annotation>
       </species>
-      <species id="nuc_gene_a__MTOR_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__MTOR_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000198793</annotation>
       </species>
-      <species id="nuc_gene_a__GSK3B_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__GSK3B_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000082701</annotation>
       </species>
-      <species id="nuc_gene_a__TSC1_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__TSC1_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000165699</annotation>
       </species>
-      <species id="nuc_gene_a__TSC2_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__TSC2_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000103197</annotation>
       </species>
-      <species id="nuc_gene_a__PRKCA_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__PRKCA_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000154229</annotation>
       </species>
-      <species id="nuc_gene_a__PRKCB_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__PRKCB_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000166501</annotation>
       </species>
-      <species id="nuc_gene_a__PRKCG_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__PRKCG_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000126583</annotation>
       </species>
-      <species id="nuc_gene_a__PRKCD_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__PRKCD_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000163932</annotation>
       </species>
-      <species id="nuc_gene_a__PEBP1_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__PEBP1_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000089220</annotation>
       </species>
-      <species id="nuc_gene_a__MAPK1_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__MAPK1_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000100030</annotation>
       </species>
-      <species id="nuc_gene_a__MAPK3_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__MAPK3_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000102882</annotation>
       </species>
-      <species id="nuc_gene_a__FOXO3_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__FOXO3_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000118689</annotation>
       </species>
-      <species id="nuc_gene_a__RHEB_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__RHEB_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000106615</annotation>
       </species>
-      <species id="nuc_gene_a__RPTOR_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__RPTOR_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000141564</annotation>
       </species>
-      <species id="nuc_gene_a__RPS6KB1_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__RPS6KB1_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000108443</annotation>
       </species>
-      <species id="nuc_gene_a__RPS6KB2_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__RPS6KB2_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000175634</annotation>
       </species>
-      <species id="nuc_gene_a__EIF4EBP1_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__EIF4EBP1_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000187840</annotation>
       </species>
-      <species id="nuc_gene_a__SOS1_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__SOS1_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000115904</annotation>
       </species>
-      <species id="nuc_gene_a__CDKN2A_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__CDKN2A_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000147889</annotation>
       </species>
-      <species id="nuc_gene_a__MDM4_" compartment="Nucleus" initialConcentration="0.003794976" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__MDM4_" compartment="Nucleus" initialAmount="4" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000198625</annotation>
       </species>
-      <species id="nuc_gene_a__FGFR1_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__FGFR1_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000077782</annotation>
       </species>
-      <species id="nuc_gene_a__FGFR2_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__FGFR2_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000066468</annotation>
       </species>
-      <species id="nuc_gene_a__FGF1_" compartment="Nucleus" initialConcentration="0.002846232" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__FGF1_" compartment="Nucleus" initialAmount="3" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000113578</annotation>
       </species>
-      <species id="nuc_gene_a__FGF2_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__FGF2_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000138685</annotation>
       </species>
-      <species id="nuc_gene_a__EIF4E_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__EIF4E_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000151247</annotation>
       </species>
-      <species id="nuc_gene_a__IRS1_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__IRS1_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000169047</annotation>
       </species>
-      <species id="nuc_gene_a__IRS2_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__IRS2_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000185950</annotation>
       </species>
-      <species id="nuc_gene_a__IGF1_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__IGF1_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000017427</annotation>
       </species>
-      <species id="nuc_gene_a__IGF2_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__IGF2_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000167244</annotation>
       </species>
-      <species id="nuc_gene_a__IGF1R_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__IGF1R_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000140443</annotation>
       </species>
-      <species id="nuc_gene_a__MSH6_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__MSH6_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000116062</annotation>
       </species>
-      <species id="nuc_gene_a__BRCA2_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__BRCA2_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000139618</annotation>
       </species>
-      <species id="nuc_gene_a__MGMT_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__MGMT_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000170430</annotation>
       </species>
-      <species id="nuc_gene_a__INSR_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__INSR_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000171105</annotation>
       </species>
-      <species id="nuc_gene_a__INS_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__INS_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000254647</annotation>
       </species>
-      <species id="nuc_gene_a__IFNG_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__IFNG_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000111537</annotation>
       </species>
-      <species id="nuc_gene_a__IFNGR2_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__IFNGR2_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000159128</annotation>
       </species>
-      <species id="nuc_gene_a__JAK1_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__JAK1_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000162434</annotation>
       </species>
-      <species id="nuc_gene_a__STAT1_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__STAT1_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000115415</annotation>
       </species>
-      <species id="nuc_gene_a__PTPN11_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__PTPN11_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000179295</annotation>
       </species>
-      <species id="nuc_gene_a__PTPN2_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__PTPN2_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000175354</annotation>
       </species>
-      <species id="nuc_gene_a__PTPN1_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__PTPN1_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000196396</annotation>
       </species>
-      <species id="nuc_gene_a__SOCS1_" compartment="Nucleus" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__SOCS1_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000185338</annotation>
       </species>
-      <species id="nuc_gene_i__TP53_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__TP53_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000141510</annotation>
       </species>
-      <species id="nuc_gene_i__MDM2_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__MDM2_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000135679</annotation>
       </species>
-      <species id="nuc_gene_i__PPM1D_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__PPM1D_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000170836</annotation>
       </species>
-      <species id="nuc_gene_i__ATM_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__ATM_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000149311</annotation>
       </species>
-      <species id="nuc_gene_i__ATR_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__ATR_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000175054</annotation>
       </species>
-      <species id="nuc_gene_i__RB1_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__RB1_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000139687</annotation>
       </species>
-      <species id="nuc_gene_i__E2F1_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__E2F1_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000101412</annotation>
       </species>
-      <species id="nuc_gene_i__E2F2_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__E2F2_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000007968</annotation>
       </species>
-      <species id="nuc_gene_i__E2F3_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__E2F3_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000112242</annotation>
       </species>
-      <species id="nuc_gene_i__CCND1_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__CCND1_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000110092</annotation>
       </species>
-      <species id="nuc_gene_i__CCND2_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__CCND2_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000118971</annotation>
       </species>
-      <species id="nuc_gene_i__CCND3_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__CCND3_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000112576</annotation>
       </species>
-      <species id="nuc_gene_i__CCNE1_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__CCNE1_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000105173</annotation>
       </species>
-      <species id="nuc_gene_i__CCNE2_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__CCNE2_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000175305</annotation>
       </species>
-      <species id="nuc_gene_i__SKP2_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__SKP2_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000145604</annotation>
       </species>
-      <species id="nuc_gene_i__CDC25A_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__CDC25A_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000164045</annotation>
       </species>
-      <species id="nuc_gene_i__CDC25B_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__CDC25B_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000101224</annotation>
       </species>
-      <species id="nuc_gene_i__CDC25C_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__CDC25C_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000158402</annotation>
       </species>
-      <species id="nuc_gene_i__CCNA2_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__CCNA2_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000145386</annotation>
       </species>
-      <species id="nuc_gene_i__CDKN1B_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__CDKN1B_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000111276</annotation>
       </species>
-      <species id="nuc_gene_i__CDH1_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__CDH1_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000039068</annotation>
       </species>
-      <species id="nuc_gene_i__CCNB1_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__CCNB1_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000134057</annotation>
       </species>
-      <species id="nuc_gene_i__CDC20_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__CDC20_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000117399</annotation>
       </species>
-      <species id="nuc_gene_i__WEE1_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__WEE1_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000166483</annotation>
       </species>
-      <species id="nuc_gene_i__CHEK1_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__CHEK1_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000149554</annotation>
       </species>
-      <species id="nuc_gene_i__CDKN1A_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__CDKN1A_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000124762</annotation>
       </species>
-      <species id="nuc_gene_i__CDK1_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__CDK1_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000170312</annotation>
       </species>
-      <species id="nuc_gene_i__CDK2_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__CDK2_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000123374</annotation>
       </species>
-      <species id="nuc_gene_i__CDK4_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__CDK4_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000135446</annotation>
       </species>
-      <species id="nuc_gene_i__CDK6_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__CDK6_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000105810</annotation>
       </species>
-      <species id="nuc_gene_i__TNFSF10_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__TNFSF10_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000121858</annotation>
       </species>
-      <species id="nuc_gene_i__TNFRSF10A_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__TNFRSF10A_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000104689</annotation>
       </species>
-      <species id="nuc_gene_i__TNFRSF10B_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__TNFRSF10B_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000120889</annotation>
       </species>
-      <species id="nuc_gene_i__CFLAR_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__CFLAR_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000003402</annotation>
       </species>
-      <species id="nuc_gene_i__CASP8_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__CASP8_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000064012</annotation>
       </species>
-      <species id="nuc_gene_i__CASP10_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__CASP10_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000003400</annotation>
       </species>
-      <species id="nuc_gene_i__BFAR_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__BFAR_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000103429</annotation>
       </species>
-      <species id="nuc_gene_i__CASP3_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__CASP3_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000164305</annotation>
       </species>
-      <species id="nuc_gene_i__CASP7_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__CASP7_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000165806</annotation>
       </species>
-      <species id="nuc_gene_i__CASP6_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__CASP6_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000138794</annotation>
       </species>
-      <species id="nuc_gene_i__XIAP_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__XIAP_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000101966</annotation>
       </species>
-      <species id="nuc_gene_i__PARP1_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__PARP1_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000143799</annotation>
       </species>
-      <species id="nuc_gene_i__BID_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__BID_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000015475</annotation>
       </species>
-      <species id="nuc_gene_i__BCL2_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__BCL2_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000171791</annotation>
       </species>
-      <species id="nuc_gene_i__BCL2L1_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__BCL2L1_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000171552</annotation>
       </species>
-      <species id="nuc_gene_i__MCL1_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__MCL1_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000143384</annotation>
       </species>
-      <species id="nuc_gene_i__BAX_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__BAX_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000087088</annotation>
       </species>
-      <species id="nuc_gene_i__CYC1_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__CYC1_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000172115</annotation>
       </species>
-      <species id="nuc_gene_i__DIABLO_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__DIABLO_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000184047</annotation>
       </species>
-      <species id="nuc_gene_i__APAF1_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__APAF1_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000120868</annotation>
       </species>
-      <species id="nuc_gene_i__CASP9_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__CASP9_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000132906</annotation>
       </species>
-      <species id="nuc_gene_i__BAD_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__BAD_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000002330</annotation>
       </species>
-      <species id="nuc_gene_i__BBC3_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__BBC3_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000105327</annotation>
       </species>
-      <species id="nuc_gene_i__PMAIP1_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__PMAIP1_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000141682</annotation>
       </species>
-      <species id="nuc_gene_i__BCL2L11_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__BCL2L11_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000153094</annotation>
       </species>
-      <species id="nuc_gene_i__EGF_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__EGF_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000138798</annotation>
       </species>
-      <species id="nuc_gene_i__NRG1_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__NRG1_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000157168</annotation>
       </species>
-      <species id="nuc_gene_i__EGFR_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__EGFR_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000146648</annotation>
       </species>
-      <species id="nuc_gene_i__ERBB2_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__ERBB2_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000141736</annotation>
       </species>
-      <species id="nuc_gene_i__ERBB3_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__ERBB3_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000065361</annotation>
       </species>
-      <species id="nuc_gene_i__ERBB4_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__ERBB4_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000178568</annotation>
       </species>
-      <species id="nuc_gene_i__MET_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__MET_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000105976</annotation>
       </species>
-      <species id="nuc_gene_i__HGF_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__HGF_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000019991</annotation>
       </species>
-      <species id="nuc_gene_i__PDGFRA_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__PDGFRA_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000134853</annotation>
       </species>
-      <species id="nuc_gene_i__PDGFRB_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__PDGFRB_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000113721</annotation>
       </species>
-      <species id="nuc_gene_i__PDGFB_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__PDGFB_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000100311</annotation>
       </species>
-      <species id="nuc_gene_i__SPRY2_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__SPRY2_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000136158</annotation>
       </species>
-      <species id="nuc_gene_i__CBL_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__CBL_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000110395</annotation>
       </species>
-      <species id="nuc_gene_i__GRB2_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__GRB2_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000177885</annotation>
       </species>
-      <species id="nuc_gene_i__PLCG1_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__PLCG1_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000124181</annotation>
       </species>
-      <species id="nuc_gene_i__PLCG2_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__PLCG2_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000197943</annotation>
       </species>
-      <species id="nuc_gene_i__PIK3CA_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__PIK3CA_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000121879</annotation>
       </species>
-      <species id="nuc_gene_i__PIK3CB_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__PIK3CB_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000051382</annotation>
       </species>
-      <species id="nuc_gene_i__PIK3CG_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__PIK3CG_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000105851</annotation>
       </species>
-      <species id="nuc_gene_i__PIK3CD_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__PIK3CD_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000171608</annotation>
       </species>
-      <species id="nuc_gene_i__PIK3R1_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__PIK3R1_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000145675</annotation>
       </species>
-      <species id="nuc_gene_i__PIK3R2_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__PIK3R2_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000105647</annotation>
       </species>
-      <species id="nuc_gene_i__PIK3R3_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__PIK3R3_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000117461</annotation>
       </species>
-      <species id="nuc_gene_i__PIK3R4_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__PIK3R4_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000196455</annotation>
       </species>
-      <species id="nuc_gene_i__PIK3C2A_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__PIK3C2A_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000011405</annotation>
       </species>
-      <species id="nuc_gene_i__RASGRP1_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__RASGRP1_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000172575</annotation>
       </species>
-      <species id="nuc_gene_i__RASGRP3_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__RASGRP3_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000152689</annotation>
       </species>
-      <species id="nuc_gene_i__NRAS_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__NRAS_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000213281</annotation>
       </species>
-      <species id="nuc_gene_i__KRAS_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__KRAS_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000133703</annotation>
       </species>
-      <species id="nuc_gene_i__HRAS_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__HRAS_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000174775</annotation>
       </species>
-      <species id="nuc_gene_i__NF1_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__NF1_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000196712</annotation>
       </species>
-      <species id="nuc_gene_i__RAF1_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__RAF1_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000132155</annotation>
       </species>
-      <species id="nuc_gene_i__BRAF_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__BRAF_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000157764</annotation>
       </species>
-      <species id="nuc_gene_i__MAP2K1_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__MAP2K1_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000169032</annotation>
       </species>
-      <species id="nuc_gene_i__MAP2K2_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__MAP2K2_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000126934</annotation>
       </species>
-      <species id="nuc_gene_i__DUSP6_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__DUSP6_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000139318</annotation>
       </species>
-      <species id="nuc_gene_i__RPS6KA1_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__RPS6KA1_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000117676</annotation>
       </species>
-      <species id="nuc_gene_i__RPS6KA2_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__RPS6KA2_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000071242</annotation>
       </species>
-      <species id="nuc_gene_i__RPS6KA3_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__RPS6KA3_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000177189</annotation>
       </species>
-      <species id="nuc_gene_i__RPS6KA4_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__RPS6KA4_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000162302</annotation>
       </species>
-      <species id="nuc_gene_i__DUSP1_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__DUSP1_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000120129</annotation>
       </species>
-      <species id="nuc_gene_i__FOS_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__FOS_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000170345</annotation>
       </species>
-      <species id="nuc_gene_i__JUN_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__JUN_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000177606</annotation>
       </species>
-      <species id="nuc_gene_i__MYC_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__MYC_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000136997</annotation>
       </species>
-      <species id="nuc_gene_i__CTNNB1_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__CTNNB1_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000168036</annotation>
       </species>
-      <species id="nuc_gene_i__PTEN_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__PTEN_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000171862</annotation>
       </species>
-      <species id="nuc_gene_i__AKT1_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__AKT1_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000142208</annotation>
       </species>
-      <species id="nuc_gene_i__AKT2_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__AKT2_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000105221</annotation>
       </species>
-      <species id="nuc_gene_i__PDPK1_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__PDPK1_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000140992</annotation>
       </species>
-      <species id="nuc_gene_i__RICTOR_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__RICTOR_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000164327</annotation>
       </species>
-      <species id="nuc_gene_i__MTOR_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__MTOR_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000198793</annotation>
       </species>
-      <species id="nuc_gene_i__GSK3B_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__GSK3B_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000082701</annotation>
       </species>
-      <species id="nuc_gene_i__TSC1_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__TSC1_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000165699</annotation>
       </species>
-      <species id="nuc_gene_i__TSC2_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__TSC2_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000103197</annotation>
       </species>
-      <species id="nuc_gene_i__PRKCA_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__PRKCA_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000154229</annotation>
       </species>
-      <species id="nuc_gene_i__PRKCB_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__PRKCB_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000166501</annotation>
       </species>
-      <species id="nuc_gene_i__PRKCG_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__PRKCG_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000126583</annotation>
       </species>
-      <species id="nuc_gene_i__PRKCD_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__PRKCD_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000163932</annotation>
       </species>
-      <species id="nuc_gene_i__PEBP1_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__PEBP1_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000089220</annotation>
       </species>
-      <species id="nuc_gene_i__MAPK1_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__MAPK1_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000100030</annotation>
       </species>
-      <species id="nuc_gene_i__MAPK3_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__MAPK3_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000102882</annotation>
       </species>
-      <species id="nuc_gene_i__FOXO3_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__FOXO3_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000118689</annotation>
       </species>
-      <species id="nuc_gene_i__RHEB_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__RHEB_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000106615</annotation>
       </species>
-      <species id="nuc_gene_i__RPTOR_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__RPTOR_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000141564</annotation>
       </species>
-      <species id="nuc_gene_i__RPS6KB1_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__RPS6KB1_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000108443</annotation>
       </species>
-      <species id="nuc_gene_i__RPS6KB2_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__RPS6KB2_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000175634</annotation>
       </species>
-      <species id="nuc_gene_i__EIF4EBP1_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__EIF4EBP1_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000187840</annotation>
       </species>
-      <species id="nuc_gene_i__SOS1_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__SOS1_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000115904</annotation>
       </species>
-      <species id="nuc_gene_i__CDKN2A_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__CDKN2A_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000147889</annotation>
       </species>
-      <species id="nuc_gene_i__MDM4_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__MDM4_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000198625</annotation>
       </species>
-      <species id="nuc_gene_i__FGFR1_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__FGFR1_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000077782</annotation>
       </species>
-      <species id="nuc_gene_i__FGFR2_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__FGFR2_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000066468</annotation>
       </species>
-      <species id="nuc_gene_i__FGF1_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__FGF1_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000113578</annotation>
       </species>
-      <species id="nuc_gene_i__FGF2_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__FGF2_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000138685</annotation>
       </species>
-      <species id="nuc_gene_i__EIF4E_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__EIF4E_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000151247</annotation>
       </species>
-      <species id="nuc_gene_i__IRS1_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__IRS1_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000169047</annotation>
       </species>
-      <species id="nuc_gene_i__IRS2_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__IRS2_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000185950</annotation>
       </species>
-      <species id="nuc_gene_i__IGF1_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__IGF1_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000017427</annotation>
       </species>
-      <species id="nuc_gene_i__IGF2_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__IGF2_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000167244</annotation>
       </species>
-      <species id="nuc_gene_i__IGF1R_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__IGF1R_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000140443</annotation>
       </species>
-      <species id="nuc_gene_i__MSH6_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__MSH6_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000116062</annotation>
       </species>
-      <species id="nuc_gene_i__BRCA2_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__BRCA2_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000139618</annotation>
       </species>
-      <species id="nuc_gene_i__MGMT_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__MGMT_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000170430</annotation>
       </species>
-      <species id="nuc_gene_i__INSR_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__INSR_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000171105</annotation>
       </species>
-      <species id="nuc_gene_i__INS_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__INS_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000254647</annotation>
       </species>
-      <species id="nuc_gene_i__IFNG_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__IFNG_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000111537</annotation>
       </species>
-      <species id="nuc_gene_i__IFNGR2_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__IFNGR2_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000159128</annotation>
       </species>
-      <species id="nuc_gene_i__JAK1_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__JAK1_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000162434</annotation>
       </species>
-      <species id="nuc_gene_i__STAT1_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__STAT1_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000115415</annotation>
       </species>
-      <species id="nuc_gene_i__PTPN11_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__PTPN11_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000179295</annotation>
       </species>
-      <species id="nuc_gene_i__PTPN2_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__PTPN2_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000175354</annotation>
       </species>
-      <species id="nuc_gene_i__PTPN1_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__PTPN1_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000196396</annotation>
       </species>
-      <species id="nuc_gene_i__SOCS1_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__SOCS1_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
         <annotation>ENSG00000185338</annotation>
       </species>
     </listOfSpecies>

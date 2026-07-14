@@ -1,4 +1,4 @@
-"""Dense species index and ownership masks for hybrid partitioning."""
+"""Dense species index from SBML file membership (no ownership annotations)."""
 
 from __future__ import annotations
 
@@ -16,16 +16,32 @@ except ImportError as exc:  # pragma: no cover
 
 @dataclass(frozen=True)
 class SpeciesIndex:
-    """Ordered union of species IDs with ownership masks."""
+    """Ordered union of species IDs with membership masks.
+
+    ``deterministic_mask`` / ``stochastic_mask`` mean “present in that SBML”,
+    not write ownership. Overlap is ``deterministic_mask & stochastic_mask``.
+    """
 
     names: tuple[str, ...]
     name_to_index: dict[str, int]
-    deterministic_mask: np.ndarray  # bool, length N — BNGsim writes these
-    stochastic_mask: np.ndarray  # bool, length N — StochMod writes these
+    deterministic_mask: np.ndarray  # bool — in deterministic SBML
+    stochastic_mask: np.ndarray  # bool — in stochastic SBML
 
     @property
     def n_species(self) -> int:
         return len(self.names)
+
+    @property
+    def overlap_mask(self) -> np.ndarray:
+        return self.deterministic_mask & self.stochastic_mask
+
+    @property
+    def deterministic_only_mask(self) -> np.ndarray:
+        return self.deterministic_mask & ~self.stochastic_mask
+
+    @property
+    def stochastic_only_mask(self) -> np.ndarray:
+        return self.stochastic_mask & ~self.deterministic_mask
 
     def indices_of(self, names: Sequence[str]) -> np.ndarray:
         return np.asarray([self.name_to_index[n] for n in names], dtype=np.int64)
@@ -39,85 +55,17 @@ def _species_ids_from_sbml(path: str | Path) -> list[str]:
     return [sp.getId() for sp in model.getListOfSpecies()]
 
 
-def _annotation_text(species) -> str:
-    ann = species.getAnnotationString() or ""
-    if "<annotation>" in ann and "</annotation>" in ann:
-        start = ann.find("<annotation>") + len("<annotation>")
-        end = ann.find("</annotation>")
-        return ann[start:end].strip()
-    return ann.strip()
-
-
-def ownership_from_sbml(path: str | Path) -> dict[str, str]:
-    """Map species id → role when annotation explicitly says Deterministic/Stochastic.
-
-    Annotations like ``Cytoplasm 0 Deterministic`` / ``Nucleus 1 Stochastic``.
-    Species without an explicit role token are omitted (caller decides).
-    """
-    doc = libsbml.readSBMLFromFile(str(path))
-    model = doc.getModel()
-    if model is None:
-        raise ValueError(f"No model in SBML: {path}")
-
-    roles: dict[str, str] = {}
-    for sp in model.getListOfSpecies():
-        text = _annotation_text(sp).lower()
-        if "deterministic" in text:
-            roles[sp.getId()] = "deterministic"
-        elif "stochastic" in text:
-            roles[sp.getId()] = "stochastic"
-    return roles
-
-
-def _infer_role_from_name(name: str) -> str:
-    """Heuristic for partitioned models without role annotations."""
-    n = name.lower()
-    if any(
-        tok in n
-        for tok in (
-            "mrna",
-            "gene",
-            "transcript",
-            "nuc_gene",
-            "cyt_mrna",
-        )
-    ):
-        return "stochastic"
-    return "deterministic"
-
-
-def resolve_ownership(
-    name: str,
-    *,
-    annotated: dict[str, str],
-    det_ids: set[str],
-    stoch_ids: set[str],
-) -> str:
-    """Decide which process may write ``name``."""
-    if name in annotated:
-        return annotated[name]
-    in_det = name in det_ids
-    in_stoch = name in stoch_ids
-    if in_stoch and not in_det:
-        return "stochastic"
-    if in_det and not in_stoch:
-        return "deterministic"
-    # Present in both partitions (or neither — shouldn't happen): name heuristic.
-    return _infer_role_from_name(name)
-
-
 def build_species_index(
     *sbml_paths: str | Path,
-    ownership_sbml: str | Path | None = None,
     deterministic_sbml: str | Path | None = None,
     stochastic_sbml: str | Path | None = None,
+    **_unused,
 ) -> SpeciesIndex:
     """Build a dense index from the ordered union of species across SBML files.
 
-    Ownership priority:
-    1. Explicit Deterministic/Stochastic annotation (from ``ownership_sbml`` files)
-    2. Membership: only-in-stochastic → stochastic; only-in-deterministic → deterministic
-    3. Name heuristic for species present in both models
+    Membership only: a species is marked deterministic / stochastic if it
+    appears in that partition file. Overlap is allowed (shared modifiers /
+    exchange species).
     """
     if not sbml_paths:
         raise ValueError("At least one SBML path is required")
@@ -130,9 +78,7 @@ def build_species_index(
                 seen.append(sid)
                 seen_set.add(sid)
 
-    # Membership sets for fallback ownership
     if deterministic_sbml is None or stochastic_sbml is None:
-        # Infer from call order used by Rover: (stochastic, deterministic)
         if len(sbml_paths) >= 2:
             stochastic_sbml = stochastic_sbml or sbml_paths[0]
             deterministic_sbml = deterministic_sbml or sbml_paths[1]
@@ -143,23 +89,12 @@ def build_species_index(
     det_ids = set(_species_ids_from_sbml(deterministic_sbml))
     stoch_ids = set(_species_ids_from_sbml(stochastic_sbml))
 
-    annotated: dict[str, str] = {}
-    for path in (ownership_sbml, deterministic_sbml, stochastic_sbml):
-        if path is None:
-            continue
-        annotated.update(ownership_from_sbml(path))
-
     n = len(seen)
     det = np.zeros(n, dtype=bool)
     stoch = np.zeros(n, dtype=bool)
     for i, name in enumerate(seen):
-        role = resolve_ownership(
-            name, annotated=annotated, det_ids=det_ids, stoch_ids=stoch_ids
-        )
-        if role == "deterministic":
-            det[i] = True
-        else:
-            stoch[i] = True
+        det[i] = name in det_ids
+        stoch[i] = name in stoch_ids
 
     return SpeciesIndex(
         names=tuple(seen),
@@ -184,15 +119,44 @@ def gather(global_counts: np.ndarray, local_indices: np.ndarray) -> np.ndarray:
     return np.asarray(global_counts, dtype=np.float64)[local_indices].copy()
 
 
-def scatter_delta(
-    local_delta: np.ndarray,
-    local_indices: np.ndarray,
-    n_global: int,
-    ownership_mask: np.ndarray | None = None,
+def exchange_counts(
+    s0: np.ndarray,
+    *,
+    stoch_local: np.ndarray,
+    stoch_indices: np.ndarray,
+    bng_local: np.ndarray,
+    bng_indices: np.ndarray,
+    index: SpeciesIndex,
 ) -> np.ndarray:
-    """Scatter a local delta into a zero global delta array, optionally masked."""
-    out = np.zeros(n_global, dtype=np.float64)
-    out[local_indices] = local_delta
-    if ownership_mask is not None:
-        out = np.where(ownership_mask, out, 0.0)
+    """Merge parallel module results into a new shared count vector.
+
+    - Stochastic-only / deterministic-only: take that module's post-step value
+    - Overlap: ``s0 + Δ_stoch + Δ_bng`` (modifier-only modules contribute ~0)
+    """
+    out = np.asarray(s0, dtype=np.float64).copy()
+    stoch_full = out.copy()
+    bng_full = out.copy()
+    stoch_full[stoch_indices] = np.asarray(stoch_local, dtype=np.float64)
+    bng_full[bng_indices] = np.asarray(bng_local, dtype=np.float64)
+
+    only_stoch = index.stochastic_only_mask
+    only_bng = index.deterministic_only_mask
+    overlap = index.overlap_mask
+
+    out[only_stoch] = stoch_full[only_stoch]
+    out[only_bng] = bng_full[only_bng]
+    print("---before---")
+    print(out[495, 498, 499, 508, 509, 510, 512, 518, 519, 532 ,533])
+    out[overlap] = (
+        s0[overlap]
+        + (stoch_full[overlap] - s0[overlap])
+        + (bng_full[overlap] - s0[overlap])
+    )
+    # Molecule counts are non-negative; ODE/tau-leap + delta exchange can
+    # undershoot and poison the next CVODE window if negatives are kept.
+    print("---after---")
+    for idx, val in enumerate(out):
+        if val < 0:
+            print("index: ", idx, " val: ", val)
+    np.maximum(out, 0.0, out=out)
     return out

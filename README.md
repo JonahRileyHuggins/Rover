@@ -2,11 +2,31 @@
 
 Statically partitioned hybrid simulator that couples:
 
-- **BNGsim** (ODE / Jacobian) on a deterministic SBML partition
+- **BNGsim** (ODE / analytical Jacobian) on a deterministic SBML partition
 - **StochMod** (constrained tau-leap) on a stochastic SBML partition
 
-over a shared **molecule-count** array store, orchestrated with
-[process-bigraph](https://github.com/vivarium-collective/process-bigraph).
+over a shared **molecule-count** array. Orchestration is a plain Python loop
+(SingleCell-shaped): both modules advance from the same pre-step state, then
+exchange results (exclusive copy + additive overlap deltas).
+
+## Where one step happens
+
+```text
+HybridSimulator.run
+  └─ rover.engine.run_steps
+       ├─ s0 = counts
+       ├─ stoch.advance_from(s0, dt)   # StochModModule
+       ├─ bng.advance_from(s0, dt)     # BngsimModule (clock rewound to 0)
+       └─ exchange(s0, s_stoch, s_bng) # membership merge
+```
+
+Edit coupling in [`rover/engine.py`](rover/engine.py) (`run_steps` / `exchange_counts`)
+or `advance_from` under [`rover/modules/`](rover/modules/).
+
+Partitioning is **file membership** only (no annotations / species-name rules).
+Overlap species are exchange variables: each module may read them; after both
+steps, shared counts get `s0 + Δ_stoch + Δ_bng` so a modifier-only module
+(`Δ ≈ 0`) does not wipe the producer’s update.
 
 ## Quickstart
 
@@ -15,7 +35,7 @@ over a shared **molecule-count** array store, orchestrated with
 pip install -e ../StochMod
 pip install -e ".[dev]"
 
-python basic_bigraph.py
+python basic_hybrid.py
 pytest
 ```
 
@@ -23,8 +43,8 @@ pytest
 from rover import HybridSimulator
 
 sim = HybridSimulator(
-    "tests/data/deterministic-interactions.xml",
-    "tests/data/stochastic-gene-expression.xml",
+    "tests/data/LR/deterministic-interactions.xml",
+    "tests/data/LR/stochastic-gene-expression.xml",
     dt=1.0,
 )
 
@@ -46,25 +66,26 @@ traj, index = run_hybrid(det_xml, stoch_xml, t_end=50.0, dt=1.0)
 ```
 
 Shared store currency is molecule counts. BNGsim nM concentrations are
-converted at the process boundary using SBML compartment volumes.
+converted at the module boundary using SBML compartment volumes.
 
 ### Trajectory storage
 
 | Piece | Where | Why |
 |-------|--------|-----|
-| Live `_counts` | 1-D `float64` in RAM | Hot path for operator splitting |
+| Live `_counts` | 1-D `float64` in RAM | Hot path for coupling |
 | Trajectory | `(n_points, n_species)` memory **or** memmap `.npy` | History only; one row write per step |
 
 Do **not** have BNGsim/StochMod dump to disk each step — that would dominate cost.
 The orchestrator copies the live vector into the next trajectory row (sequential
 write; memmap is fine because the OS caches pages).
+
 ## Performance notes
 
-`run` / `run_hybrid` default to `engine="split"`: a tight Python loop that calls
-each simulator's `apply_inplace` once per coupling step. That is much faster
-than `engine="composite"` (full process-bigraph scheduling every step).
+**Absolute time is orchestrator-owned.** Trajectory times are `t0 + step*dt`.
+Each coupling step advances a local interval `[0, dt]` in BNGsim (interactive
+clock rewound before `advance(dt)`). StochMod leaps once by `dt` per call.
 
-Still, hybrid coupling is **not** the same cost model as a standalone batch run:
+Hybrid coupling is **not** the same cost model as a standalone batch run:
 
 | Mode | What happens |
 |------|----------------|
@@ -74,6 +95,7 @@ Still, hybrid coupling is **not** the same cost model as a standalone batch run:
 So `t_end=259200, dt=1` means **259 200 coupling steps**. Prefer a larger
 coupling `dt` when the biology allows it (e.g. `dt=30` → ~8640 steps for 3 days).
 
-BNGsim INFO logs report whether codegen succeeded. On some Windows consoles
-codegen can fail with a `charmap` encoding error; Rover falls back to the
-interpreted RHS and logs a warning.
+BNGsim defaults: codegen on, `jacobian="analytical"`, `rtol=1e-4`, `atol=1e-6`,
+`max_steps=1e8`. If codegen fails, Rover falls back to the interpreted RHS; if
+analytical Jacobian construction fails, it falls back to finite differences.
+On some Windows consoles codegen can fail with a `charmap` encoding error.

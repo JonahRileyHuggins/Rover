@@ -5,12 +5,11 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "rover"
 version = "0.1.0"
-description = "Hybrid BNGsim + StochMod process-bigraph simulation engine"
+description = "Hybrid BNGsim + StochMod simulation engine"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
     "numpy>=1.24",
-    "process-bigraph>=0.1.0",
     "bngsim>=0.9.0",
     "stochmod>=0.1.0",
     "python-libsbml>=5.20",
