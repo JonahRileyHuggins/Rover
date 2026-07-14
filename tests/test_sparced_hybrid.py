@@ -43,9 +43,23 @@ def test_sparced_stochmod_scales_substance_units():
     assert scales.shape[0] == 452
     assert np.all(scales > 0.0)
     assert np.all(np.isfinite(scales))
-    # All 152 overlap species use V*N_A*1e-9 (incl. zero-IC); genes stay at 1
-    assert int(np.sum(scales > 1.0)) == 152
-    assert int(np.sum(scales == 1.0)) == 300
+    # Dual-encoded overlap + genes are already molecule counts in the stoch file
+    assert np.all(scales == 1.0)
+
+
+def test_sparced_mrna_seeded_as_copy_counts():
+    """Overlap mRNA must stay at SBML numerics (~1-20), not V·N_A·1e-9 molecules."""
+    from rover.engine import build_hybrid_engine
+    from rover.units import overlap_currency_modes
+
+    modes = overlap_currency_modes(STOCH, DET)
+    assert modes.get("cyt_mrna__MAPK1_201_") == "numeric"
+
+    engine = build_hybrid_engine(DET, STOCH, dt=30.0)
+    i = engine.index.name_to_index["cyt_mrna__MAPK1_201_"]
+    assert engine.counts[i] == pytest.approx(6.0, rel=0, abs=1e-9)
+    j = engine.index.name_to_index["cyt_mrna__MAPK3_201_"]
+    assert engine.counts[j] == pytest.approx(2.0, rel=0, abs=1e-9)
 
 
 def test_sparced_hybrid_short_run():

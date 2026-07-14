@@ -18,7 +18,11 @@ from rover.species_index import (
     exchange_counts,
     local_to_global,
 )
-from rover.units import counts_from_bngsim_storage, stochmod_to_molecule_scales
+from rover.units import (
+    counts_from_bngsim_storage,
+    overlap_currency_modes,
+    stochmod_to_molecule_scales,
+)
 
 logger = logging.getLogger("rover")
 
@@ -104,10 +108,19 @@ def build_hybrid_engine(
     if initial_counts is None:
         import bngsim
 
+        modes = overlap_currency_modes(stochastic_sbml, deterministic_sbml)
+        identity_species = {sid for sid, mode in modes.items() if mode == "numeric"}
+
         counts = np.zeros(index.n_species, dtype=np.float64)
         uc = bngsim.UnitConverter.from_model(kernel.model)
-        det_counts = counts_from_bngsim_storage(kernel.get_state(), uc)
-        for i, name in enumerate(kernel.state_names):
+        bng_names = list(kernel.state_names)
+        det_counts = counts_from_bngsim_storage(
+            kernel.get_state(),
+            uc,
+            species_names=bng_names,
+            identity_species=identity_species,
+        )
+        for i, name in enumerate(bng_names):
             counts[index.name_to_index[name]] = float(det_counts[i])
 
         stoch_state = stoch_raw.get_state()
@@ -139,13 +152,22 @@ def build_hybrid_engine(
             )
         initial_counts = counts
         logger.info(
-            "Membership: %d det-only / %d stoch-only / %d overlap (N=%d)",
+            "Membership: %d det-only / %d stoch-only / %d overlap (N=%d); "
+            "identity-bridge overlap=%d",
             int(index.deterministic_only_mask.sum()),
             int(index.stochastic_only_mask.sum()),
             int(index.overlap_mask.sum()),
             index.n_species,
+            len(identity_species),
         )
     else:
+        identity_species = {
+            sid
+            for sid, mode in overlap_currency_modes(
+                stochastic_sbml, deterministic_sbml
+            ).items()
+            if mode == "numeric"
+        }
         initial_counts = np.asarray(initial_counts, dtype=np.float64)
         if initial_counts.shape != (index.n_species,):
             raise ValueError(
@@ -160,6 +182,7 @@ def build_hybrid_engine(
         local_indices=det_indices,
         n_species=index.n_species,
         codegen_active=codegen_active,
+        identity_species=identity_species,
     )
     stoch = StochModModule(
         module=stoch_raw,

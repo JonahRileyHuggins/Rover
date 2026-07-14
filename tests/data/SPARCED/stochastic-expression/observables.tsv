@@ -1,0 +1,6 @@
+observableId	observableFormula	noiseFormula
+MAPK1ac	nuc_gene_a__MAPK1_	1
+MAPK3ac	nuc_gene_a__MAPK3_	1
+MAPK1_mRNA	cyt_mrna__MAPK1_201_	1
+MAPK3_mRNA	cyt_mrna__MAPK3_201_	1
+ERK_total	(cyt_cong__p_p_MAPK__B2L11_1_*1+cyt_cong__p_p_MAPK__BAD_*1+cyt_cong__EGFR_1__p_p_MAPK_*1+cyt_cong__ERBB2_1__p_p_MAPK_*1+cyt_cong__ERBB4_1__p_p_MAPK_*1+nuc_cong__MAPK_*1+nuc_cong__p_p_MAPK_*1+cyt_cong__MAPK_*1+cyt_cong__p_MAPK_*1+cyt_cong__p_p_MAPK_*1+cyt_cong__GRB2__SOS1_1__p_p_MAPK_*1+cyt_cong__RAF1_1__p_p_MAPK_*1+cyt_cong__NF1_1__p_p_MAPK_*1+cyt_cong__MAPK__p_p_MAP2K_*1+cyt_cong__p_MAPK__p_p_MAP2K_*1+cyt_cong__RPS6KA__p_p_MAPK_*1+nuc_cong__p_p_MAPK__DUS1_*1+nuc_cong__FOS_1__p_p_MAPK_*1+cyt_cong__p_MAPK__DUS6_1_*1+cyt_cong__p_p_MAPK__DUS6_1_*1+cyt_cong__p_p_MAPK__p_DUS1_*1)*((6.022*10**23)*(10**-9)*(5.25*10**-12))	1

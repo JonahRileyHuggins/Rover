@@ -145,8 +145,6 @@ def exchange_counts(
 
     out[only_stoch] = stoch_full[only_stoch]
     out[only_bng] = bng_full[only_bng]
-    print("---before---")
-    print(out[495, 498, 499, 508, 509, 510, 512, 518, 519, 532 ,533])
     out[overlap] = (
         s0[overlap]
         + (stoch_full[overlap] - s0[overlap])
@@ -154,9 +152,5 @@ def exchange_counts(
     )
     # Molecule counts are non-negative; ODE/tau-leap + delta exchange can
     # undershoot and poison the next CVODE window if negatives are kept.
-    print("---after---")
-    for idx, val in enumerate(out):
-        if val < 0:
-            print("index: ", idx, " val: ", val)
     np.maximum(out, 0.0, out=out)
     return out

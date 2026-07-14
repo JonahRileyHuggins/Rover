@@ -52,9 +52,13 @@ def test_bngsim_storage_round_trip():
 
 
 def test_lr_stochmod_scales_stay_molecule_counts_with_companion():
-    from rover.units import stochmod_to_molecule_scales
+    from rover.units import overlap_currency_modes, stochmod_to_molecule_scales
 
     stoch = DATA / "stochastic-gene-expression.xml"
     scales = stochmod_to_molecule_scales(stoch, companion_deterministic_sbml=DET)
     assert scales.shape[0] == 9
     assert np.all(scales == 1.0)
+    # LR gene/mRNA amounts match true molecules from det nM·V·N_A·1e-9
+    modes = overlap_currency_modes(stoch, DET)
+    assert modes.get("nuc_gene_a__LIGAND_") == "physical"
+    assert modes.get("cyt_mrna__LIGAND_") == "physical"

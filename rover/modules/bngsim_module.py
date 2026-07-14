@@ -168,20 +168,33 @@ class BngsimModule:
         local_indices: list[int] | np.ndarray,
         n_species: int,
         codegen_active: bool = False,
+        identity_species: set[str] | frozenset[str] | None = None,
     ) -> None:
         import bngsim
 
         self._kernel = kernel
         self.codegen_active = bool(codegen_active)
         self._uc = bngsim.UnitConverter.from_model(kernel.model)
-        self._converter = CountConverter.from_unit_converter(self._uc)
+        self._local_names = list(self._kernel.state_names)
+        self._identity_species = frozenset(identity_species or ())
+        self._converter = CountConverter.from_unit_converter(
+            self._uc,
+            species_names=self._local_names,
+            identity_species=self._identity_species,
+        )
         self._local_indices = np.asarray(local_indices, dtype=np.int64)
         self._n_species = int(n_species)
-        self._local_names = list(self._kernel.state_names)
         if len(self._local_indices) != len(self._local_names):
             raise ValueError(
                 f"local_indices length {len(self._local_indices)} != "
                 f"kernel species {len(self._local_names)}"
+            )
+        n_id = sum(1 for n in self._local_names if n in self._identity_species)
+        if n_id:
+            logger.info(
+                "BNGsim unit bridge: %d/%d species use identity (dual-encoded counts)",
+                n_id,
+                len(self._local_names),
             )
         logger.info(
             "BNGsim module ready (codegen=%s, n_species=%d)",

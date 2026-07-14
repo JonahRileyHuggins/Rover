@@ -1,0 +1,13 @@
+format_version: 1 
+parameter_file: ../SPARCED-Parameters.tsv
+problems: 
+  - condition_files: 
+    - conditions.tsv
+    measurement_files:
+    - measurements.tsv
+    observable_files:
+    - observables.tsv
+    sbml_files:
+    - ../deterministic-interactions.xml
+    - ../stochastic-gene-expression.xml
+    cell_count: 1
