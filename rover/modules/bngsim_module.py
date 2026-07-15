@@ -202,6 +202,8 @@ class BngsimModule:
             len(self._local_names),
         )
         quiet_bngsim_logging()
+        self.last_integrate_s = 0.0
+        self.last_bridge_s = 0.0
 
     def _rewind_clock(self) -> None:
         """Rewind BNGsim interactive clock to 0 without restoring SBML ICs."""
@@ -209,13 +211,26 @@ class BngsimModule:
         self._kernel._last_result = None
 
     def advance_from(self, counts: np.ndarray, dt: float) -> np.ndarray:
-        """Advance one local ``[0, dt]`` window; return post-step local counts."""
+        """Advance one local ``[0, dt]`` window; return post-step local counts.
+
+        ``last_integrate_s`` / ``last_bridge_s`` attribute the CVODE call vs
+        Rover unit-convert / set_state / rewind work for progress logs.
+        """
+        import time
+
+        t0 = time.perf_counter()
         local_counts = np.asarray(counts[self._local_indices], dtype=np.float64)
         storage = self._converter.storage_from_counts(local_counts)
         self._kernel.set_state(storage)
         self._rewind_clock()
+        t1 = time.perf_counter()
         new_storage = self._kernel.advance(float(dt))
-        return self._converter.counts_from_storage(new_storage)
+        t2 = time.perf_counter()
+        out = self._converter.counts_from_storage(new_storage)
+        t3 = time.perf_counter()
+        self.last_bridge_s = (t1 - t0) + (t3 - t2)
+        self.last_integrate_s = t2 - t1
+        return out
 
     @property
     def local_indices(self) -> np.ndarray:

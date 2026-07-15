@@ -261,6 +261,7 @@ def run_steps(
     wall0 = time.perf_counter()
     t_bng = 0.0
     t_stoch = 0.0
+    t_rover = 0.0
     for step in range(1, n_steps + 1):
         s0 = counts
         t_a = time.perf_counter()
@@ -268,8 +269,12 @@ def run_steps(
         t_b = time.perf_counter()
         local_bng = engine.bng.advance_from(s0, dt)
         t_c = time.perf_counter()
-        t_stoch += t_b - t_a
-        t_bng += t_c - t_b
+
+        # Module-reported integrate vs bridge; residual wall time is orchestrator.
+        t_stoch += float(getattr(engine.stoch, "last_integrate_s", t_b - t_a))
+        t_bng += float(getattr(engine.bng, "last_integrate_s", t_c - t_b))
+        t_rover += float(getattr(engine.stoch, "last_bridge_s", 0.0))
+        t_rover += float(getattr(engine.bng, "last_bridge_s", 0.0))
 
         counts = exchange_counts(
             s0,
@@ -283,18 +288,21 @@ def run_steps(
         if trajectory is not None:
             trajectory.record(step, float(t0_abs + step * dt), counts)
 
+        t_d = time.perf_counter()
+        t_rover += t_d - t_c
+
         if step % progress_every == 0 or step == n_steps:
             elapsed = time.perf_counter() - wall0
             logger.info(
                 "  step %d/%d (t=%.4g)  elapsed=%.2fs  "
-                "stoch=%.2fs  bng=%.2fs  us/step=%.1f",
+                "stoch=%.2fs  bng=%.2fs  rover=%.2fs",
                 step,
                 n_steps,
                 t0_abs + step * dt,
                 elapsed,
                 t_stoch,
                 t_bng,
-                1e6 * elapsed / step,
+                t_rover,
             )
 
     if trajectory is not None:
@@ -303,11 +311,11 @@ def run_steps(
     engine.counts = counts
     total = time.perf_counter() - wall0
     logger.info(
-        "Coupled run done in %.3fs (%.1f us/step; stoch=%.1f%% bng=%.1f%%)",
+        "Coupled run done in %.3fs (stoch=%.1f%% bng=%.1f%% rover=%.1f%%)",
         total,
-        1e6 * total / n_steps,
         100.0 * t_stoch / total if total else 0.0,
         100.0 * t_bng / total if total else 0.0,
+        100.0 * t_rover / total if total else 0.0,
     )
     return counts
 

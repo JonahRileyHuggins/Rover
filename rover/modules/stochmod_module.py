@@ -45,12 +45,26 @@ class StochModModule:
             "StochMod module ready (%d species; count-based state)",
             len(self._local_names),
         )
+        self.last_integrate_s = 0.0
+        self.last_bridge_s = 0.0
 
     def advance_from(self, counts: np.ndarray, dt: float) -> np.ndarray:
-        """Advance one tau-leap of size ``dt``; return post-step local counts."""
+        """Advance one tau-leap of size ``dt``; return post-step local counts.
+
+        ``last_integrate_s`` / ``last_bridge_s`` split the leap from Rover
+        gather/set_state overhead for progress logs.
+        """
+        import time
+
+        t0 = time.perf_counter()
         local_counts = np.asarray(counts[self._local_indices], dtype=np.float64).copy()
         self._module.set_state(local_counts)
-        return np.asarray(self._module.advance(float(dt)), dtype=np.float64)
+        t1 = time.perf_counter()
+        out = np.asarray(self._module.advance(float(dt)), dtype=np.float64)
+        t2 = time.perf_counter()
+        self.last_bridge_s = t1 - t0
+        self.last_integrate_s = t2 - t1
+        return out
 
     @property
     def local_indices(self) -> np.ndarray:
