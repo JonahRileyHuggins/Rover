@@ -33,31 +33,31 @@
       </compartment>
     </listOfCompartments>
     <listOfSpecies>
-      <species id="cyt_prot__LIGAND_" compartment="Cytoplasm" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__LIGAND_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Cytoplasm 0 Deterministic</annotation>
       </species>
-      <species id="cyt_prot__RECEPTOR_" compartment="Cytoplasm" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__RECEPTOR_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Cytoplasm 100 Deterministic</annotation>
       </species>
-      <species id="cyt_prot__LIGAND__RECEPTOR_" compartment="Cytoplasm" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__LIGAND__RECEPTOR_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Cytoplasm 0 Deterministic</annotation>
       </species>
-      <species id="nuc_gene_a__LIGAND_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__LIGAND_" compartment="Nucleus" initialConcentration="0.000172528" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Nucleus 1 Stochastic</annotation>
       </species>
-      <species id="nuc_gene_i__LIGAND_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__LIGAND_" compartment="Nucleus" initialConcentration="0.00172528" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Nucleus 1 Stochastic</annotation>
       </species>
-      <species id="nuc_gene_a__RECEPTOR_" compartment="Nucleus" initialAmount="2" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_a__RECEPTOR_" compartment="Nucleus" initialConcentration="0.000172528" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Nucleus 1 Stochastic</annotation>
       </species>
-      <species id="nuc_gene_i__RECEPTOR_" compartment="Nucleus" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+      <species id="nuc_gene_i__RECEPTOR_" compartment="Nucleus" initialConcentration="0.00172528" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Nucleus 1 Stochastic</annotation>
       </species>
-      <species id="cyt_mrna__LIGAND_" compartment="Cytoplasm" initialAmount="5" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__LIGAND_" compartment="Cytoplasm" initialConcentration="0.0172528" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Cytoplasm 5 Stochastic</annotation>
       </species>
-      <species id="cyt_mrna__RECEPTOR_" compartment="Cytoplasm" initialAmount="5" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__RECEPTOR_" compartment="Cytoplasm" initialConcentration="0.0172528" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Cytoplasm 5 Stochastic</annotation>
       </species>
     </listOfSpecies>

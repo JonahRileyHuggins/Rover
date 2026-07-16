@@ -12,12 +12,12 @@ _SPARCED = DATA / "SPARCED"
 DET = (
     _LR / "deterministic-interactions.xml"
     if (_LR / "deterministic-interactions.xml").exists()
-    else _SPARCED / "deterministic-interactions.xml"
+    else _SPARCED / "deterministic-interactions-v1.4.2.xml"
 )
 STOCH = (
     _LR / "stochastic-gene-expression.xml"
     if (_LR / "stochastic-gene-expression.xml").exists()
-    else _SPARCED / "stochastic-gene-expression.xml"
+    else _SPARCED / "stochastic-gene-expression-v1.4.2.xml"
 )
 
 

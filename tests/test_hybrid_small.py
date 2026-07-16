@@ -10,6 +10,7 @@ from stochmod import StochasticModule
 from rover.engine import build_hybrid_engine, run_hybrid, run_steps
 from rover.modules.stochmod_module import StochModModule
 from rover.species_index import build_species_index, local_to_global
+from rover.units import sbml_initial_nM
 
 DATA = Path(__file__).resolve().parent / "data" / "LR"
 DET = DATA / "deterministic-interactions.xml"
@@ -51,13 +52,16 @@ def test_stochmod_advance_from_returns_local_without_mutating_global():
         local_indices=idxs,
         n_species=index.n_species,
     )
+    stoch_nM = sbml_initial_nM(STOCH)
     counts = np.zeros(index.n_species, dtype=np.float64)
-    for i, name in enumerate(raw.species_names):
-        counts[index.name_to_index[name]] = float(raw.get_state()[i])
+    for name in raw.species_names:
+        counts[index.name_to_index[name]] = float(stoch_nM[name])
     before = counts.copy()
     local = mod.advance_from(counts, 1.0)
     np.testing.assert_array_equal(counts, before)
     assert local.shape == (len(idxs),)
+    assert np.all(np.isfinite(local))
+    assert np.all(local >= 0.0)
 
 
 def test_hybrid_short_run_proteins_rise():
@@ -67,11 +71,12 @@ def test_hybrid_short_run_proteins_rise():
     mrna_i = engine.index.name_to_index["cyt_mrna__LIGAND_"]
 
     counts0 = engine.counts.copy()
-    assert counts0[mrna_i] == pytest.approx(5.0, rel=1e-2)
-    assert counts0[prot_i] == pytest.approx(0.0, abs=1e-6)
+    # Overlap seeded from BNGsim (deterministic SBML nM)
+    assert counts0[mrna_i] == pytest.approx(0.001582, rel=1e-3)
+    assert counts0[prot_i] == pytest.approx(0.0, abs=1e-12)
 
     counts1 = run_steps(engine, t_end=50.0, dt=1.0)
-    assert counts1[prot_i] > counts0[prot_i] + 0.1
+    assert counts1[prot_i] > counts0[prot_i]
 
 
 def test_run_hybrid_helper():

@@ -1,4 +1,4 @@
-"""BNGsim ODE module: set_state from counts, advance one local [0, dt] window."""
+"""BNGsim ODE module: identity bridge from shared nM, advance one [0, dt] window."""
 
 from __future__ import annotations
 
@@ -7,8 +7,6 @@ from pathlib import Path
 from typing import Any
 
 import numpy as np
-
-from rover.units import CountConverter
 
 logger = logging.getLogger("rover.bngsim")
 
@@ -155,9 +153,10 @@ def build_reaction_kernel(
 
 
 class BngsimModule:
-    """Advance BNGsim one local ``[0, dt]`` window from shared molecule counts.
+    """Advance BNGsim one local ``[0, dt]`` window from shared nanomolar state.
 
-    Does not mutate the global count vector — the orchestrator exchanges results.
+    Shared store and BNGsim storage are both nM — identity bridge (no convert).
+    Does not mutate the global vector — the orchestrator exchanges results.
     Absolute trajectory time is owned by the orchestrator, not this module.
     """
 
@@ -168,20 +167,10 @@ class BngsimModule:
         local_indices: list[int] | np.ndarray,
         n_species: int,
         codegen_active: bool = False,
-        identity_species: set[str] | frozenset[str] | None = None,
     ) -> None:
-        import bngsim
-
         self._kernel = kernel
         self.codegen_active = bool(codegen_active)
-        self._uc = bngsim.UnitConverter.from_model(kernel.model)
         self._local_names = list(self._kernel.state_names)
-        self._identity_species = frozenset(identity_species or ())
-        self._converter = CountConverter.from_unit_converter(
-            self._uc,
-            species_names=self._local_names,
-            identity_species=self._identity_species,
-        )
         self._local_indices = np.asarray(local_indices, dtype=np.int64)
         self._n_species = int(n_species)
         if len(self._local_indices) != len(self._local_names):
@@ -189,15 +178,8 @@ class BngsimModule:
                 f"local_indices length {len(self._local_indices)} != "
                 f"kernel species {len(self._local_names)}"
             )
-        n_id = sum(1 for n in self._local_names if n in self._identity_species)
-        if n_id:
-            logger.info(
-                "BNGsim unit bridge: %d/%d species use identity (dual-encoded counts)",
-                n_id,
-                len(self._local_names),
-            )
         logger.info(
-            "BNGsim module ready (codegen=%s, n_species=%d)",
+            "BNGsim module ready (codegen=%s, n_species=%d, identity nM bridge)",
             self.codegen_active,
             len(self._local_names),
         )
@@ -211,24 +193,22 @@ class BngsimModule:
         self._kernel._last_result = None
 
     def advance_from(self, counts: np.ndarray, dt: float) -> np.ndarray:
-        """Advance one local ``[0, dt]`` window; return post-step local counts.
+        """Advance one local ``[0, dt]`` window; return post-step local nM.
 
         ``last_integrate_s`` / ``last_bridge_s`` attribute the CVODE call vs
-        Rover unit-convert / set_state / rewind work for progress logs.
+        Rover set_state / rewind work for progress logs.
         """
         import time
 
         t0 = time.perf_counter()
-        local_counts = np.asarray(counts[self._local_indices], dtype=np.float64)
-        storage = self._converter.storage_from_counts(local_counts)
-        self._kernel.set_state(storage)
+        local_nM = np.asarray(counts[self._local_indices], dtype=np.float64)
+        self._kernel.set_state(local_nM)
         self._rewind_clock()
         t1 = time.perf_counter()
         new_storage = self._kernel.advance(float(dt))
         t2 = time.perf_counter()
-        out = self._converter.counts_from_storage(new_storage)
-        t3 = time.perf_counter()
-        self.last_bridge_s = (t1 - t0) + (t3 - t2)
+        out = np.asarray(new_storage, dtype=np.float64)
+        self.last_bridge_s = t1 - t0
         self.last_integrate_s = t2 - t1
         return out
 

@@ -5,7 +5,7 @@ Statically partitioned hybrid simulator that couples:
 - **BNGsim** (ODE / analytical Jacobian) on a deterministic SBML partition
 - **StochMod** (constrained tau-leap) on a stochastic SBML partition
 
-over a shared **molecule-count** array. Orchestration is a plain Python loop
+over a shared **nanomolar** array. Orchestration is a plain Python loop
 (SingleCell-shaped): both modules advance from the same pre-step state, then
 exchange results (exclusive copy + additive overlap deltas).
 
@@ -14,9 +14,9 @@ exchange results (exclusive copy + additive overlap deltas).
 ```text
 HybridSimulator.run
   └─ rover.engine.run_steps
-       ├─ s0 = counts
-       ├─ stoch.advance_from(s0, dt)   # StochModModule
-       ├─ bng.advance_from(s0, dt)     # BngsimModule (clock rewound to 0)
+       ├─ s0 = counts          # shared nM
+       ├─ stoch.advance_from(s0, dt)   # StochModModule (nM ↔ molecules)
+       ├─ bng.advance_from(s0, dt)     # BngsimModule (identity nM; clock → 0)
        └─ exchange(s0, s_stoch, s_bng) # membership merge
 ```
 
@@ -25,7 +25,7 @@ or `advance_from` under [`rover/modules/`](rover/modules/).
 
 Partitioning is **file membership** only (no annotations / species-name rules).
 Overlap species are exchange variables: each module may read them; after both
-steps, shared counts get `s0 + Δ_stoch + Δ_bng` so a modifier-only module
+steps, shared values get `s0 + Δ_stoch + Δ_bng` so a modifier-only module
 (`Δ ≈ 0`) does not wipe the producer’s update.
 
 ## Quickstart
@@ -48,11 +48,11 @@ sim = HybridSimulator(
     dt=1.0,
 )
 
-sim.update("cyt_mrna__LIGAND_", 10)
+sim.update("cyt_mrna__LIGAND_", 0.001582)
 sim.update({"kTL1_1": 2.0, "kTC1_1": 0.01})
 
-traj = sim.run(t_end=60.0)           # shape (61, n_species); live state stays 1-D
-df = sim.to_dataframe()              # columns: time + species ids
+traj = sim.run(t_end=60.0)           # shape (61, n_species); live state stays 1-D nM
+df = sim.to_dataframe()              # columns: time + species ids (nM)
 # Large runs — pre-size a memmap .npy (OS page cache; kernels never open the file):
 # traj = sim.run(t_end=259200, dt=30, results_path="out/traj.npy")
 sim.reset()
@@ -65,14 +65,15 @@ from rover import run_hybrid
 traj, index = run_hybrid(det_xml, stoch_xml, t_end=50.0, dt=1.0)
 ```
 
-Shared store currency is molecule counts. BNGsim nM concentrations are
-converted at the module boundary using SBML compartment volumes.
+Shared store currency is nanomolar. BNGsim storage is already nM (identity
+bridge). StochMod converts to molecule counts at the module boundary using SBML
+compartment volumes (`nM · V · N_A · 1e-9`), matching SingleCell.
 
 ### Trajectory storage
 
 | Piece | Where | Why |
 |-------|--------|-----|
-| Live `_counts` | 1-D `float64` in RAM | Hot path for coupling |
+| Live `_counts` | 1-D `float64` nM in RAM | Hot path for coupling |
 | Trajectory | `(n_points, n_species)` memory **or** memmap `.npy` | History only; one row write per step |
 
 Do **not** have BNGsim/StochMod dump to disk each step — that would dominate cost.

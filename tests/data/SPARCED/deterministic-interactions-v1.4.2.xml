@@ -25,7 +25,6 @@
       </unitDefinition>
     </listOfUnitDefinitions>
     <listOfCompartments>
-      <compartment sboTerm="SBO:0000410" id="default_compartment" spatialDimensions="3" size="1" constant="true"/>
       <compartment id="Cytoplasm" spatialDimensions="3" size="5.25e-12" units="volume" constant="true">
         <annotation>GO:0005737</annotation>
       </compartment>
@@ -130,7 +129,7 @@
       <species id="nuc_prot__MGMT_" compartment="Nucleus" initialConcentration="120.2552" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P16455</annotation>
       </species>
-      <species id="nuc_abs__DNADoubleStrandBreak_" compartment="Nucleus" initialConcentration="0.000243951" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="nuc_abs__DNADoubleStrandBreak_" compartment="Nucleus" initialConcentration="0.0002439507" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>CHEMBL454708</annotation>
       </species>
       <species id="nuc_abs__DNASingleStrandBreak_" compartment="Nucleus" initialConcentration="6.05e-06" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
@@ -313,7 +312,7 @@
       <species id="cyt_cong_a__TNF10_1__TNFRSF10__CASP8_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>O00220 O14763 Q14790 Q92851</annotation>
       </species>
-      <species id="cyt_cong_a__CASP8_" compartment="Cytoplasm" initialConcentration="0.000505187" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_cong_a__CASP8_" compartment="Cytoplasm" initialConcentration="0.0005051866" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q14790 Q92851</annotation>
       </species>
       <species id="cyt_prot__BFAR_1_" compartment="Cytoplasm" initialConcentration="0.841154" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
@@ -328,7 +327,7 @@
       <species id="cyt_cong__CASP8__CASP3_" compartment="Cytoplasm" initialConcentration="0.00637693" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q14790 Q92851 P42574 P55210</annotation>
       </species>
-      <species id="cyt_cong__cl_CASP3_" compartment="Cytoplasm" initialConcentration="0.000202566" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_cong__cl_CASP3_" compartment="Cytoplasm" initialConcentration="0.0002025658" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P42574 P55210</annotation>
       </species>
       <species id="cyt_prot_i__CASP6_" compartment="Cytoplasm" initialConcentration="47.67663" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
@@ -337,7 +336,7 @@
       <species id="cyt_cong__CASP3__CASP6_" compartment="Cytoplasm" initialConcentration="3.05e-08" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P42574 P55210 P55212</annotation>
       </species>
-      <species id="cyt_prot_a__CASP6_" compartment="Cytoplasm" initialConcentration="0.000573321" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot_a__CASP6_" compartment="Cytoplasm" initialConcentration="0.0005733206" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P55212</annotation>
       </species>
       <species id="cyt_cong__CASP6__CASP8_" compartment="Cytoplasm" initialConcentration="1.44e-07" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
@@ -370,13 +369,16 @@
       <species id="cyt_cong__BCL2_" compartment="Cytoplasm" initialConcentration="12.48062" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P10415 Q07817 Q07820</annotation>
       </species>
+      <species id="cyt_cong__cl_BID_1__BCL2_" compartment="Cytoplasm" initialConcentration="5.62e-05" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+        <annotation>P55957-1 P10415 Q07817 Q07820</annotation>
+      </species>
       <species id="cyt_prot_i__BAX_1_" compartment="Cytoplasm" initialConcentration="88.22686" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q07812-1</annotation>
       </species>
       <species id="cyt_prot__cl_BID_1__BAX_1_" compartment="Cytoplasm" initialConcentration="4.46e-08" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P55957-1 Q07812-1</annotation>
       </species>
-      <species id="cyt_prot_a__BAX_1_" compartment="Cytoplasm" initialConcentration="0.000144181" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot_a__BAX_1_" compartment="Cytoplasm" initialConcentration="0.0001441807" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q07812-1</annotation>
       </species>
       <species id="mit_prot_a__BAX_1_" compartment="Mitochondria" initialConcentration="0.001926774" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
@@ -388,10 +390,10 @@
       <species id="mit_cong__BAX_1__BCL2_" compartment="Mitochondria" initialConcentration="0.009670088" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q07812-1 P10415 Q07817 Q07820</annotation>
       </species>
-      <species id="mit_prot_a__BAX_1__BAX_1_" compartment="Mitochondria" initialConcentration="0.000117383" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="mit_prot_a__BAX_1__BAX_1_" compartment="Mitochondria" initialConcentration="0.0001173835" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q07812-1</annotation>
       </species>
-      <species id="mit_cong__BAX_1__BAX_1__BCL2_" compartment="Mitochondria" initialConcentration="0.000589124" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="mit_cong__BAX_1__BAX_1__BCL2_" compartment="Mitochondria" initialConcentration="0.0005891238" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q07812-1 P10415 Q07817 Q07820</annotation>
       </species>
       <species id="mit_prot_a__BAX_1__BAX_1__BAX_1__BAX_1_" compartment="Mitochondria" initialConcentration="4.36e-07" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
@@ -406,7 +408,7 @@
       <species id="mit_abs__BAX_1__BAX_1__BAX_1__BAX_1__pore_" compartment="Mitochondria" initialConcentration="3.11e-06" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>GO:0005739 Q07812-1</annotation>
       </species>
-      <species id="mit_abs_a__pore_" compartment="Mitochondria" initialConcentration="0.000311028" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="mit_abs_a__pore_" compartment="Mitochondria" initialConcentration="0.0003110284" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>GO:0005739</annotation>
       </species>
       <species id="mit_prot__CY1_" compartment="Mitochondria" initialConcentration="15542.59" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
@@ -445,7 +447,7 @@
       <species id="cyt_prot_a__APAF_1__CASP9_1_" compartment="Cytoplasm" initialConcentration="0.003099874" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>O14727-1 Q8NBP7-1</annotation>
       </species>
-      <species id="cyt_prot_a__APAF_1__CASP9_1__CASP3_" compartment="Cytoplasm" initialConcentration="0.003541869" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_cong_a__APAF_1__CASP9_1__CASP3_" compartment="Cytoplasm" initialConcentration="0.003541869" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>O14727-1 Q8NBP7-1 P42574 P55210</annotation>
       </species>
       <species id="cyt_prot__DBLOH_1_" compartment="Cytoplasm" initialConcentration="0.001101639" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
@@ -487,7 +489,7 @@
       <species id="cyt_cong__BCL2__B2L11_1_" compartment="Cytoplasm" initialConcentration="2.124035" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P10415 Q07817 Q07820 O43521-1</annotation>
       </species>
-      <species id="cyt_cong__p_p_ERK__B2L11_1_" compartment="Cytoplasm" initialConcentration="0.000597003" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_cong__p_p_ERK__B2L11_1_" compartment="Cytoplasm" initialConcentration="0.0005970032" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P28482 P27361 P27361 O43521-1</annotation>
       </species>
       <species id="cyt_prot__pS69_B2L11_1_" compartment="Cytoplasm" initialConcentration="0.1058178" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
@@ -499,7 +501,7 @@
       <species id="cyt_prot__p_BAD_" compartment="Cytoplasm" initialConcentration="0.8912809" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q92934</annotation>
       </species>
-      <species id="cyt_cong__p_p_ERK__BAD_" compartment="Cytoplasm" initialConcentration="0.000940057" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_cong__p_p_ERK__BAD_" compartment="Cytoplasm" initialConcentration="0.0009400569" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P28482 P27361 P27361 Q92934</annotation>
       </species>
       <species id="exc_prot__EGF_1_" compartment="Extracellular" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
@@ -709,7 +711,7 @@
       <species id="cyt_cong__ERBB4_1__p_p_ERK_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q15303-1 P28482 P27361</annotation>
       </species>
-      <species id="cyt_prot__EGF_1__p_ERBB2_1_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__EGF_1__p_EGFR_1__p_ERBB2_1_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P01133-1 P00533-1 P04626-1</annotation>
       </species>
       <species id="cyt_prot__EGF_1__p_EGFR_1__p_EGFR_1_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
@@ -940,7 +942,7 @@
       <species id="cyt_prot_in__INS_1__INSR_1__INSR_1__INS_1_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P01308-1 P06213-1</annotation>
       </species>
-      <species id="cyt_prot_in__EGF_1__p_ERBB2_1_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot_in__EGF_1__p_EGFR_1__p_ERBB2_1_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P01133-1 P00533-1 P04626-1</annotation>
       </species>
       <species id="cyt_prot_in__EGF_1__p_EGFR_1__p_EGFR_1_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
@@ -961,10 +963,10 @@
       <species id="cyt_prot_in__EGF_1__p_EGFR_1__NRG1_1__p_ERBB4_1_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q02297-1 P00533-1 P01133-1 Q15303-1</annotation>
       </species>
-      <species id="cyt_prot_in_p_ERBB2_1__NRG1_1_ERBB3_1_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot_in__p_ERBB2_1__NRG1_1__p_ERBB3_1_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P04626-1 Q02297-1 P21860-1</annotation>
       </species>
-      <species id="cyt_prot_in_p_EGFR_1__NRG1_1_ERBB3_1_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot_in__p_EGFR_1__NRG1_1__p_ERBB3_1_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P21860-1 Q02297-1 P00533-1</annotation>
       </species>
       <species id="cyt_prot_in__NRG1_1__p_ERBB3_1__p_ERBB4_1_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
@@ -1018,7 +1020,7 @@
       <species id="cyt_cong_in__INS_1__p_INSR_1__p_INSR_1__INS_1__IRS_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P35568 P06213-1 Q9Y4H2 P01308-1</annotation>
       </species>
-      <species id="cyt_prot__EGF_1__p_ERBB2_1__GRB2__SOS1_1_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__EGF_1__p_EGFR_1__p_ERBB2_1__GRB2__SOS1_1_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P01133-1 P00533-1 P04626-1 P62993 Q07889-1</annotation>
       </species>
       <species id="cyt_prot__EGF_1__p_EGFR_1__p_EGFR_1__GRB2__SOS1_1_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
@@ -1096,7 +1098,7 @@
       <species id="cyt_cong__INS_1__p_INSR_1__p_INSR_1__INS_1__IRS__GRB2__SOS1_1_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P35568 Q07889-1 Q9Y4H2 P06213-1 P01308-1 P62993-1</annotation>
       </species>
-      <species id="cyt_prot_in__EGF_1__p_ERBB2_1__GRB2__SOS1_1_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot_in__EGF_1__p_EGFR_1__p_ERBB2_1__GRB2__SOS1_1_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P00533-1 P62993-1 P04626-1 Q07889-1 P01133-1</annotation>
       </species>
       <species id="cyt_prot_in__EGF_1__p_EGFR_1__p_EGFR_1__GRB2__SOS1_1_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
@@ -1174,7 +1176,7 @@
       <species id="cyt_cong_in__INS_1__p_INSR_1__p_INSR_1__INS_1__IRS__GRB2__SOS1_1_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q9Y4H2 P62993-1 P35568 Q07889-1 P06213-1 P01308-1</annotation>
       </species>
-      <species id="cyt_cong__EGF_1__p_ERBB2_1__PLCG_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_cong__EGF_1__p_EGFR_1__p_ERBB2_1__PLCG_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P01133-1 P00533-1 P04626-1 P19174 P16885</annotation>
       </species>
       <species id="cyt_cong__EGF_1__p_EGFR_1__p_EGFR_1__PLCG_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
@@ -1252,7 +1254,7 @@
       <species id="cyt_cong__INS_1__p_INSR_1__p_INSR_1__INS_1__IRS__PLCG_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P35568 P06213-1 Q9Y4H2 P01308-1 P19174 P16885</annotation>
       </species>
-      <species id="cyt_cong__EGF_1__p_ERBB2_1__PIK3C__PIK3R_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_cong__EGF_1__p_EGFR_1__p_ERBB2_1__PIK3C__PIK3R_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P04626-1 P01133-1 P00533-1 P42336 P42338 P48736 O00329 P27986 O00459 Q92569 Q99570</annotation>
       </species>
       <species id="cyt_cong__EGF_1__p_EGFR_1__p_EGFR_1__PIK3C__PIK3R_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
@@ -1330,7 +1332,7 @@
       <species id="cyt_cong__INS_1__p_INSR_1__p_INSR_1__INS_1__IRS__PIK3C__PIK3R_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P35568 P06213-1 Q9Y4H2 P01308-1 P42336 P42338 P48736 O00329 P27986 O00459 Q92569 Q99570</annotation>
       </species>
-      <species id="cyt_prot__EGF_1__p_ERBB2_1__P3C2A_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__EGF_1__p_EGFR_1__p_ERBB2_1__P3C2A_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P04626-1 P01133-1 P00533-1 O00443-1</annotation>
       </species>
       <species id="cyt_prot__EGF_1__p_EGFR_1__p_EGFR_1__P3C2A_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
@@ -1408,7 +1410,7 @@
       <species id="cyt_cong__INS_1__p_INSR_1__p_INSR_1__INS_1__IRS__P3C2A_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P35568 P06213-1 Q9Y4H2 P01308-1 O00443-1</annotation>
       </species>
-      <species id="cyt_cong_in__EGF_1__p_ERBB2_1__GRB2__SOS1_1__RAS__GDP_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_cong_in__EGF_1__p_EGFR_1__p_ERBB2_1__GRB2__SOS1_1__RAS__GDP_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P01133-1 P00533-1 P04626-1 P62993-1 Q07889-1 P01111 P01116 P01112</annotation>
       </species>
       <species id="cyt_cong_in__EGF_1__p_EGFR_1__p_EGFR_1__GRB2__SOS1_1__RAS__GDP_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
@@ -1483,7 +1485,7 @@
       <species id="cyt_cong_in__INS_1__p_INSR_1__p_INSR_1__INS_1__IRS__GRB2__SOS1_1__RAS__GDP_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q9Y4H2 P01111 P01116 P35568 CHEBI:17522 P01112 P06213-1</annotation>
       </species>
-      <species id="cyt_cong__EGF_1__p_ERBB2_1__GRB2__SOS1_1__RAS__GDP_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_cong__EGF_1__p_EGFR_1__p_ERBB2_1__GRB2__SOS1_1__RAS__GDP_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P01111 P01116 P01112 CHEBI:17522 Q07889-1 P01133-1</annotation>
       </species>
       <species id="cyt_cong__EGF_1__p_EGFR_1__p_EGFR_1__GRB2__SOS1_1__RAS__GDP_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
@@ -1561,7 +1563,7 @@
       <species id="cyt_cong__INS_1__p_INSR_1__p_INSR_1__INS_1__IRS__GRB2__SOS1_1__RAS__GDP_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q9Y4H2 P01111 P01116 P35568 CHEBI:17522 P01112 P06213-1</annotation>
       </species>
-      <species id="cyt_cong__EGF_1__p_ERBB2_1__PLCG__PIP2_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_cong__EGF_1__p_EGFR_1__p_ERBB2_1__PLCG__PIP2_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P00533-1 CHEBI:18348 P04626-1 P01133-1</annotation>
       </species>
       <species id="cyt_cong__EGF_1__p_EGFR_1__p_EGFR_1__PLCG__PIP2_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
@@ -1639,7 +1641,7 @@
       <species id="cyt_cong__INS_1__p_INSR_1__p_INSR_1__INS_1__IRS__PLCG__PIP2_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q9Y4H2 CHEBI:18348 P06213-1 P35568 P01308-1</annotation>
       </species>
-      <species id="cyt_cong__EGF_1__p_ERBB2_1__PIK3C__PIK3R__PIP2_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_cong__EGF_1__p_EGFR_1__p_ERBB2_1__PIK3C__PIK3R__PIP2_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P00533-1 CHEBI:18348 P04626-1 P01133-1</annotation>
       </species>
       <species id="cyt_cong__EGF_1__p_EGFR_1__p_EGFR_1__PIK3C__PIK3R__PIP2_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
@@ -1717,7 +1719,7 @@
       <species id="cyt_cong__INS_1__p_INSR_1__p_INSR_1__INS_1__IRS__PIK3C__PIK3R__PIP2_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q9Y4H2 CHEBI:18348 P06213-1 P35568 P01308-1</annotation>
       </species>
-      <species id="cyt_mixed__EGF_1__p_ERBB2_1__P3C2A__PIP_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mixed__EGF_1__p_EGFR_1__p_ERBB2_1__P3C2A__PIP_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P04626-1 P01133-1 P00533-1</annotation>
       </species>
       <species id="cyt_mixed__EGF_1__p_EGFR_1__p_EGFR_1__P3C2A__PIP_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
@@ -1933,7 +1935,7 @@
       <species id="cyt_prot__CTNB1_1_" compartment="Cytoplasm" initialConcentration="17.75651" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P35222</annotation>
       </species>
-      <species id="cyt_prot__PS33_pS37_pT41_CTNB1_" compartment="Cytoplasm" initialConcentration="179.7919" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__pS33_pS37_pT41_CTNB1_" compartment="Cytoplasm" initialConcentration="179.7919" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P35222</annotation>
       </species>
       <species id="cyt_comp__IP3_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
@@ -2050,7 +2052,7 @@
       <species id="cyt_prot__pT37_pT46_4EBP1_1_" compartment="Cytoplasm" initialConcentration="1.099698" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q13541</annotation>
       </species>
-      <species id="cyt_prot__SOS1_1_" compartment="Cytoplasm" initialConcentration="0.000565021" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_prot__SOS1_1_" compartment="Cytoplasm" initialConcentration="0.0005650215" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q07889-1</annotation>
       </species>
       <species id="cyt_cong__GRB2__SOS1_1__p_p_ERK_" compartment="Cytoplasm" initialConcentration="0.002778459" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
@@ -2101,16 +2103,16 @@
       <species id="cyt_mixed__PIP3__PTEN_1_" compartment="Cytoplasm" initialConcentration="0.00338352" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>CHEBI:16618 P60484-1</annotation>
       </species>
-      <species id="cyt_cong__PIP3__AKT__PIP3__PDPK1_1_" compartment="Cytoplasm" initialConcentration="0.000453159" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_cong__PIP3__AKT__PIP3__PDPK1_1_" compartment="Cytoplasm" initialConcentration="0.0004531593" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>CHEBI:16618 P31751 P31749 O15530-1 Q9Y243</annotation>
       </species>
-      <species id="cyt_cong__PIP3__p_AKT__RICTR_1__MTOR_1_" compartment="Cytoplasm" initialConcentration="0.000389923" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_cong__PIP3__p_AKT__RICTR_1__MTOR_1_" compartment="Cytoplasm" initialConcentration="0.0003899231" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P31749 Q9Y243 CHEBI:16618 P31751</annotation>
       </species>
       <species id="cyt_cong__GSK3B_1__p_p_AKT_" compartment="Cytoplasm" initialConcentration="0.01442675" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P31749 P31751 Q9Y243</annotation>
       </species>
-      <species id="cyt_cong__TSC2_1__p_p_AKT_" compartment="Cytoplasm" initialConcentration="0.000678837" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_cong__TSC2_1__p_p_AKT_" compartment="Cytoplasm" initialConcentration="0.0006788368" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q9Y243 P31751 P31749 P49815-1</annotation>
       </species>
       <species id="cyt_cong__TSC2_1__p_p_ERK_" compartment="Cytoplasm" initialConcentration="0.001896456" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
@@ -2125,10 +2127,10 @@
       <species id="cyt_prot_a__KS6B1_1__RPTOR_1__MTOR_1_" compartment="Cytoplasm" initialConcentration="0.003115522" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P23443-1 P42345 Q8N122-1</annotation>
       </species>
-      <species id="cyt_cong__FOXO3_1__p_p_AKT_" compartment="Cytoplasm" initialConcentration="0.000532865" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_cong__FOXO3_1__p_p_AKT_" compartment="Cytoplasm" initialConcentration="0.0005328653" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P31749 P31751 Q9Y243</annotation>
       </species>
-      <species id="cyt_cong_a__PIK3C__PIK3R__RPTOR_1__MTOR_1_" compartment="Cytoplasm" initialConcentration="0.000340142" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_cong_a__PIK3C__PIK3R__RPTOR_1__MTOR_1_" compartment="Cytoplasm" initialConcentration="0.0003401418" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P42336 P42338 P48736 O00329 P27986 O00459 Q92569 Q99570 P42345 Q8N122-1</annotation>
       </species>
       <species id="cyt_cong__p_ERK__DUS6_1_" compartment="Cytoplasm" initialConcentration="4.04e-05" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
@@ -2137,7 +2139,7 @@
       <species id="cyt_cong__p_p_ERK__DUS6_1_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P28482 P27361 Q16828-1</annotation>
       </species>
-      <species id="cyt_cong__p_p_ERK__p_DUS1_" compartment="Cytoplasm" initialConcentration="0.000102762" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_cong__p_p_ERK__p_DUS1_" compartment="Cytoplasm" initialConcentration="0.0001027623" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P28482 P27361 P28562</annotation>
       </species>
       <species id="cyt_cong__RAS__GTP__BRAF_1_" compartment="Cytoplasm" initialConcentration="0.1161464" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
@@ -2149,7 +2151,7 @@
       <species id="cyt_cong__MEK__RAS__GTP__BRAF_1__BRAF_1_" compartment="Cytoplasm" initialConcentration="0.001530097" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q02750 P36507 P01111 P01116 P01112 CHEBI:15996 P15056</annotation>
       </species>
-      <species id="cyt_cong__p_MEK__RAS__GTP__BRAF_1__BRAF_1_" compartment="Cytoplasm" initialConcentration="0.000200322" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_cong__p_MEK__RAS__GTP__BRAF_1__BRAF_1_" compartment="Cytoplasm" initialConcentration="0.0002003216" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q02750 P36507 P01111 P01116 P01112 CHEBI:15996 P15056</annotation>
       </species>
       <species id="cyt_prot__IF4E_1_" compartment="Cytoplasm" initialConcentration="235.6398" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
@@ -2161,10 +2163,10 @@
       <species id="cyt_mixed__RAS__GTP__RAF1_1__RAF1_1_" compartment="Cytoplasm" initialConcentration="0.08304726" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>P01111 CHEBI:15996 P01116 P01112 P04049-1</annotation>
       </species>
-      <species id="cyt_mixed__MEK__RAS__GTP__RAF1_1__RAF1_1_" compartment="Cytoplasm" initialConcentration="0.5180873" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_cong__MEK__RAS__GTP__RAF1_1__RAF1_1_" compartment="Cytoplasm" initialConcentration="0.5180873" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q02750 P36507 P01111 CHEBI:15996 P01116 P01112 P04049-1</annotation>
       </species>
-      <species id="cyt_mixed__p_MEK__RAS__GTP__RAF1_1__RAF1_1_" compartment="Cytoplasm" initialConcentration="0.06782845" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_cong__p_MEK__RAS__GTP__RAF1_1__RAF1_1_" compartment="Cytoplasm" initialConcentration="0.06782845" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>Q02750 P36507 P01111 P01116 P01112 CHEBI:15996 P04049-1</annotation>
       </species>
       <species id="nuc_prot__FOXO3_1_" compartment="Nucleus" initialConcentration="9.030427" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
@@ -2290,13 +2292,13 @@
       <species id="cyt_mrna__MDM2_202_" compartment="Cytoplasm" initialConcentration="0.0158124" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000258149.11</annotation>
       </species>
-      <species id="cyt_mrna__PPM1D_201_" compartment="Cytoplasm" initialConcentration="0.000632496" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__PPM1D_201_" compartment="Cytoplasm" initialConcentration="0.0006324961" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000305921.8</annotation>
       </species>
-      <species id="cyt_mrna__ATM_229_" compartment="Cytoplasm" initialConcentration="0.000948744" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__ATM_229_" compartment="Cytoplasm" initialConcentration="0.0009487441" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000675843.1</annotation>
       </species>
-      <species id="cyt_mrna__ATR_201_" compartment="Cytoplasm" initialConcentration="0.000632496" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__ATR_201_" compartment="Cytoplasm" initialConcentration="0.0006324961" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000350721.9</annotation>
       </species>
       <species id="cyt_mrna__RB1_201_" compartment="Cytoplasm" initialConcentration="0.005376217" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
@@ -2317,7 +2319,7 @@
       <species id="cyt_mrna__CCND2_201_" compartment="Cytoplasm" initialConcentration="0.000316248" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000261254.8</annotation>
       </species>
-      <species id="cyt_mrna__CCND3_203_" compartment="Cytoplasm" initialConcentration="0.000632496" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__CCND3_203_" compartment="Cytoplasm" initialConcentration="0.0006324961" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000372991.9</annotation>
       </species>
       <species id="cyt_mrna__CCNE1_201_" compartment="Cytoplasm" initialConcentration="0.005376217" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
@@ -2365,7 +2367,7 @@
       <species id="cyt_mrna__CDK1_203_" compartment="Cytoplasm" initialConcentration="0.01391491" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000395284.8</annotation>
       </species>
-      <species id="cyt_mrna__CDK2_201_" compartment="Cytoplasm" initialConcentration="0.000632496" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__CDK2_201_" compartment="Cytoplasm" initialConcentration="0.0006324961" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000266970.9</annotation>
       </species>
       <species id="cyt_mrna__CDK4_201_" compartment="Cytoplasm" initialConcentration="0.003478728" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
@@ -2416,13 +2418,13 @@
       <species id="cyt_mrna__BCL2_201_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000333681.5</annotation>
       </species>
-      <species id="cyt_mrna__BCL2L1_201_" compartment="Cytoplasm" initialConcentration="0.000948744" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__BCL2L1_201_" compartment="Cytoplasm" initialConcentration="0.0009487441" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000307677.5</annotation>
       </species>
       <species id="cyt_mrna__MCL1_202_" compartment="Cytoplasm" initialConcentration="0.006641209" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000369026.3</annotation>
       </species>
-      <species id="cyt_mrna__BAX_202_" compartment="Cytoplasm" initialConcentration="0.000948744" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__BAX_202_" compartment="Cytoplasm" initialConcentration="0.0009487441" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000345358.12</annotation>
       </species>
       <species id="cyt_mrna__CYC1_201_" compartment="Cytoplasm" initialConcentration="0.02909482" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
@@ -2431,10 +2433,10 @@
       <species id="cyt_mrna__DIABLO_206_" compartment="Cytoplasm" initialConcentration="0.002846232" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000464942.7</annotation>
       </species>
-      <species id="cyt_mrna__APAF1_210_" compartment="Cytoplasm" initialConcentration="0.000632496" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__APAF1_210_" compartment="Cytoplasm" initialConcentration="0.0006324961" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000551964.6</annotation>
       </species>
-      <species id="cyt_mrna__CASP9_201_" compartment="Cytoplasm" initialConcentration="0.000632496" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__CASP9_201_" compartment="Cytoplasm" initialConcentration="0.0006324961" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000333868.10</annotation>
       </species>
       <species id="cyt_mrna__BAD_201_" compartment="Cytoplasm" initialConcentration="0.004111224" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
@@ -2446,7 +2448,7 @@
       <species id="cyt_mrna__PMAIP1_202_" compartment="Cytoplasm" initialConcentration="0.001264992" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000316660.7</annotation>
       </species>
-      <species id="cyt_mrna__BCL2L11_204_" compartment="Cytoplasm" initialConcentration="0.000948744" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__BCL2L11_204_" compartment="Cytoplasm" initialConcentration="0.0009487441" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000393256.8</annotation>
       </species>
       <species id="cyt_mrna__EGF_201_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
@@ -2482,10 +2484,10 @@
       <species id="cyt_mrna__PDGFB_201_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000331163.11</annotation>
       </species>
-      <species id="cyt_mrna__SPRY2_202_" compartment="Cytoplasm" initialConcentration="0.000632496" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__SPRY2_202_" compartment="Cytoplasm" initialConcentration="0.0006324961" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000377104.4</annotation>
       </species>
-      <species id="cyt_mrna__CBL_201_" compartment="Cytoplasm" initialConcentration="0.000948744" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__CBL_201_" compartment="Cytoplasm" initialConcentration="0.0009487441" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000264033.6</annotation>
       </species>
       <species id="cyt_mrna__GRB2_202_" compartment="Cytoplasm" initialConcentration="0.00158124" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
@@ -2497,10 +2499,10 @@
       <species id="cyt_mrna__PLCG2_208_" compartment="Cytoplasm" initialConcentration="0.000316248" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000564138.6</annotation>
       </species>
-      <species id="cyt_mrna__PIK3CA_201_" compartment="Cytoplasm" initialConcentration="0.000632496" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__PIK3CA_201_" compartment="Cytoplasm" initialConcentration="0.0006324961" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000263967.4</annotation>
       </species>
-      <species id="cyt_mrna__PTPN2_201_" compartment="Cytoplasm" initialConcentration="0.000632496" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__PTPN2_201_" compartment="Cytoplasm" initialConcentration="0.0006324961" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000674063.1</annotation>
       </species>
       <species id="cyt_mrna__PIK3CG_205_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
@@ -2509,7 +2511,7 @@
       <species id="cyt_mrna__PIK3CD_202_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000377346.9</annotation>
       </species>
-      <species id="cyt_mrna__PIK3R1_211_" compartment="Cytoplasm" initialConcentration="0.000632496" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__PIK3R1_211_" compartment="Cytoplasm" initialConcentration="0.0006324961" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000521381.6</annotation>
       </species>
       <species id="cyt_mrna__PIK3R2_201_" compartment="Cytoplasm" initialConcentration="0.000316248" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
@@ -2536,7 +2538,7 @@
       <species id="cyt_mrna__KRAS_202_" compartment="Cytoplasm" initialConcentration="0.002529984" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000311936.8</annotation>
       </species>
-      <species id="cyt_mrna__HRAS_221_" compartment="Cytoplasm" initialConcentration="0.000948744" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__HRAS_221_" compartment="Cytoplasm" initialConcentration="0.0009487441" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000311189.8</annotation>
       </species>
       <species id="cyt_mrna__NF1_202_" compartment="Cytoplasm" initialConcentration="0.001264992" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
@@ -2548,10 +2550,10 @@
       <species id="cyt_mrna__BRAF_220_" compartment="Cytoplasm" initialConcentration="0.000316248" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000646891.2</annotation>
       </species>
-      <species id="cyt_mrna__MAP2K1_201_" compartment="Cytoplasm" initialConcentration="0.000632496" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__MAP2K1_201_" compartment="Cytoplasm" initialConcentration="0.0006324961" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000307102.10</annotation>
       </species>
-      <species id="cyt_mrna__MAP2K2_201_" compartment="Cytoplasm" initialConcentration="0.000948744" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__MAP2K2_201_" compartment="Cytoplasm" initialConcentration="0.0009487441" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000262948.10</annotation>
       </species>
       <species id="cyt_mrna__DUSP6_201_" compartment="Cytoplasm" initialConcentration="0.000316248" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
@@ -2560,7 +2562,7 @@
       <species id="cyt_mrna__RPS6KA1_236_" compartment="Cytoplasm" initialConcentration="0.000316248" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000374168.7</annotation>
       </species>
-      <species id="cyt_mrna__RPS6KA2_201_" compartment="Cytoplasm" initialConcentration="0.000632496" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__RPS6KA2_201_" compartment="Cytoplasm" initialConcentration="0.0006324961" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000265678.9</annotation>
       </species>
       <species id="cyt_mrna__RPS6KA3_201_" compartment="Cytoplasm" initialConcentration="0.001264992" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
@@ -2569,16 +2571,16 @@
       <species id="cyt_mrna__RPS6KA4_201_" compartment="Cytoplasm" initialConcentration="0.000316248" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000334205.9</annotation>
       </species>
-      <species id="cyt_mrna__DUSP1_201_" compartment="Cytoplasm" initialConcentration="0.000948744" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__DUSP1_201_" compartment="Cytoplasm" initialConcentration="0.0009487441" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000239223.4</annotation>
       </species>
-      <species id="cyt_mrna__FOS_201_" compartment="Cytoplasm" initialConcentration="0.000948744" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__FOS_201_" compartment="Cytoplasm" initialConcentration="0.0009487441" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000303562.9</annotation>
       </species>
       <species id="cyt_mrna__JUN_201_" compartment="Cytoplasm" initialConcentration="0.002213736" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000371222.4</annotation>
       </species>
-      <species id="cyt_mrna__MYC_206_" compartment="Cytoplasm" initialConcentration="0.000632496" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__MYC_206_" compartment="Cytoplasm" initialConcentration="0.0006324961" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000621592.8</annotation>
       </species>
       <species id="cyt_mrna__CTNNB1_201_" compartment="Cytoplasm" initialConcentration="0.01043619" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
@@ -2590,10 +2592,10 @@
       <species id="cyt_mrna__AKT1_218_" compartment="Cytoplasm" initialConcentration="0.000316248" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000649815.2</annotation>
       </species>
-      <species id="cyt_mrna__AKT2_206_" compartment="Cytoplasm" initialConcentration="0.000948744" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__AKT2_206_" compartment="Cytoplasm" initialConcentration="0.0009487441" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000392038.7</annotation>
       </species>
-      <species id="cyt_mrna__PDPK1_202_" compartment="Cytoplasm" initialConcentration="0.000948744" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__PDPK1_202_" compartment="Cytoplasm" initialConcentration="0.0009487441" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000342085.9</annotation>
       </species>
       <species id="cyt_mrna__RICTOR_202_" compartment="Cytoplasm" initialConcentration="0.001264992" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
@@ -2602,7 +2604,7 @@
       <species id="cyt_mrna__MTOR_201_" compartment="Cytoplasm" initialConcentration="0.000316248" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000361445.9</annotation>
       </species>
-      <species id="cyt_mrna__GSK3B_201_" compartment="Cytoplasm" initialConcentration="0.000948744" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__GSK3B_201_" compartment="Cytoplasm" initialConcentration="0.0009487441" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000264235.13</annotation>
       </species>
       <species id="cyt_mrna__TSC1_201_" compartment="Cytoplasm" initialConcentration="0.001264992" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
@@ -2611,7 +2613,7 @@
       <species id="cyt_mrna__TSC2_201_" compartment="Cytoplasm" initialConcentration="0.000316248" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000219476.9</annotation>
       </species>
-      <species id="cyt_mrna__PRKCA_202_" compartment="Cytoplasm" initialConcentration="0.000632496" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__PRKCA_202_" compartment="Cytoplasm" initialConcentration="0.0006324961" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000413366.8</annotation>
       </species>
       <species id="cyt_mrna__PRKCB_210_" compartment="Cytoplasm" initialConcentration="0.000316248" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
@@ -2620,7 +2622,7 @@
       <species id="cyt_mrna__PRKCG_201_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000263431.4</annotation>
       </species>
-      <species id="cyt_mrna__PRKCD_201_" compartment="Cytoplasm" initialConcentration="0.000948744" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__PRKCD_201_" compartment="Cytoplasm" initialConcentration="0.0009487441" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000330452.8</annotation>
       </species>
       <species id="cyt_mrna__PEBP1_201_" compartment="Cytoplasm" initialConcentration="0.01170118" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
@@ -2629,7 +2631,7 @@
       <species id="cyt_mrna__MAPK1_201_" compartment="Cytoplasm" initialConcentration="0.001897488" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000215832.11</annotation>
       </species>
-      <species id="cyt_mrna__MAPK3_201_" compartment="Cytoplasm" initialConcentration="0.000632496" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__MAPK3_201_" compartment="Cytoplasm" initialConcentration="0.0006324961" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000263025.9</annotation>
       </species>
       <species id="cyt_mrna__FOXO3_202_" compartment="Cytoplasm" initialConcentration="0.001264992" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
@@ -2641,16 +2643,16 @@
       <species id="cyt_mrna__RPTOR_201_" compartment="Cytoplasm" initialConcentration="0.000316248" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000306801.8</annotation>
       </species>
-      <species id="cyt_mrna__RPS6KB1_201_" compartment="Cytoplasm" initialConcentration="0.000948744" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__RPS6KB1_201_" compartment="Cytoplasm" initialConcentration="0.0009487441" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000225577.9</annotation>
       </species>
-      <species id="cyt_mrna__RPS6KB2_201_" compartment="Cytoplasm" initialConcentration="0.000632496" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__RPS6KB2_201_" compartment="Cytoplasm" initialConcentration="0.0006324961" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000312629.10</annotation>
       </species>
       <species id="cyt_mrna__EIF4EBP1_201_" compartment="Cytoplasm" initialConcentration="0.01201743" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000338825.5</annotation>
       </species>
-      <species id="cyt_mrna__SOS1_202_" compartment="Cytoplasm" initialConcentration="0.000948744" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__SOS1_202_" compartment="Cytoplasm" initialConcentration="0.0009487441" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000402219.8</annotation>
       </species>
       <species id="cyt_mrna__CDKN2A_201_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
@@ -2662,7 +2664,7 @@
       <species id="cyt_mrna__FGFR1_214_" compartment="Cytoplasm" initialConcentration="0.000316248" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000447712.7</annotation>
       </species>
-      <species id="cyt_mrna__FGFR2_206_" compartment="Cytoplasm" initialConcentration="0.000632496" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__FGFR2_206_" compartment="Cytoplasm" initialConcentration="0.0006324961" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000358487.10</annotation>
       </species>
       <species id="cyt_mrna__FGF1_201_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
@@ -2674,10 +2676,10 @@
       <species id="cyt_mrna__EIF4E_203_" compartment="Cytoplasm" initialConcentration="0.01201743" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000450253.7</annotation>
       </species>
-      <species id="cyt_mrna__IRS1_201_" compartment="Cytoplasm" initialConcentration="0.000948744" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__IRS1_201_" compartment="Cytoplasm" initialConcentration="0.0009487441" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000305123.6</annotation>
       </species>
-      <species id="cyt_mrna__IRS2_201_" compartment="Cytoplasm" initialConcentration="0.000632496" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__IRS2_201_" compartment="Cytoplasm" initialConcentration="0.0006324961" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000375856.5</annotation>
       </species>
       <species id="cyt_mrna__IGF1_202_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
@@ -2686,13 +2688,13 @@
       <species id="cyt_mrna__IGF2_205_" compartment="Cytoplasm" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000416167.7</annotation>
       </species>
-      <species id="cyt_mrna__IGF1R_217_" compartment="Cytoplasm" initialConcentration="0.000948744" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__IGF1R_217_" compartment="Cytoplasm" initialConcentration="0.0009487441" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000650285.1</annotation>
       </species>
       <species id="cyt_mrna__MSH6_201_" compartment="Cytoplasm" initialConcentration="0.00158124" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000234420.11</annotation>
       </species>
-      <species id="cyt_mrna__BRCA2_201_" compartment="Cytoplasm" initialConcentration="0.000632496" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+      <species id="cyt_mrna__BRCA2_201_" compartment="Cytoplasm" initialConcentration="0.0006324961" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENST00000380152.8</annotation>
       </species>
       <species id="cyt_mrna__MGMT_205_" compartment="Cytoplasm" initialConcentration="0.00158124" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
@@ -2932,7 +2934,6 @@
       <species id="nuc_gene_i__CDK6_" compartment="Nucleus" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
         <annotation>ENSG00000105810</annotation>
       </species>
-      <species id="cyt_cong_cl_BID_1__BCL2_" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
     </listOfSpecies>
     <listOfParameters>
       <parameter id="kbR_1" value="0.0042" constant="true"/>
@@ -11972,8 +11973,8 @@
           <speciesReference species="nuc_prot_a__P53_" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="nuc_prot_a__ATR_1_"/>
           <modifierSpeciesReference species="nuc_prot_a__ATM_"/>
+          <modifierSpeciesReference species="nuc_prot_a__ATR_1_"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -16211,7 +16212,7 @@
           <speciesReference species="cyt_cong__BCL2_" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="cyt_cong_cl_BID_1__BCL2_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_cong__cl_BID_1__BCL2_" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -16227,7 +16228,7 @@
       </reaction>
       <reaction id="vA30" reversible="false">
         <listOfReactants>
-          <speciesReference species="cyt_cong_cl_BID_1__BCL2_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_cong__cl_BID_1__BCL2_" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="cyt_prot__cl_BID_1_" stoichiometry="1" constant="true"/>
@@ -16238,7 +16239,7 @@
             <apply>
               <times/>
               <ci> kA30_1 </ci>
-              <ci> cyt_cong_cl_BID_1__BCL2_ </ci>
+              <ci> cyt_cong__cl_BID_1__BCL2_ </ci>
               <ci> Cytoplasm </ci>
             </apply>
           </math>
@@ -16846,7 +16847,7 @@
           <speciesReference species="cyt_prot_a__APAF_1__CASP9_1_" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="cyt_prot_a__APAF_1__CASP9_1__CASP3_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_cong_a__APAF_1__CASP9_1__CASP3_" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -16862,7 +16863,7 @@
       </reaction>
       <reaction id="vA63" reversible="false">
         <listOfReactants>
-          <speciesReference species="cyt_prot_a__APAF_1__CASP9_1__CASP3_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_cong_a__APAF_1__CASP9_1__CASP3_" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="cyt_cong__CASP3_" stoichiometry="1" constant="true"/>
@@ -16873,7 +16874,7 @@
             <apply>
               <times/>
               <ci> kA63_1 </ci>
-              <ci> cyt_prot_a__APAF_1__CASP9_1__CASP3_ </ci>
+              <ci> cyt_cong_a__APAF_1__CASP9_1__CASP3_ </ci>
               <ci> Cytoplasm </ci>
             </apply>
           </math>
@@ -16881,7 +16882,7 @@
       </reaction>
       <reaction id="vA64" reversible="false">
         <listOfReactants>
-          <speciesReference species="cyt_prot_a__APAF_1__CASP9_1__CASP3_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_cong_a__APAF_1__CASP9_1__CASP3_" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="cyt_cong__cl_CASP3_" stoichiometry="1" constant="true"/>
@@ -16892,7 +16893,7 @@
             <apply>
               <times/>
               <ci> kA64_1 </ci>
-              <ci> cyt_prot_a__APAF_1__CASP9_1__CASP3_ </ci>
+              <ci> cyt_cong_a__APAF_1__CASP9_1__CASP3_ </ci>
               <ci> Cytoplasm </ci>
             </apply>
           </math>
@@ -20296,7 +20297,7 @@
           <speciesReference species="cyt_prot__EGF_1__EGFR_1__ERBB2_1_" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="cyt_prot__EGF_1__p_ERBB2_1_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_prot__EGF_1__p_EGFR_1__p_ERBB2_1_" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -20761,7 +20762,7 @@
       </reaction>
       <reaction id="vRP2_1" reversible="false">
         <listOfReactants>
-          <speciesReference species="cyt_prot__EGF_1__p_ERBB2_1_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_prot__EGF_1__p_EGFR_1__p_ERBB2_1_" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="cyt_prot__EGF_1__EGFR_1__ERBB2_1_" stoichiometry="1" constant="true"/>
@@ -20771,7 +20772,7 @@
             <apply>
               <times/>
               <ci> kRP2_1_1 </ci>
-              <ci> cyt_prot__EGF_1__p_ERBB2_1_ </ci>
+              <ci> cyt_prot__EGF_1__p_EGFR_1__p_ERBB2_1_ </ci>
               <ci> Cytoplasm </ci>
             </apply>
           </math>
@@ -22243,10 +22244,10 @@
       </reaction>
       <reaction id="vRP5_1" reversible="false">
         <listOfReactants>
-          <speciesReference species="cyt_prot__EGF_1__p_ERBB2_1_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_prot__EGF_1__p_EGFR_1__p_ERBB2_1_" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="cyt_prot_in__EGF_1__p_ERBB2_1_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_prot_in__EGF_1__p_EGFR_1__p_ERBB2_1_" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
           <modifierSpeciesReference species="cyt_prot__CBL_1_"/>
@@ -22262,11 +22263,11 @@
                   <ci> kRP5_1_1 </ci>
                   <apply>
                     <divide/>
-                    <ci> cyt_prot__EGF_1__p_ERBB2_1_ </ci>
+                    <ci> cyt_prot__EGF_1__p_EGFR_1__p_ERBB2_1_ </ci>
                     <apply>
                       <plus/>
                       <ci> kRP5_1_2 </ci>
-                      <ci> cyt_prot__EGF_1__p_ERBB2_1_ </ci>
+                      <ci> cyt_prot__EGF_1__p_EGFR_1__p_ERBB2_1_ </ci>
                     </apply>
                   </apply>
                   <ci> cyt_prot__CBL_1_ </ci>
@@ -22274,7 +22275,7 @@
                 <apply>
                   <times/>
                   <ci> kRP5_1_3 </ci>
-                  <ci> cyt_prot__EGF_1__p_ERBB2_1_ </ci>
+                  <ci> cyt_prot__EGF_1__p_EGFR_1__p_ERBB2_1_ </ci>
                 </apply>
               </apply>
               <ci> Cytoplasm </ci>
@@ -22533,7 +22534,7 @@
           <speciesReference species="cyt_prot__p_ERBB2_1__NRG1_1__p_ERBB3_1_" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="cyt_prot_in_p_ERBB2_1__NRG1_1_ERBB3_1_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_prot_in__p_ERBB2_1__NRG1_1__p_ERBB3_1_" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
           <modifierSpeciesReference species="cyt_prot__CBL_1_"/>
@@ -22574,7 +22575,7 @@
           <speciesReference species="cyt_prot__p_EGFR_1__NRG1_1__p_ERBB3_1_" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="cyt_prot_in_p_EGFR_1__NRG1_1_ERBB3_1_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_prot_in__p_EGFR_1__NRG1_1__p_ERBB3_1_" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
           <modifierSpeciesReference species="cyt_prot__CBL_1_"/>
@@ -23309,7 +23310,7 @@
       </reaction>
       <reaction id="vRP6_1" reversible="false">
         <listOfReactants>
-          <speciesReference species="cyt_prot_in__EGF_1__p_ERBB2_1_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_prot_in__EGF_1__p_EGFR_1__p_ERBB2_1_" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="cyt_prot_in__EGF_1__EGFR_1__ERBB2_1_" stoichiometry="1" constant="true"/>
@@ -23319,7 +23320,7 @@
             <apply>
               <times/>
               <ci> kRP6_1_1 </ci>
-              <ci> cyt_prot_in__EGF_1__p_ERBB2_1_ </ci>
+              <ci> cyt_prot_in__EGF_1__p_EGFR_1__p_ERBB2_1_ </ci>
               <ci> Cytoplasm </ci>
             </apply>
           </math>
@@ -23435,7 +23436,7 @@
       </reaction>
       <reaction id="vRP6_9" reversible="false">
         <listOfReactants>
-          <speciesReference species="cyt_prot_in_p_ERBB2_1__NRG1_1_ERBB3_1_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_prot_in__p_ERBB2_1__NRG1_1__p_ERBB3_1_" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="cyt_prot_in__ERBB2_1__NRG1_1__ERBB3_1_" stoichiometry="1" constant="true"/>
@@ -23445,7 +23446,7 @@
             <apply>
               <times/>
               <ci> kRP6_9_1 </ci>
-              <ci> cyt_prot_in_p_ERBB2_1__NRG1_1_ERBB3_1_ </ci>
+              <ci> cyt_prot_in__p_ERBB2_1__NRG1_1__p_ERBB3_1_ </ci>
               <ci> Cytoplasm </ci>
             </apply>
           </math>
@@ -23453,7 +23454,7 @@
       </reaction>
       <reaction id="vRP6_11" reversible="false">
         <listOfReactants>
-          <speciesReference species="cyt_prot_in_p_EGFR_1__NRG1_1_ERBB3_1_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_prot_in__p_EGFR_1__NRG1_1__p_ERBB3_1_" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="cyt_prot_in__EGFR_1__NRG1_1__ERBB3_1_" stoichiometry="1" constant="true"/>
@@ -23463,7 +23464,7 @@
             <apply>
               <times/>
               <ci> kRP6_11_1 </ci>
-              <ci> cyt_prot_in_p_EGFR_1__NRG1_1_ERBB3_1_ </ci>
+              <ci> cyt_prot_in__p_EGFR_1__NRG1_1__p_ERBB3_1_ </ci>
               <ci> Cytoplasm </ci>
             </apply>
           </math>
@@ -23780,7 +23781,7 @@
           <speciesReference species="cyt_prot_in__EGF_1__EGFR_1__ERBB2_1_" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="cyt_prot_in__EGF_1__p_ERBB2_1_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_prot_in__EGF_1__p_EGFR_1__p_ERBB2_1_" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -23906,7 +23907,7 @@
           <speciesReference species="cyt_prot_in__ERBB2_1__NRG1_1__ERBB3_1_" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="cyt_prot_in_p_ERBB2_1__NRG1_1_ERBB3_1_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_prot_in__p_ERBB2_1__NRG1_1__p_ERBB3_1_" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -23924,7 +23925,7 @@
           <speciesReference species="cyt_prot_in__EGFR_1__NRG1_1__ERBB3_1_" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="cyt_prot_in_p_EGFR_1__NRG1_1_ERBB3_1_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_prot_in__p_EGFR_1__NRG1_1__p_ERBB3_1_" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -24713,18 +24714,18 @@
       </reaction>
       <reaction id="vRP9_1" reversible="false">
         <listOfReactants>
-          <speciesReference species="cyt_prot_in__EGF_1__p_ERBB2_1_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_prot_in__EGF_1__p_EGFR_1__p_ERBB2_1_" stoichiometry="1" constant="true"/>
           <speciesReference species="cyt_prot__GRB2__SOS1_1_" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="cyt_prot_in__EGF_1__p_ERBB2_1__GRB2__SOS1_1_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_prot_in__EGF_1__p_EGFR_1__p_ERBB2_1__GRB2__SOS1_1_" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> kRP9_1_1 </ci>
-              <ci> cyt_prot_in__EGF_1__p_ERBB2_1_ </ci>
+              <ci> cyt_prot_in__EGF_1__p_EGFR_1__p_ERBB2_1_ </ci>
               <ci> cyt_prot__GRB2__SOS1_1_ </ci>
               <ci> Cytoplasm </ci>
             </apply>
@@ -24853,7 +24854,7 @@
       </reaction>
       <reaction id="vRP9_9" reversible="false">
         <listOfReactants>
-          <speciesReference species="cyt_prot_in_p_ERBB2_1__NRG1_1_ERBB3_1_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_prot_in__p_ERBB2_1__NRG1_1__p_ERBB3_1_" stoichiometry="1" constant="true"/>
           <speciesReference species="cyt_prot__GRB2__SOS1_1_" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
@@ -24864,7 +24865,7 @@
             <apply>
               <times/>
               <ci> kRP9_9_1 </ci>
-              <ci> cyt_prot_in_p_ERBB2_1__NRG1_1_ERBB3_1_ </ci>
+              <ci> cyt_prot_in__p_ERBB2_1__NRG1_1__p_ERBB3_1_ </ci>
               <ci> cyt_prot__GRB2__SOS1_1_ </ci>
               <ci> Cytoplasm </ci>
             </apply>
@@ -24873,7 +24874,7 @@
       </reaction>
       <reaction id="vRP9_11" reversible="false">
         <listOfReactants>
-          <speciesReference species="cyt_prot_in_p_EGFR_1__NRG1_1_ERBB3_1_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_prot_in__p_EGFR_1__NRG1_1__p_ERBB3_1_" stoichiometry="1" constant="true"/>
           <speciesReference species="cyt_prot__GRB2__SOS1_1_" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
@@ -24884,7 +24885,7 @@
             <apply>
               <times/>
               <ci> kRP9_11_1 </ci>
-              <ci> cyt_prot_in_p_EGFR_1__NRG1_1_ERBB3_1_ </ci>
+              <ci> cyt_prot_in__p_EGFR_1__NRG1_1__p_ERBB3_1_ </ci>
               <ci> cyt_prot__GRB2__SOS1_1_ </ci>
               <ci> Cytoplasm </ci>
             </apply>
@@ -25233,10 +25234,10 @@
       </reaction>
       <reaction id="vRP10_1" reversible="false">
         <listOfReactants>
-          <speciesReference species="cyt_prot_in__EGF_1__p_ERBB2_1__GRB2__SOS1_1_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_prot_in__EGF_1__p_EGFR_1__p_ERBB2_1__GRB2__SOS1_1_" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="cyt_prot_in__EGF_1__p_ERBB2_1_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_prot_in__EGF_1__p_EGFR_1__p_ERBB2_1_" stoichiometry="1" constant="true"/>
           <speciesReference species="cyt_prot__GRB2__SOS1_1_" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <kineticLaw>
@@ -25244,7 +25245,7 @@
             <apply>
               <times/>
               <ci> kRP10_1_1 </ci>
-              <ci> cyt_prot_in__EGF_1__p_ERBB2_1__GRB2__SOS1_1_ </ci>
+              <ci> cyt_prot_in__EGF_1__p_EGFR_1__p_ERBB2_1__GRB2__SOS1_1_ </ci>
               <ci> Cytoplasm </ci>
             </apply>
           </math>
@@ -25369,7 +25370,7 @@
           <speciesReference species="cyt_prot_in__p_ERBB2_1__NRG1_1__p_ERBB3_1__GRB2__SOS1_1_" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="cyt_prot_in_p_ERBB2_1__NRG1_1_ERBB3_1_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_prot_in__p_ERBB2_1__NRG1_1__p_ERBB3_1_" stoichiometry="1" constant="true"/>
           <speciesReference species="cyt_prot__GRB2__SOS1_1_" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <kineticLaw>
@@ -25388,7 +25389,7 @@
           <speciesReference species="cyt_prot_in__p_EGFR_1__NRG1_1__p_ERBB3_1__GRB2__SOS1_1_" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="cyt_prot_in_p_EGFR_1__NRG1_1_ERBB3_1_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_prot_in__p_EGFR_1__NRG1_1__p_ERBB3_1_" stoichiometry="1" constant="true"/>
           <speciesReference species="cyt_prot__GRB2__SOS1_1_" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <kineticLaw>
@@ -25727,18 +25728,18 @@
       </reaction>
       <reaction id="vRP11_1" reversible="false">
         <listOfReactants>
-          <speciesReference species="cyt_prot__EGF_1__p_ERBB2_1_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_prot__EGF_1__p_EGFR_1__p_ERBB2_1_" stoichiometry="1" constant="true"/>
           <speciesReference species="cyt_prot__GRB2__SOS1_1_" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="cyt_prot__EGF_1__p_ERBB2_1__GRB2__SOS1_1_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_prot__EGF_1__p_EGFR_1__p_ERBB2_1__GRB2__SOS1_1_" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> kRP11_1_1 </ci>
-              <ci> cyt_prot__EGF_1__p_ERBB2_1_ </ci>
+              <ci> cyt_prot__EGF_1__p_EGFR_1__p_ERBB2_1_ </ci>
               <ci> cyt_prot__GRB2__SOS1_1_ </ci>
               <ci> Cytoplasm </ci>
             </apply>
@@ -26247,10 +26248,10 @@
       </reaction>
       <reaction id="vRP12_1" reversible="false">
         <listOfReactants>
-          <speciesReference species="cyt_prot__EGF_1__p_ERBB2_1__GRB2__SOS1_1_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_prot__EGF_1__p_EGFR_1__p_ERBB2_1__GRB2__SOS1_1_" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="cyt_prot__EGF_1__p_ERBB2_1_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_prot__EGF_1__p_EGFR_1__p_ERBB2_1_" stoichiometry="1" constant="true"/>
           <speciesReference species="cyt_prot__GRB2__SOS1_1_" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <kineticLaw>
@@ -26258,7 +26259,7 @@
             <apply>
               <times/>
               <ci> kRP12_1_1 </ci>
-              <ci> cyt_prot__EGF_1__p_ERBB2_1__GRB2__SOS1_1_ </ci>
+              <ci> cyt_prot__EGF_1__p_EGFR_1__p_ERBB2_1__GRB2__SOS1_1_ </ci>
               <ci> Cytoplasm </ci>
             </apply>
           </math>
@@ -26741,18 +26742,18 @@
       </reaction>
       <reaction id="vRP13_1" reversible="false">
         <listOfReactants>
-          <speciesReference species="cyt_prot__EGF_1__p_ERBB2_1_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_prot__EGF_1__p_EGFR_1__p_ERBB2_1_" stoichiometry="1" constant="true"/>
           <speciesReference species="cyt_cong__PLCG_" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="cyt_cong__EGF_1__p_ERBB2_1__PLCG_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_cong__EGF_1__p_EGFR_1__p_ERBB2_1__PLCG_" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> kRP13_1_1 </ci>
-              <ci> cyt_prot__EGF_1__p_ERBB2_1_ </ci>
+              <ci> cyt_prot__EGF_1__p_EGFR_1__p_ERBB2_1_ </ci>
               <ci> cyt_cong__PLCG_ </ci>
               <ci> Cytoplasm </ci>
             </apply>
@@ -27261,10 +27262,10 @@
       </reaction>
       <reaction id="vRP14_1" reversible="false">
         <listOfReactants>
-          <speciesReference species="cyt_cong__EGF_1__p_ERBB2_1__PLCG_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_cong__EGF_1__p_EGFR_1__p_ERBB2_1__PLCG_" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="cyt_prot__EGF_1__p_ERBB2_1_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_prot__EGF_1__p_EGFR_1__p_ERBB2_1_" stoichiometry="1" constant="true"/>
           <speciesReference species="cyt_cong__PLCG_" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <kineticLaw>
@@ -27272,7 +27273,7 @@
             <apply>
               <times/>
               <ci> kRP14_1_1 </ci>
-              <ci> cyt_cong__EGF_1__p_ERBB2_1__PLCG_ </ci>
+              <ci> cyt_cong__EGF_1__p_EGFR_1__p_ERBB2_1__PLCG_ </ci>
               <ci> Cytoplasm </ci>
             </apply>
           </math>
@@ -27755,18 +27756,18 @@
       </reaction>
       <reaction id="vRP15_1" reversible="false">
         <listOfReactants>
-          <speciesReference species="cyt_prot__EGF_1__p_ERBB2_1_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_prot__EGF_1__p_EGFR_1__p_ERBB2_1_" stoichiometry="1" constant="true"/>
           <speciesReference species="cyt_cong__PIK3C__PIK3R_" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="cyt_cong__EGF_1__p_ERBB2_1__PIK3C__PIK3R_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_cong__EGF_1__p_EGFR_1__p_ERBB2_1__PIK3C__PIK3R_" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> kRP15_1_1 </ci>
-              <ci> cyt_prot__EGF_1__p_ERBB2_1_ </ci>
+              <ci> cyt_prot__EGF_1__p_EGFR_1__p_ERBB2_1_ </ci>
               <ci> cyt_cong__PIK3C__PIK3R_ </ci>
               <ci> Cytoplasm </ci>
             </apply>
@@ -28275,10 +28276,10 @@
       </reaction>
       <reaction id="vRP16_1" reversible="false">
         <listOfReactants>
-          <speciesReference species="cyt_cong__EGF_1__p_ERBB2_1__PIK3C__PIK3R_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_cong__EGF_1__p_EGFR_1__p_ERBB2_1__PIK3C__PIK3R_" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="cyt_prot__EGF_1__p_ERBB2_1_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_prot__EGF_1__p_EGFR_1__p_ERBB2_1_" stoichiometry="1" constant="true"/>
           <speciesReference species="cyt_cong__PIK3C__PIK3R_" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <kineticLaw>
@@ -28286,7 +28287,7 @@
             <apply>
               <times/>
               <ci> kRP16_1_1 </ci>
-              <ci> cyt_cong__EGF_1__p_ERBB2_1__PIK3C__PIK3R_ </ci>
+              <ci> cyt_cong__EGF_1__p_EGFR_1__p_ERBB2_1__PIK3C__PIK3R_ </ci>
               <ci> Cytoplasm </ci>
             </apply>
           </math>
@@ -28772,18 +28773,18 @@
       </reaction>
       <reaction id="vRP17_1" reversible="false">
         <listOfReactants>
-          <speciesReference species="cyt_prot__EGF_1__p_ERBB2_1_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_prot__EGF_1__p_EGFR_1__p_ERBB2_1_" stoichiometry="1" constant="true"/>
           <speciesReference species="cyt_prot__P3C2A_1_" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="cyt_prot__EGF_1__p_ERBB2_1__P3C2A_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_prot__EGF_1__p_EGFR_1__p_ERBB2_1__P3C2A_" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> kRP17_1_1 </ci>
-              <ci> cyt_prot__EGF_1__p_ERBB2_1_ </ci>
+              <ci> cyt_prot__EGF_1__p_EGFR_1__p_ERBB2_1_ </ci>
               <ci> cyt_prot__P3C2A_1_ </ci>
               <ci> Cytoplasm </ci>
             </apply>
@@ -29292,10 +29293,10 @@
       </reaction>
       <reaction id="vRP18_1" reversible="false">
         <listOfReactants>
-          <speciesReference species="cyt_prot__EGF_1__p_ERBB2_1__P3C2A_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_prot__EGF_1__p_EGFR_1__p_ERBB2_1__P3C2A_" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="cyt_prot__EGF_1__p_ERBB2_1_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_prot__EGF_1__p_EGFR_1__p_ERBB2_1_" stoichiometry="1" constant="true"/>
           <speciesReference species="cyt_prot__P3C2A_1_" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <kineticLaw>
@@ -29303,7 +29304,7 @@
             <apply>
               <times/>
               <ci> kRP18_1_1 </ci>
-              <ci> cyt_prot__EGF_1__p_ERBB2_1__P3C2A_ </ci>
+              <ci> cyt_prot__EGF_1__p_EGFR_1__p_ERBB2_1__P3C2A_ </ci>
               <ci> Cytoplasm </ci>
             </apply>
           </math>
@@ -29786,18 +29787,18 @@
       </reaction>
       <reaction id="vRP19_1" reversible="false">
         <listOfReactants>
-          <speciesReference species="cyt_prot_in__EGF_1__p_ERBB2_1__GRB2__SOS1_1_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_prot_in__EGF_1__p_EGFR_1__p_ERBB2_1__GRB2__SOS1_1_" stoichiometry="1" constant="true"/>
           <speciesReference species="cyt_cong__RAS__GDP_" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="cyt_cong_in__EGF_1__p_ERBB2_1__GRB2__SOS1_1__RAS__GDP_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_cong_in__EGF_1__p_EGFR_1__p_ERBB2_1__GRB2__SOS1_1__RAS__GDP_" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> kRP19_1_1 </ci>
-              <ci> cyt_prot_in__EGF_1__p_ERBB2_1__GRB2__SOS1_1_ </ci>
+              <ci> cyt_prot_in__EGF_1__p_EGFR_1__p_ERBB2_1__GRB2__SOS1_1_ </ci>
               <ci> cyt_cong__RAS__GDP_ </ci>
               <ci> Cytoplasm </ci>
             </apply>
@@ -30306,10 +30307,10 @@
       </reaction>
       <reaction id="vRP20_1" reversible="false">
         <listOfReactants>
-          <speciesReference species="cyt_cong_in__EGF_1__p_ERBB2_1__GRB2__SOS1_1__RAS__GDP_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_cong_in__EGF_1__p_EGFR_1__p_ERBB2_1__GRB2__SOS1_1__RAS__GDP_" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="cyt_prot_in__EGF_1__p_ERBB2_1__GRB2__SOS1_1_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_prot_in__EGF_1__p_EGFR_1__p_ERBB2_1__GRB2__SOS1_1_" stoichiometry="1" constant="true"/>
           <speciesReference species="cyt_cong__RAS__GDP_" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <kineticLaw>
@@ -30317,7 +30318,7 @@
             <apply>
               <times/>
               <ci> kRP20_1_1 </ci>
-              <ci> cyt_cong_in__EGF_1__p_ERBB2_1__GRB2__SOS1_1__RAS__GDP_ </ci>
+              <ci> cyt_cong_in__EGF_1__p_EGFR_1__p_ERBB2_1__GRB2__SOS1_1__RAS__GDP_ </ci>
               <ci> Cytoplasm </ci>
             </apply>
           </math>
@@ -30800,10 +30801,10 @@
       </reaction>
       <reaction id="vRP21_1" reversible="false">
         <listOfReactants>
-          <speciesReference species="cyt_cong_in__EGF_1__p_ERBB2_1__GRB2__SOS1_1__RAS__GDP_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_cong_in__EGF_1__p_EGFR_1__p_ERBB2_1__GRB2__SOS1_1__RAS__GDP_" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="cyt_prot_in__EGF_1__p_ERBB2_1__GRB2__SOS1_1_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_prot_in__EGF_1__p_EGFR_1__p_ERBB2_1__GRB2__SOS1_1_" stoichiometry="1" constant="true"/>
           <speciesReference species="cyt_cong__RAS__GTP_" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <kineticLaw>
@@ -30811,7 +30812,7 @@
             <apply>
               <times/>
               <ci> kRP21_1_1 </ci>
-              <ci> cyt_cong_in__EGF_1__p_ERBB2_1__GRB2__SOS1_1__RAS__GDP_ </ci>
+              <ci> cyt_cong_in__EGF_1__p_EGFR_1__p_ERBB2_1__GRB2__SOS1_1__RAS__GDP_ </ci>
               <ci> Cytoplasm </ci>
             </apply>
           </math>
@@ -31294,18 +31295,18 @@
       </reaction>
       <reaction id="vRP22_1" reversible="false">
         <listOfReactants>
-          <speciesReference species="cyt_prot__EGF_1__p_ERBB2_1__GRB2__SOS1_1_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_prot__EGF_1__p_EGFR_1__p_ERBB2_1__GRB2__SOS1_1_" stoichiometry="1" constant="true"/>
           <speciesReference species="cyt_cong__RAS__GDP_" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="cyt_cong__EGF_1__p_ERBB2_1__GRB2__SOS1_1__RAS__GDP_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_cong__EGF_1__p_EGFR_1__p_ERBB2_1__GRB2__SOS1_1__RAS__GDP_" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> kRP22_1_1 </ci>
-              <ci> cyt_prot__EGF_1__p_ERBB2_1__GRB2__SOS1_1_ </ci>
+              <ci> cyt_prot__EGF_1__p_EGFR_1__p_ERBB2_1__GRB2__SOS1_1_ </ci>
               <ci> cyt_cong__RAS__GDP_ </ci>
               <ci> Cytoplasm </ci>
             </apply>
@@ -31814,10 +31815,10 @@
       </reaction>
       <reaction id="vRP23_1" reversible="false">
         <listOfReactants>
-          <speciesReference species="cyt_cong__EGF_1__p_ERBB2_1__GRB2__SOS1_1__RAS__GDP_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_cong__EGF_1__p_EGFR_1__p_ERBB2_1__GRB2__SOS1_1__RAS__GDP_" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="cyt_prot__EGF_1__p_ERBB2_1__GRB2__SOS1_1_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_prot__EGF_1__p_EGFR_1__p_ERBB2_1__GRB2__SOS1_1_" stoichiometry="1" constant="true"/>
           <speciesReference species="cyt_cong__RAS__GDP_" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <kineticLaw>
@@ -31825,7 +31826,7 @@
             <apply>
               <times/>
               <ci> kRP23_1_1 </ci>
-              <ci> cyt_cong__EGF_1__p_ERBB2_1__GRB2__SOS1_1__RAS__GDP_ </ci>
+              <ci> cyt_cong__EGF_1__p_EGFR_1__p_ERBB2_1__GRB2__SOS1_1__RAS__GDP_ </ci>
               <ci> Cytoplasm </ci>
             </apply>
           </math>
@@ -32308,10 +32309,10 @@
       </reaction>
       <reaction id="vRP24_1" reversible="false">
         <listOfReactants>
-          <speciesReference species="cyt_cong__EGF_1__p_ERBB2_1__GRB2__SOS1_1__RAS__GDP_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_cong__EGF_1__p_EGFR_1__p_ERBB2_1__GRB2__SOS1_1__RAS__GDP_" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="cyt_prot__EGF_1__p_ERBB2_1__GRB2__SOS1_1_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_prot__EGF_1__p_EGFR_1__p_ERBB2_1__GRB2__SOS1_1_" stoichiometry="1" constant="true"/>
           <speciesReference species="cyt_cong__RAS__GTP_" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <kineticLaw>
@@ -32319,7 +32320,7 @@
             <apply>
               <times/>
               <ci> kRP24_1_1 </ci>
-              <ci> cyt_cong__EGF_1__p_ERBB2_1__GRB2__SOS1_1__RAS__GDP_ </ci>
+              <ci> cyt_cong__EGF_1__p_EGFR_1__p_ERBB2_1__GRB2__SOS1_1__RAS__GDP_ </ci>
               <ci> Cytoplasm </ci>
             </apply>
           </math>
@@ -32802,18 +32803,18 @@
       </reaction>
       <reaction id="vRP25_1" reversible="false">
         <listOfReactants>
-          <speciesReference species="cyt_cong__EGF_1__p_ERBB2_1__PLCG_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_cong__EGF_1__p_EGFR_1__p_ERBB2_1__PLCG_" stoichiometry="1" constant="true"/>
           <speciesReference species="cyt_comp__PIP2_" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="cyt_cong__EGF_1__p_ERBB2_1__PLCG__PIP2_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_cong__EGF_1__p_EGFR_1__p_ERBB2_1__PLCG__PIP2_" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> kRP25_1_1 </ci>
-              <ci> cyt_cong__EGF_1__p_ERBB2_1__PLCG_ </ci>
+              <ci> cyt_cong__EGF_1__p_EGFR_1__p_ERBB2_1__PLCG_ </ci>
               <ci> cyt_comp__PIP2_ </ci>
               <ci> Cytoplasm </ci>
             </apply>
@@ -33322,10 +33323,10 @@
       </reaction>
       <reaction id="vRP26_1" reversible="false">
         <listOfReactants>
-          <speciesReference species="cyt_cong__EGF_1__p_ERBB2_1__PLCG__PIP2_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_cong__EGF_1__p_EGFR_1__p_ERBB2_1__PLCG__PIP2_" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="cyt_cong__EGF_1__p_ERBB2_1__PLCG_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_cong__EGF_1__p_EGFR_1__p_ERBB2_1__PLCG_" stoichiometry="1" constant="true"/>
           <speciesReference species="cyt_comp__PIP2_" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <kineticLaw>
@@ -33333,7 +33334,7 @@
             <apply>
               <times/>
               <ci> kRP26_1_1 </ci>
-              <ci> cyt_cong__EGF_1__p_ERBB2_1__PLCG__PIP2_ </ci>
+              <ci> cyt_cong__EGF_1__p_EGFR_1__p_ERBB2_1__PLCG__PIP2_ </ci>
               <ci> Cytoplasm </ci>
             </apply>
           </math>
@@ -33816,10 +33817,10 @@
       </reaction>
       <reaction id="vRP27_1" reversible="false">
         <listOfReactants>
-          <speciesReference species="cyt_cong__EGF_1__p_ERBB2_1__PLCG__PIP2_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_cong__EGF_1__p_EGFR_1__p_ERBB2_1__PLCG__PIP2_" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="cyt_cong__EGF_1__p_ERBB2_1__PLCG_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_cong__EGF_1__p_EGFR_1__p_ERBB2_1__PLCG_" stoichiometry="1" constant="true"/>
           <speciesReference species="cyt_comp__CDP_DAG_" stoichiometry="1" constant="true"/>
           <speciesReference species="cyt_comp__IP3_" stoichiometry="1" constant="true"/>
         </listOfProducts>
@@ -33828,7 +33829,7 @@
             <apply>
               <times/>
               <ci> kRP27_1_1 </ci>
-              <ci> cyt_cong__EGF_1__p_ERBB2_1__PLCG__PIP2_ </ci>
+              <ci> cyt_cong__EGF_1__p_EGFR_1__p_ERBB2_1__PLCG__PIP2_ </ci>
               <ci> Cytoplasm </ci>
             </apply>
           </math>
@@ -34336,18 +34337,18 @@
       </reaction>
       <reaction id="vRP28_1" reversible="false">
         <listOfReactants>
-          <speciesReference species="cyt_cong__EGF_1__p_ERBB2_1__PIK3C__PIK3R_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_cong__EGF_1__p_EGFR_1__p_ERBB2_1__PIK3C__PIK3R_" stoichiometry="1" constant="true"/>
           <speciesReference species="cyt_comp__PIP2_" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="cyt_cong__EGF_1__p_ERBB2_1__PIK3C__PIK3R__PIP2_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_cong__EGF_1__p_EGFR_1__p_ERBB2_1__PIK3C__PIK3R__PIP2_" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> kRP28_1_1 </ci>
-              <ci> cyt_cong__EGF_1__p_ERBB2_1__PIK3C__PIK3R_ </ci>
+              <ci> cyt_cong__EGF_1__p_EGFR_1__p_ERBB2_1__PIK3C__PIK3R_ </ci>
               <ci> cyt_comp__PIP2_ </ci>
               <ci> Cytoplasm </ci>
             </apply>
@@ -34856,10 +34857,10 @@
       </reaction>
       <reaction id="vRP29_1" reversible="false">
         <listOfReactants>
-          <speciesReference species="cyt_cong__EGF_1__p_ERBB2_1__PIK3C__PIK3R__PIP2_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_cong__EGF_1__p_EGFR_1__p_ERBB2_1__PIK3C__PIK3R__PIP2_" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="cyt_cong__EGF_1__p_ERBB2_1__PIK3C__PIK3R_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_cong__EGF_1__p_EGFR_1__p_ERBB2_1__PIK3C__PIK3R_" stoichiometry="1" constant="true"/>
           <speciesReference species="cyt_comp__PIP2_" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <kineticLaw>
@@ -34867,7 +34868,7 @@
             <apply>
               <times/>
               <ci> kRP29_1_1 </ci>
-              <ci> cyt_cong__EGF_1__p_ERBB2_1__PIK3C__PIK3R__PIP2_ </ci>
+              <ci> cyt_cong__EGF_1__p_EGFR_1__p_ERBB2_1__PIK3C__PIK3R__PIP2_ </ci>
               <ci> Cytoplasm </ci>
             </apply>
           </math>
@@ -35350,10 +35351,10 @@
       </reaction>
       <reaction id="vRP30_1" reversible="false">
         <listOfReactants>
-          <speciesReference species="cyt_cong__EGF_1__p_ERBB2_1__PIK3C__PIK3R__PIP2_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_cong__EGF_1__p_EGFR_1__p_ERBB2_1__PIK3C__PIK3R__PIP2_" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="cyt_cong__EGF_1__p_ERBB2_1__PIK3C__PIK3R_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_cong__EGF_1__p_EGFR_1__p_ERBB2_1__PIK3C__PIK3R_" stoichiometry="1" constant="true"/>
           <speciesReference species="cyt_comp__PIP3_" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <kineticLaw>
@@ -35361,7 +35362,7 @@
             <apply>
               <times/>
               <ci> kRP30_1_1 </ci>
-              <ci> cyt_cong__EGF_1__p_ERBB2_1__PIK3C__PIK3R__PIP2_ </ci>
+              <ci> cyt_cong__EGF_1__p_EGFR_1__p_ERBB2_1__PIK3C__PIK3R__PIP2_ </ci>
               <ci> Cytoplasm </ci>
             </apply>
           </math>
@@ -35844,18 +35845,18 @@
       </reaction>
       <reaction id="vRP31_1" reversible="false">
         <listOfReactants>
-          <speciesReference species="cyt_prot__EGF_1__p_ERBB2_1__P3C2A_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_prot__EGF_1__p_EGFR_1__p_ERBB2_1__P3C2A_" stoichiometry="1" constant="true"/>
           <speciesReference species="cyt_comp__PIP_" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="cyt_mixed__EGF_1__p_ERBB2_1__P3C2A__PIP_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_mixed__EGF_1__p_EGFR_1__p_ERBB2_1__P3C2A__PIP_" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> kRP31_1_1 </ci>
-              <ci> cyt_prot__EGF_1__p_ERBB2_1__P3C2A_ </ci>
+              <ci> cyt_prot__EGF_1__p_EGFR_1__p_ERBB2_1__P3C2A_ </ci>
               <ci> cyt_comp__PIP_ </ci>
               <ci> Cytoplasm </ci>
             </apply>
@@ -36364,10 +36365,10 @@
       </reaction>
       <reaction id="vRP32_1" reversible="false">
         <listOfReactants>
-          <speciesReference species="cyt_mixed__EGF_1__p_ERBB2_1__P3C2A__PIP_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_mixed__EGF_1__p_EGFR_1__p_ERBB2_1__P3C2A__PIP_" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="cyt_prot__EGF_1__p_ERBB2_1__P3C2A_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_prot__EGF_1__p_EGFR_1__p_ERBB2_1__P3C2A_" stoichiometry="1" constant="true"/>
           <speciesReference species="cyt_comp__PIP_" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <kineticLaw>
@@ -36375,7 +36376,7 @@
             <apply>
               <times/>
               <ci> kRP32_1_1 </ci>
-              <ci> cyt_mixed__EGF_1__p_ERBB2_1__P3C2A__PIP_ </ci>
+              <ci> cyt_mixed__EGF_1__p_EGFR_1__p_ERBB2_1__P3C2A__PIP_ </ci>
               <ci> Cytoplasm </ci>
             </apply>
           </math>
@@ -36858,10 +36859,10 @@
       </reaction>
       <reaction id="vRP33_1" reversible="false">
         <listOfReactants>
-          <speciesReference species="cyt_mixed__EGF_1__p_ERBB2_1__P3C2A__PIP_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_mixed__EGF_1__p_EGFR_1__p_ERBB2_1__P3C2A__PIP_" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="cyt_prot__EGF_1__p_ERBB2_1__P3C2A_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_prot__EGF_1__p_EGFR_1__p_ERBB2_1__P3C2A_" stoichiometry="1" constant="true"/>
           <speciesReference species="cyt_comp__PI_3_P_" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <kineticLaw>
@@ -36869,7 +36870,7 @@
             <apply>
               <times/>
               <ci> kRP33_1_1 </ci>
-              <ci> cyt_mixed__EGF_1__p_ERBB2_1__P3C2A__PIP_ </ci>
+              <ci> cyt_mixed__EGF_1__p_EGFR_1__p_ERBB2_1__P3C2A__PIP_ </ci>
               <ci> Cytoplasm </ci>
             </apply>
           </math>
@@ -37863,7 +37864,7 @@
           <speciesReference species="cyt_mixed__RAS__GTP__RAF1_1__RAF1_1_" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="cyt_mixed__MEK__RAS__GTP__RAF1_1__RAF1_1_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_cong__MEK__RAS__GTP__RAF1_1__RAF1_1_" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -37879,7 +37880,7 @@
       </reaction>
       <reaction id="vP14" reversible="false">
         <listOfReactants>
-          <speciesReference species="cyt_mixed__MEK__RAS__GTP__RAF1_1__RAF1_1_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_cong__MEK__RAS__GTP__RAF1_1__RAF1_1_" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="cyt_cong__MEK_" stoichiometry="1" constant="true"/>
@@ -37890,7 +37891,7 @@
             <apply>
               <times/>
               <ci> kP14_1 </ci>
-              <ci> cyt_mixed__MEK__RAS__GTP__RAF1_1__RAF1_1_ </ci>
+              <ci> cyt_cong__MEK__RAS__GTP__RAF1_1__RAF1_1_ </ci>
               <ci> Cytoplasm </ci>
             </apply>
           </math>
@@ -37898,7 +37899,7 @@
       </reaction>
       <reaction id="vP15" reversible="false">
         <listOfReactants>
-          <speciesReference species="cyt_mixed__MEK__RAS__GTP__RAF1_1__RAF1_1_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_cong__MEK__RAS__GTP__RAF1_1__RAF1_1_" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="cyt_prot__p_MEK_" stoichiometry="1" constant="true"/>
@@ -37909,7 +37910,7 @@
             <apply>
               <times/>
               <ci> kP15_1 </ci>
-              <ci> cyt_mixed__MEK__RAS__GTP__RAF1_1__RAF1_1_ </ci>
+              <ci> cyt_cong__MEK__RAS__GTP__RAF1_1__RAF1_1_ </ci>
               <ci> Cytoplasm </ci>
             </apply>
           </math>
@@ -37921,7 +37922,7 @@
           <speciesReference species="cyt_mixed__RAS__GTP__RAF1_1__RAF1_1_" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="cyt_mixed__p_MEK__RAS__GTP__RAF1_1__RAF1_1_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_cong__p_MEK__RAS__GTP__RAF1_1__RAF1_1_" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -37937,7 +37938,7 @@
       </reaction>
       <reaction id="vP17" reversible="false">
         <listOfReactants>
-          <speciesReference species="cyt_mixed__p_MEK__RAS__GTP__RAF1_1__RAF1_1_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_cong__p_MEK__RAS__GTP__RAF1_1__RAF1_1_" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="cyt_prot__p_MEK_" stoichiometry="1" constant="true"/>
@@ -37948,7 +37949,7 @@
             <apply>
               <times/>
               <ci> kP17_1 </ci>
-              <ci> cyt_mixed__p_MEK__RAS__GTP__RAF1_1__RAF1_1_ </ci>
+              <ci> cyt_cong__p_MEK__RAS__GTP__RAF1_1__RAF1_1_ </ci>
               <ci> Cytoplasm </ci>
             </apply>
           </math>
@@ -37956,7 +37957,7 @@
       </reaction>
       <reaction id="vP18" reversible="false">
         <listOfReactants>
-          <speciesReference species="cyt_mixed__p_MEK__RAS__GTP__RAF1_1__RAF1_1_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_cong__p_MEK__RAS__GTP__RAF1_1__RAF1_1_" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="cyt_prot__p_p_MEK_" stoichiometry="1" constant="true"/>
@@ -37967,7 +37968,7 @@
             <apply>
               <times/>
               <ci> kP18_1 </ci>
-              <ci> cyt_mixed__p_MEK__RAS__GTP__RAF1_1__RAF1_1_ </ci>
+              <ci> cyt_cong__p_MEK__RAS__GTP__RAF1_1__RAF1_1_ </ci>
               <ci> Cytoplasm </ci>
             </apply>
           </math>
@@ -40023,7 +40024,7 @@
           <speciesReference species="cyt_prot__CTNB1_1_" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="cyt_prot__PS33_pS37_pT41_CTNB1_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_prot__pS33_pS37_pT41_CTNB1_" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
           <modifierSpeciesReference species="cyt_prot__GSK3B_1_"/>
@@ -40065,7 +40066,7 @@
       </reaction>
       <reaction id="vP131" reversible="false">
         <listOfReactants>
-          <speciesReference species="cyt_prot__PS33_pS37_pT41_CTNB1_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_prot__pS33_pS37_pT41_CTNB1_" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="cyt_prot__CTNB1_1_" stoichiometry="1" constant="true"/>
@@ -40075,7 +40076,7 @@
             <apply>
               <times/>
               <ci> kP131_1 </ci>
-              <ci> cyt_prot__PS33_pS37_pT41_CTNB1_ </ci>
+              <ci> cyt_prot__pS33_pS37_pT41_CTNB1_ </ci>
               <ci> Cytoplasm </ci>
             </apply>
           </math>
@@ -40825,7 +40826,7 @@
       </reaction>
       <reaction id="vP174" reversible="false">
         <listOfReactants>
-          <speciesReference species="cyt_prot__PS33_pS37_pT41_CTNB1_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_prot__pS33_pS37_pT41_CTNB1_" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfModifiers>
           <modifierSpeciesReference species="cyt_prot__TSC1_1__TSC2_1_"/>
@@ -40835,7 +40836,7 @@
             <apply>
               <times/>
               <ci> kP174_1 </ci>
-              <ci> cyt_prot__PS33_pS37_pT41_CTNB1_ </ci>
+              <ci> cyt_prot__pS33_pS37_pT41_CTNB1_ </ci>
               <ci> cyt_prot__TSC1_1__TSC2_1_ </ci>
               <ci> Cytoplasm </ci>
             </apply>
@@ -41664,14 +41665,14 @@
       </reaction>
       <reaction id="vAd17" reversible="false">
         <listOfReactants>
-          <speciesReference species="cyt_cong_cl_BID_1__BCL2_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_cong__cl_BID_1__BCL2_" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> kAd17_1 </ci>
-              <ci> cyt_cong_cl_BID_1__BCL2_ </ci>
+              <ci> cyt_cong__cl_BID_1__BCL2_ </ci>
               <ci> Cytoplasm </ci>
             </apply>
           </math>
@@ -41904,14 +41905,14 @@
       </reaction>
       <reaction id="vAd33" reversible="false">
         <listOfReactants>
-          <speciesReference species="cyt_prot_a__APAF_1__CASP9_1__CASP3_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_cong_a__APAF_1__CASP9_1__CASP3_" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> kAd33_1 </ci>
-              <ci> cyt_prot_a__APAF_1__CASP9_1__CASP3_ </ci>
+              <ci> cyt_cong_a__APAF_1__CASP9_1__CASP3_ </ci>
               <ci> Cytoplasm </ci>
             </apply>
           </math>
@@ -42924,14 +42925,14 @@
       </reaction>
       <reaction id="vRPd1_1" reversible="false">
         <listOfReactants>
-          <speciesReference species="cyt_prot__EGF_1__p_ERBB2_1_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_prot__EGF_1__p_EGFR_1__p_ERBB2_1_" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> kRPd1_1_1 </ci>
-              <ci> cyt_prot__EGF_1__p_ERBB2_1_ </ci>
+              <ci> cyt_prot__EGF_1__p_EGFR_1__p_ERBB2_1_ </ci>
               <ci> Cytoplasm </ci>
             </apply>
           </math>
@@ -44154,14 +44155,14 @@
       </reaction>
       <reaction id="vRPd4_1" reversible="false">
         <listOfReactants>
-          <speciesReference species="cyt_prot_in__EGF_1__p_ERBB2_1_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_prot_in__EGF_1__p_EGFR_1__p_ERBB2_1_" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> kRPd4_1_1 </ci>
-              <ci> cyt_prot_in__EGF_1__p_ERBB2_1_ </ci>
+              <ci> cyt_prot_in__EGF_1__p_EGFR_1__p_ERBB2_1_ </ci>
               <ci> Cytoplasm </ci>
             </apply>
           </math>
@@ -44259,14 +44260,14 @@
       </reaction>
       <reaction id="vRPd4_9" reversible="false">
         <listOfReactants>
-          <speciesReference species="cyt_prot_in_p_ERBB2_1__NRG1_1_ERBB3_1_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_prot_in__p_ERBB2_1__NRG1_1__p_ERBB3_1_" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> kRPd4_9_1 </ci>
-              <ci> cyt_prot_in_p_ERBB2_1__NRG1_1_ERBB3_1_ </ci>
+              <ci> cyt_prot_in__p_ERBB2_1__NRG1_1__p_ERBB3_1_ </ci>
               <ci> Cytoplasm </ci>
             </apply>
           </math>
@@ -44274,14 +44275,14 @@
       </reaction>
       <reaction id="vRPd4_11" reversible="false">
         <listOfReactants>
-          <speciesReference species="cyt_prot_in_p_EGFR_1__NRG1_1_ERBB3_1_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_prot_in__p_EGFR_1__NRG1_1__p_ERBB3_1_" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> kRPd4_11_1 </ci>
-              <ci> cyt_prot_in_p_EGFR_1__NRG1_1_ERBB3_1_ </ci>
+              <ci> cyt_prot_in__p_EGFR_1__NRG1_1__p_ERBB3_1_ </ci>
               <ci> Cytoplasm </ci>
             </apply>
           </math>
@@ -44604,14 +44605,14 @@
       </reaction>
       <reaction id="vRPd5_1" reversible="false">
         <listOfReactants>
-          <speciesReference species="cyt_prot__EGF_1__p_ERBB2_1__GRB2__SOS1_1_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_prot__EGF_1__p_EGFR_1__p_ERBB2_1__GRB2__SOS1_1_" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> kRPd5_1_1 </ci>
-              <ci> cyt_prot__EGF_1__p_ERBB2_1__GRB2__SOS1_1_ </ci>
+              <ci> cyt_prot__EGF_1__p_EGFR_1__p_ERBB2_1__GRB2__SOS1_1_ </ci>
               <ci> Cytoplasm </ci>
             </apply>
           </math>
@@ -44994,14 +44995,14 @@
       </reaction>
       <reaction id="vRPd6_1" reversible="false">
         <listOfReactants>
-          <speciesReference species="cyt_prot_in__EGF_1__p_ERBB2_1__GRB2__SOS1_1_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_prot_in__EGF_1__p_EGFR_1__p_ERBB2_1__GRB2__SOS1_1_" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> kRPd6_1_1 </ci>
-              <ci> cyt_prot_in__EGF_1__p_ERBB2_1__GRB2__SOS1_1_ </ci>
+              <ci> cyt_prot_in__EGF_1__p_EGFR_1__p_ERBB2_1__GRB2__SOS1_1_ </ci>
               <ci> Cytoplasm </ci>
             </apply>
           </math>
@@ -45384,14 +45385,14 @@
       </reaction>
       <reaction id="vRPd7_1" reversible="false">
         <listOfReactants>
-          <speciesReference species="cyt_cong__EGF_1__p_ERBB2_1__PLCG_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_cong__EGF_1__p_EGFR_1__p_ERBB2_1__PLCG_" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> kRPd7_1_1 </ci>
-              <ci> cyt_cong__EGF_1__p_ERBB2_1__PLCG_ </ci>
+              <ci> cyt_cong__EGF_1__p_EGFR_1__p_ERBB2_1__PLCG_ </ci>
               <ci> Cytoplasm </ci>
             </apply>
           </math>
@@ -45774,14 +45775,14 @@
       </reaction>
       <reaction id="vRPd8_1" reversible="false">
         <listOfReactants>
-          <speciesReference species="cyt_cong__EGF_1__p_ERBB2_1__PIK3C__PIK3R_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_cong__EGF_1__p_EGFR_1__p_ERBB2_1__PIK3C__PIK3R_" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> kRPd8_1_1 </ci>
-              <ci> cyt_cong__EGF_1__p_ERBB2_1__PIK3C__PIK3R_ </ci>
+              <ci> cyt_cong__EGF_1__p_EGFR_1__p_ERBB2_1__PIK3C__PIK3R_ </ci>
               <ci> Cytoplasm </ci>
             </apply>
           </math>
@@ -46164,14 +46165,14 @@
       </reaction>
       <reaction id="vRPd10_1" reversible="false">
         <listOfReactants>
-          <speciesReference species="cyt_prot__EGF_1__p_ERBB2_1__P3C2A_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_prot__EGF_1__p_EGFR_1__p_ERBB2_1__P3C2A_" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> kRPd10_1_1 </ci>
-              <ci> cyt_prot__EGF_1__p_ERBB2_1__P3C2A_ </ci>
+              <ci> cyt_prot__EGF_1__p_EGFR_1__p_ERBB2_1__P3C2A_ </ci>
               <ci> Cytoplasm </ci>
             </apply>
           </math>
@@ -46554,14 +46555,14 @@
       </reaction>
       <reaction id="vRPd11_1" reversible="false">
         <listOfReactants>
-          <speciesReference species="cyt_cong_in__EGF_1__p_ERBB2_1__GRB2__SOS1_1__RAS__GDP_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_cong_in__EGF_1__p_EGFR_1__p_ERBB2_1__GRB2__SOS1_1__RAS__GDP_" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> kRPd11_1_1 </ci>
-              <ci> cyt_cong_in__EGF_1__p_ERBB2_1__GRB2__SOS1_1__RAS__GDP_ </ci>
+              <ci> cyt_cong_in__EGF_1__p_EGFR_1__p_ERBB2_1__GRB2__SOS1_1__RAS__GDP_ </ci>
               <ci> Cytoplasm </ci>
             </apply>
           </math>
@@ -46944,14 +46945,14 @@
       </reaction>
       <reaction id="vRPd12_1" reversible="false">
         <listOfReactants>
-          <speciesReference species="cyt_cong__EGF_1__p_ERBB2_1__GRB2__SOS1_1__RAS__GDP_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_cong__EGF_1__p_EGFR_1__p_ERBB2_1__GRB2__SOS1_1__RAS__GDP_" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> kRPd12_1_1 </ci>
-              <ci> cyt_cong__EGF_1__p_ERBB2_1__GRB2__SOS1_1__RAS__GDP_ </ci>
+              <ci> cyt_cong__EGF_1__p_EGFR_1__p_ERBB2_1__GRB2__SOS1_1__RAS__GDP_ </ci>
               <ci> Cytoplasm </ci>
             </apply>
           </math>
@@ -47334,14 +47335,14 @@
       </reaction>
       <reaction id="vRPd13_1" reversible="false">
         <listOfReactants>
-          <speciesReference species="cyt_cong__EGF_1__p_ERBB2_1__PLCG__PIP2_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_cong__EGF_1__p_EGFR_1__p_ERBB2_1__PLCG__PIP2_" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> kRPd13_1_1 </ci>
-              <ci> cyt_cong__EGF_1__p_ERBB2_1__PLCG__PIP2_ </ci>
+              <ci> cyt_cong__EGF_1__p_EGFR_1__p_ERBB2_1__PLCG__PIP2_ </ci>
               <ci> Cytoplasm </ci>
             </apply>
           </math>
@@ -47724,14 +47725,14 @@
       </reaction>
       <reaction id="vRPd14_1" reversible="false">
         <listOfReactants>
-          <speciesReference species="cyt_cong__EGF_1__p_ERBB2_1__PIK3C__PIK3R__PIP2_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_cong__EGF_1__p_EGFR_1__p_ERBB2_1__PIK3C__PIK3R__PIP2_" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> kRPd14_1_1 </ci>
-              <ci> cyt_cong__EGF_1__p_ERBB2_1__PIK3C__PIK3R__PIP2_ </ci>
+              <ci> cyt_cong__EGF_1__p_EGFR_1__p_ERBB2_1__PIK3C__PIK3R__PIP2_ </ci>
               <ci> Cytoplasm </ci>
             </apply>
           </math>
@@ -48114,14 +48115,14 @@
       </reaction>
       <reaction id="vRPd16_1" reversible="false">
         <listOfReactants>
-          <speciesReference species="cyt_mixed__EGF_1__p_ERBB2_1__P3C2A__PIP_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_mixed__EGF_1__p_EGFR_1__p_ERBB2_1__P3C2A__PIP_" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> kRPd16_1_1 </ci>
-              <ci> cyt_mixed__EGF_1__p_ERBB2_1__P3C2A__PIP_ </ci>
+              <ci> cyt_mixed__EGF_1__p_EGFR_1__p_ERBB2_1__P3C2A__PIP_ </ci>
               <ci> Cytoplasm </ci>
             </apply>
           </math>
@@ -48879,14 +48880,14 @@
       </reaction>
       <reaction id="vPd26" reversible="false">
         <listOfReactants>
-          <speciesReference species="cyt_prot__PS33_pS37_pT41_CTNB1_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_prot__pS33_pS37_pT41_CTNB1_" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> kPd26_1 </ci>
-              <ci> cyt_prot__PS33_pS37_pT41_CTNB1_ </ci>
+              <ci> cyt_prot__pS33_pS37_pT41_CTNB1_ </ci>
               <ci> Cytoplasm </ci>
             </apply>
           </math>
@@ -49749,14 +49750,14 @@
       </reaction>
       <reaction id="vPd85" reversible="false">
         <listOfReactants>
-          <speciesReference species="cyt_mixed__MEK__RAS__GTP__RAF1_1__RAF1_1_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_cong__MEK__RAS__GTP__RAF1_1__RAF1_1_" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> kPd85_1 </ci>
-              <ci> cyt_mixed__MEK__RAS__GTP__RAF1_1__RAF1_1_ </ci>
+              <ci> cyt_cong__MEK__RAS__GTP__RAF1_1__RAF1_1_ </ci>
               <ci> Cytoplasm </ci>
             </apply>
           </math>
@@ -49764,14 +49765,14 @@
       </reaction>
       <reaction id="vPd86" reversible="false">
         <listOfReactants>
-          <speciesReference species="cyt_mixed__p_MEK__RAS__GTP__RAF1_1__RAF1_1_" stoichiometry="1" constant="true"/>
+          <speciesReference species="cyt_cong__p_MEK__RAS__GTP__RAF1_1__RAF1_1_" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> kPd86_1 </ci>
-              <ci> cyt_mixed__p_MEK__RAS__GTP__RAF1_1__RAF1_1_ </ci>
+              <ci> cyt_cong__p_MEK__RAS__GTP__RAF1_1__RAF1_1_ </ci>
               <ci> Cytoplasm </ci>
             </apply>
           </math>

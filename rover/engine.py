@@ -18,11 +18,7 @@ from rover.species_index import (
     exchange_counts,
     local_to_global,
 )
-from rover.units import (
-    counts_from_bngsim_storage,
-    overlap_currency_modes,
-    stochmod_to_molecule_scales,
-)
+from rover.units import sbml_initial_nM
 
 logger = logging.getLogger("rover")
 
@@ -38,7 +34,7 @@ def _ensure_rover_logging() -> None:
 
 @dataclass
 class HybridEngine:
-    """Shared counts + both simulator modules (SingleCell-shaped)."""
+    """Shared nM state + both simulator modules (SingleCell-shaped)."""
 
     counts: np.ndarray
     index: SpeciesIndex
@@ -55,7 +51,7 @@ def build_hybrid_engine(
     initial_counts: np.ndarray | None = None,
     bngsim_kwargs: dict[str, Any] | None = None,
 ) -> HybridEngine:
-    """Load BNGsim + StochMod once and wire them to a shared molecule-count vector.
+    """Load BNGsim + StochMod once and wire them to a shared nanomolar vector.
 
     ``dt`` is recorded only for logging; each :func:`run_steps` call passes its
     own coupling interval into ``advance_from``.
@@ -106,68 +102,42 @@ def build_hybrid_engine(
     )
 
     if initial_counts is None:
-        import bngsim
-
-        modes = overlap_currency_modes(stochastic_sbml, deterministic_sbml)
-        identity_species = {sid for sid, mode in modes.items() if mode == "numeric"}
-
         counts = np.zeros(index.n_species, dtype=np.float64)
-        uc = bngsim.UnitConverter.from_model(kernel.model)
         bng_names = list(kernel.state_names)
-        det_counts = counts_from_bngsim_storage(
-            kernel.get_state(),
-            uc,
-            species_names=bng_names,
-            identity_species=identity_species,
-        )
+        bng_nM = np.asarray(kernel.get_state(), dtype=np.float64)
         for i, name in enumerate(bng_names):
-            counts[index.name_to_index[name]] = float(det_counts[i])
+            counts[index.name_to_index[name]] = float(bng_nM[i])
 
-        stoch_state = stoch_raw.get_state()
-        stoch_scales = stochmod_to_molecule_scales(
-            stochastic_sbml,
-            companion_deterministic_sbml=deterministic_sbml,
-        )
-        if stoch_scales.shape[0] != len(stoch_raw.species_names):
-            raise ValueError("StochMod unit scales do not match species_names")
-        stoch_molecules = np.asarray(stoch_state, dtype=np.float64) * stoch_scales
-        # Stoch-only: take StochMod ICs. Overlap already seeded from BNGsim;
-        # warn if StochMod disagrees (model inconsistency).
+        stoch_nM = sbml_initial_nM(stochastic_sbml)
+        # Stoch-only: take stochastic SBML nM ICs. Overlap already seeded from
+        # BNGsim; warn if stochastic SBML disagrees.
         mismatch = 0
-        for i, name in enumerate(stoch_raw.species_names):
+        for name in stoch_raw.species_names:
             gi = index.name_to_index[name]
-            sm = float(stoch_molecules[i])
+            sm = float(stoch_nM.get(name, 0.0))
             if index.stochastic_only_mask[gi]:
                 counts[gi] = sm
             elif index.overlap_mask[gi]:
                 bng_v = float(counts[gi])
-                scale = max(abs(bng_v), abs(sm), 1.0)
-                if abs(bng_v - sm) > 1e-3 * scale + 1e-6:
+                scale = max(abs(bng_v), abs(sm), 1e-12)
+                if abs(bng_v - sm) > 1e-3 * scale + 1e-12:
                     mismatch += 1
         if mismatch:
             logger.warning(
-                "Overlap IC mismatch on %d species (BNGsim vs StochMod); "
-                "using BNGsim values for overlap",
+                "Overlap IC mismatch on %d species (BNGsim vs StochMod SBML); "
+                "using BNGsim nM values for overlap",
                 mismatch,
             )
         initial_counts = counts
         logger.info(
             "Membership: %d det-only / %d stoch-only / %d overlap (N=%d); "
-            "identity-bridge overlap=%d",
+            "shared currency=nM",
             int(index.deterministic_only_mask.sum()),
             int(index.stochastic_only_mask.sum()),
             int(index.overlap_mask.sum()),
             index.n_species,
-            len(identity_species),
         )
     else:
-        identity_species = {
-            sid
-            for sid, mode in overlap_currency_modes(
-                stochastic_sbml, deterministic_sbml
-            ).items()
-            if mode == "numeric"
-        }
         initial_counts = np.asarray(initial_counts, dtype=np.float64)
         if initial_counts.shape != (index.n_species,):
             raise ValueError(
@@ -182,7 +152,6 @@ def build_hybrid_engine(
         local_indices=det_indices,
         n_species=index.n_species,
         codegen_active=codegen_active,
-        identity_species=identity_species,
     )
     stoch = StochModModule(
         module=stoch_raw,

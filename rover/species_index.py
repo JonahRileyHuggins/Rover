@@ -150,7 +150,7 @@ def exchange_counts(
         + (stoch_full[overlap] - s0[overlap])
         + (bng_full[overlap] - s0[overlap])
     )
-    # Molecule counts are non-negative; ODE/tau-leap + delta exchange can
-    # undershoot and poison the next CVODE window if negatives are kept.
+    # Concentrations / counts are non-negative; ODE/tau-leap + delta exchange
+    # can undershoot and poison the next CVODE window if negatives are kept.
     np.maximum(out, 0.0, out=out)
     return out

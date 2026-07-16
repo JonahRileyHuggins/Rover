@@ -17,12 +17,13 @@ logger = logging.getLogger("rover")
 class HybridSimulator:
     """Stateful hybrid engine: load models once, then ``update`` / ``run``.
 
-    Live shared state is a 1-D molecule-count vector in RAM (``counts``).
+    Live shared state is a 1-D **nanomolar** vector in RAM (``counts``).
     Trajectories are recorded separately into a pre-sized matrix — either in
     memory or a memory-mapped ``.npy`` file for large runs.
 
-    Coupling is a plain loop: each step calls ``stoch.step`` then ``bng.step``
-    (see :func:`rover.engine.run_steps`).
+    Coupling is a plain loop: each step calls StochMod then BNGsim
+    (see :func:`rover.engine.run_steps`). BNGsim uses an identity nM bridge;
+    StochMod converts nM ↔ molecules at the module boundary.
 
     Parameters
     ----------
@@ -33,14 +34,14 @@ class HybridSimulator:
     bngsim_kwargs :
         Forwarded to BNGsim (default codegen + analytical Jacobian).
     initial_counts :
-        Optional length-N molecule-count vector; otherwise seeded from SBMLs.
+        Optional length-N nanomolar vector; otherwise seeded from SBMLs.
 
     Examples
     --------
     >>> sim = HybridSimulator(det_xml, stoch_xml, dt=1.0)
-    >>> sim.update("cyt_mrna__LIGAND_", 10)
+    >>> sim.update("cyt_mrna__LIGAND_", 0.001582)
     >>> traj = sim.run(t_end=60.0)                 # shape (n_points, n_species)
-    >>> df = sim.to_dataframe()                    # time + species columns
+    >>> df = sim.to_dataframe()                    # time + species columns (nM)
     >>> traj = sim.run(t_end=259200, results_path="out/traj.npy")  # memmap
     """
 

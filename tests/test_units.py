@@ -2,20 +2,22 @@
 
 from pathlib import Path
 
-import bngsim
 import numpy as np
 import pytest
 
 from rover.units import (
-    AVOGADRO,
-    bngsim_storage_from_counts,
-    counts_from_bngsim_storage,
     counts_to_nM,
+    molecules_to_nM,
     nM_to_counts,
+    nM_to_molecules,
+    nM_to_molecules_factors,
+    sbml_initial_nM,
+    species_volumes_L,
 )
 
 DATA = Path(__file__).resolve().parent / "data" / "LR"
 DET = DATA / "deterministic-interactions.xml"
+STOCH = DATA / "stochastic-gene-expression.xml"
 
 pytestmark = pytest.mark.skipif(not DET.exists(), reason="LR fixtures not present")
 
@@ -33,32 +35,17 @@ def test_scalar_nM_round_trip():
     assert counts_cyto == pytest.approx(5.0, rel=1e-3)
 
 
-def test_bngsim_storage_round_trip():
-    model = bngsim.Model.from_sbml(str(DET))
-    kernel = bngsim.ReactionKernel(model, method="ode")
-    uc = bngsim.UnitConverter.from_model(model)
-
-    storage0 = kernel.get_state()
-    counts = counts_from_bngsim_storage(storage0, uc)
-    # Gene / mRNA ICs should map to ~2 and ~5 molecules
-    names = list(kernel.state_names)
-    gene_i = names.index("nuc_gene_a__LIGAND_")
-    mrna_i = names.index("cyt_mrna__LIGAND_")
-    assert counts[gene_i] == pytest.approx(2.0, rel=1e-3)
-    assert counts[mrna_i] == pytest.approx(5.0, rel=1e-3)
-
-    storage1 = bngsim_storage_from_counts(counts, uc)
-    np.testing.assert_allclose(storage1, storage0, rtol=1e-6, atol=1e-12)
+def test_vector_nM_molecule_round_trip():
+    names, volumes = species_volumes_L(STOCH)
+    factors = nM_to_molecules_factors(volumes)
+    nM = np.asarray([sbml_initial_nM(STOCH)[n] for n in names], dtype=np.float64)
+    mol = nM_to_molecules(nM, factors)
+    back = molecules_to_nM(mol, factors)
+    np.testing.assert_allclose(back, nM, rtol=1e-12, atol=1e-18)
 
 
-def test_lr_stochmod_scales_stay_molecule_counts_with_companion():
-    from rover.units import overlap_currency_modes, stochmod_to_molecule_scales
-
-    stoch = DATA / "stochastic-gene-expression.xml"
-    scales = stochmod_to_molecule_scales(stoch, companion_deterministic_sbml=DET)
-    assert scales.shape[0] == 9
-    assert np.all(scales == 1.0)
-    # LR gene/mRNA amounts match true molecules from det nM·V·N_A·1e-9
-    modes = overlap_currency_modes(stoch, DET)
-    assert modes.get("nuc_gene_a__LIGAND_") == "physical"
-    assert modes.get("cyt_mrna__LIGAND_") == "physical"
+def test_lr_sbml_initial_nM():
+    det = sbml_initial_nM(DET)
+    stoch = sbml_initial_nM(STOCH)
+    assert det["nuc_gene_a__LIGAND_"] == pytest.approx(0.001898, rel=1e-6)
+    assert stoch["cyt_mrna__LIGAND_"] == pytest.approx(0.0172528, rel=1e-6)
