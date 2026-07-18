@@ -167,6 +167,7 @@ class BngsimModule:
         local_indices: list[int] | np.ndarray,
         n_species: int,
         codegen_active: bool = False,
+        stoch_owned_global: np.ndarray | None = None,
     ) -> None:
         self._kernel = kernel
         self.codegen_active = bool(codegen_active)
@@ -178,10 +179,19 @@ class BngsimModule:
                 f"local_indices length {len(self._local_indices)} != "
                 f"kernel species {len(self._local_names)}"
             )
+        # Stoch-owned overlap (mRNA): hold fixed over the ODE window.
+        self._freeze_mask = np.zeros(len(self._local_names), dtype=bool)
+        if stoch_owned_global is not None:
+            stoch_owned_global = np.asarray(stoch_owned_global, dtype=bool)
+            for li, gi in enumerate(self._local_indices):
+                if int(gi) < len(stoch_owned_global) and stoch_owned_global[int(gi)]:
+                    self._freeze_mask[li] = True
         logger.info(
-            "BNGsim module ready (codegen=%s, n_species=%d, identity nM bridge)",
+            "BNGsim module ready (codegen=%s, n_species=%d, identity nM bridge; "
+            "%d stoch-owned mRNA frozen over ODE window)",
             self.codegen_active,
             len(self._local_names),
+            int(self._freeze_mask.sum()),
         )
         quiet_bngsim_logging()
         self.last_integrate_s = 0.0
@@ -208,6 +218,9 @@ class BngsimModule:
         new_storage = self._kernel.advance(float(dt))
         t2 = time.perf_counter()
         out = np.asarray(new_storage, dtype=np.float64)
+        if np.any(self._freeze_mask):
+            out = out.copy()
+            out[self._freeze_mask] = local_nM[self._freeze_mask]
         self.last_bridge_s = t1 - t0
         self.last_integrate_s = t2 - t1
         return out

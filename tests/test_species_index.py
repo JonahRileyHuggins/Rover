@@ -42,19 +42,20 @@ def test_membership_masks_allow_overlap():
     assert np.all(index.stochastic_mask)
 
 
-def test_exchange_overlap_keeps_producer_delta():
-    """Modifier-only module (Δ≈0) must not wipe the producer’s overlap update."""
+def test_exchange_stoch_owned_overlap_takes_stoch():
+    """Stoch-owned overlap (e.g. mRNA) takes StochMod; BNGsim delta ignored."""
     names = ("a", "b", "shared")
     index = SpeciesIndex(
         names=names,
         name_to_index={n: i for i, n in enumerate(names)},
         deterministic_mask=np.array([True, False, True]),
         stochastic_mask=np.array([False, True, True]),
+        stoch_owned_mask=np.array([False, True, True]),
+        det_owned_mask=np.array([True, False, False]),
     )
     s0 = np.array([10.0, 20.0, 5.0])
-    # stoch evolves shared +5; bng leaves shared unchanged (modifier)
     stoch_local = np.array([25.0, 10.0])  # b, shared
-    bng_local = np.array([12.0, 5.0])  # a, shared
+    bng_local = np.array([12.0, 7.0])  # a, shared (spurious drift)
     out = exchange_counts(
         s0,
         stoch_local=stoch_local,
@@ -63,9 +64,34 @@ def test_exchange_overlap_keeps_producer_delta():
         bng_indices=np.array([0, 2]),
         index=index,
     )
-    assert out[0] == pytest.approx(12.0)  # det-only from bng
-    assert out[1] == pytest.approx(25.0)  # stoch-only from stoch
-    assert out[2] == pytest.approx(10.0)  # 5 + 5 + 0
+    assert out[0] == pytest.approx(12.0)
+    assert out[1] == pytest.approx(25.0)
+    assert out[2] == pytest.approx(10.0)  # stoch owner, not 7 or delta-sum
+
+
+def test_exchange_det_owned_overlap_takes_bng():
+    """Det-owned overlap (e.g. TF) takes BNGsim; StochMod delta ignored."""
+    names = ("a", "b", "shared")
+    index = SpeciesIndex(
+        names=names,
+        name_to_index={n: i for i, n in enumerate(names)},
+        deterministic_mask=np.array([True, False, True]),
+        stochastic_mask=np.array([False, True, True]),
+        stoch_owned_mask=np.array([False, True, False]),
+        det_owned_mask=np.array([True, False, True]),
+    )
+    s0 = np.array([10.0, 20.0, 5.0])
+    out = exchange_counts(
+        s0,
+        stoch_local=np.array([25.0, 99.0]),  # b, shared
+        stoch_indices=np.array([1, 2]),
+        bng_local=np.array([12.0, 8.0]),  # a, shared
+        bng_indices=np.array([0, 2]),
+        index=index,
+    )
+    assert out[0] == pytest.approx(12.0)
+    assert out[1] == pytest.approx(25.0)
+    assert out[2] == pytest.approx(8.0)
 
 
 def test_exchange_clips_negative_counts():
@@ -75,6 +101,8 @@ def test_exchange_clips_negative_counts():
         name_to_index={n: i for i, n in enumerate(names)},
         deterministic_mask=np.array([True, False, True]),
         stochastic_mask=np.array([False, True, True]),
+        stoch_owned_mask=np.array([False, True, True]),
+        det_owned_mask=np.array([True, False, False]),
     )
     s0 = np.array([1.0, 1.0, 1.0])
     out = exchange_counts(
@@ -88,8 +116,7 @@ def test_exchange_clips_negative_counts():
     assert np.all(out >= 0.0)
     assert out[0] == pytest.approx(0.0)
     assert out[1] == pytest.approx(0.0)
-    # overlap: 1 + (-2-1) + (0.5-1) = -2.5 → 0
-    assert out[2] == pytest.approx(0.0)
+    assert out[2] == pytest.approx(0.0)  # stoch-owned clip
 
 
 def test_local_to_global():

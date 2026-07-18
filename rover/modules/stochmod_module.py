@@ -22,8 +22,9 @@ class StochModModule:
     """Advance StochMod one ``dt`` from shared nanomolar state; return local nM.
 
     StochMod's compartment normalizer rewrites kinetic laws for **count-based**
-    propensities, so the runtime state is molecule counts. The shared store is
-    nM; this module converts at the boundary (SingleCell-shaped).
+    propensities for species StochMod owns (genes / mRNA). Det-owned overlap
+    (TF modifiers) stay in **nM** at the bridge — matching SingleCell's
+    parameter sync — so gene-regulation rate laws are not fed molecule counts.
 
     Does not mutate the global vector — the orchestrator exchanges results.
     """
@@ -36,6 +37,7 @@ class StochModModule:
         local_indices: list[int] | np.ndarray,
         n_species: int,
         companion_deterministic_sbml: str | Path | None = None,
+        det_owned_global: np.ndarray | None = None,
     ) -> None:
         del companion_deterministic_sbml  # unused; shared currency is nM
         self._module = module
@@ -55,9 +57,19 @@ class StochModModule:
         )
         self._nM_to_mol = nM_to_molecules_factors(local_volumes)
 
+        # Local mask: det-owned overlap TFs — keep nM (no molecule bridge).
+        self._pass_nM_mask = np.zeros(len(self._local_names), dtype=bool)
+        if det_owned_global is not None:
+            det_owned_global = np.asarray(det_owned_global, dtype=bool)
+            for li, gi in enumerate(self._local_indices):
+                if int(gi) < len(det_owned_global) and det_owned_global[int(gi)]:
+                    self._pass_nM_mask[li] = True
+
         logger.info(
-            "StochMod module ready (%d species; nM↔molecules bridge)",
+            "StochMod module ready (%d species; nM↔molecules bridge; "
+            "%d det-owned TFs passed as nM)",
             len(self._local_names),
+            int(self._pass_nM_mask.sum()),
         )
         self.last_integrate_s = 0.0
         self.last_bridge_s = 0.0
@@ -73,11 +85,19 @@ class StochModModule:
         t0 = time.perf_counter()
         local_nM = np.asarray(counts[self._local_indices], dtype=np.float64)
         molecules = nM_to_molecules(local_nM, self._nM_to_mol)
+        # Det-owned modifiers: feed nM directly (SingleCell parameter semantics).
+        if np.any(self._pass_nM_mask):
+            molecules = molecules.copy()
+            molecules[self._pass_nM_mask] = local_nM[self._pass_nM_mask]
         self._module.set_state(molecules)
         t1 = time.perf_counter()
         out_mol = np.asarray(self._module.advance(float(dt)), dtype=np.float64)
         t2 = time.perf_counter()
         out_nM = molecules_to_nM(out_mol, self._nM_to_mol)
+        if np.any(self._pass_nM_mask):
+            # Owner is BNGsim — restore pre-step nM (ignore leap writes on TFs).
+            out_nM = out_nM.copy()
+            out_nM[self._pass_nM_mask] = local_nM[self._pass_nM_mask]
         t3 = time.perf_counter()
         self.last_bridge_s = (t1 - t0) + (t3 - t2)
         self.last_integrate_s = t2 - t1

@@ -131,11 +131,13 @@ def build_hybrid_engine(
         initial_counts = counts
         logger.info(
             "Membership: %d det-only / %d stoch-only / %d overlap (N=%d); "
-            "shared currency=nM",
+            "ownership: %d stoch-owned / %d det-owned; shared currency=nM",
             int(index.deterministic_only_mask.sum()),
             int(index.stochastic_only_mask.sum()),
             int(index.overlap_mask.sum()),
             index.n_species,
+            int(index.stoch_owned_mask.sum()),
+            int(index.det_owned_mask.sum()),
         )
     else:
         initial_counts = np.asarray(initial_counts, dtype=np.float64)
@@ -152,6 +154,7 @@ def build_hybrid_engine(
         local_indices=det_indices,
         n_species=index.n_species,
         codegen_active=codegen_active,
+        stoch_owned_global=index.stoch_owned_mask,
     )
     stoch = StochModModule(
         module=stoch_raw,
@@ -159,6 +162,7 @@ def build_hybrid_engine(
         local_indices=stoch_indices,
         n_species=index.n_species,
         companion_deterministic_sbml=deterministic_sbml,
+        det_owned_global=index.det_owned_mask,
     )
 
     engine = HybridEngine(

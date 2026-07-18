@@ -7,7 +7,7 @@ Statically partitioned hybrid simulator that couples:
 
 over a shared **nanomolar** array. Orchestration is a plain Python loop
 (SingleCell-shaped): both modules advance from the same pre-step state, then
-exchange results (exclusive copy + additive overlap deltas).
+exchange results with **write ownership** on overlap species.
 
 ## Where one step happens
 
@@ -15,29 +15,38 @@ exchange results (exclusive copy + additive overlap deltas).
 HybridSimulator.run
   └─ rover.engine.run_steps
        ├─ s0 = counts          # shared nM
-       ├─ stoch.advance_from(s0, dt)   # StochModModule (nM ↔ molecules)
-       ├─ bng.advance_from(s0, dt)     # BngsimModule (identity nM; clock → 0)
-       └─ exchange(s0, s_stoch, s_bng) # membership merge
+       ├─ stoch.advance_from(s0, dt)   # StochModModule (nM ↔ molecules; TFs as nM)
+       ├─ bng.advance_from(s0, dt)     # BngsimModule (identity nM; mRNA frozen)
+       └─ exchange(s0, s_stoch, s_bng) # owner-takes-all on overlap
 ```
 
 Edit coupling in [`rover/engine.py`](rover/engine.py) (`run_steps` / `exchange_counts`)
 or `advance_from` under [`rover/modules/`](rover/modules/).
 
-Partitioning is **file membership** only (no annotations / species-name rules).
-Overlap species are exchange variables: each module may read them; after both
-steps, shared values get `s0 + Δ_stoch + Δ_bng` so a modifier-only module
-(`Δ ≈ 0`) does not wipe the producer’s update.
+Partitioning is **file membership** plus stoichiometric **write ownership**:
+overlap mRNA/genes are stoch-owned; overlap TFs (modifiers only in StochMod) are
+det-owned. Exchange takes the owner’s post-step value (not `Δ_stoch + Δ_bng`).
+Det-owned TFs are passed into StochMod as nM (SingleCell-like), not molecule counts.
 
 ## Quickstart
 
+[StochMod](https://pypi.org/project/stochmod/) and [BNGsim](https://pypi.org/project/bngsim/)
+install from PyPI with Rover:
+
 ```bash
-# Install StochMod (editable) then Rover
-pip install -e ../StochMod
 pip install -e ".[dev]"
 
 python basic_hybrid.py
 pytest
 ```
+
+StochMod compiles per-model C propensity code on first load of each SBML, so a
+C compiler (`gcc`, `clang`, or MSVC `cl`) must be available. Wheels from PyPI
+already include the Python extension itself.
+
+For local StochMod development, install an editable clone first
+(`pip install -e /path/to/StochMod`) so it shadows the PyPI package, then
+install Rover as above.
 
 ```python
 from rover import HybridSimulator
