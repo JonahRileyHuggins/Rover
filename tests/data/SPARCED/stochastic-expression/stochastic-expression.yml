@@ -1,0 +1,13 @@
+format_version: 1
+# parameter_file omitted (not required for Rover HybridSimulator verification)
+problems: 
+  - condition_files: 
+    - conditions.tsv
+    measurement_files:
+    - measurements.tsv
+    observable_files:
+    - observables.tsv
+    sbml_files:
+    - ../deterministic-interactions-v1.4.2.xml
+    - ../stochastic-gene-expression-v1.4.2.xml
+    cell_count: 1

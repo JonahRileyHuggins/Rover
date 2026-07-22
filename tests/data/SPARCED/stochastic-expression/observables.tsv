@@ -1,0 +1,6 @@
+observableId	observableFormula	noiseFormula
+MAPK1ac	nuc_gene_a__MAPK1_*((6.022*10**23)*(1/(10**9))*(1.75*10**-12))	1
+MAPK3ac	nuc_gene_a__MAPK3_*((6.022*10**23)*(1/(10**9))*(1.75*10**-12))	1
+MAPK1_mRNA	cyt_mrna__MAPK1_201_*((6.022*10**23)*(1/(10**9))*(5.25*10**-12))	1
+MAPK3_mRNA	cyt_mrna__MAPK3_201_*((6.022*10**23)*(1/(10**9))*(5.25*10**-12))	1
+ERK_total	cyt_cong__p_p_ERK__B2L11_1_*1+cyt_cong__p_p_ERK__BAD_*1+cyt_cong__EGFR_1__p_p_ERK_*1+cyt_cong__ERBB2_1__p_p_ERK_*1+cyt_cong__ERBB4_1__p_p_ERK_*1+nuc_cong__ERK_*1+nuc_cong__p_p_ERK_*1+cyt_cong__ERK_*1+cyt_cong__p_ERK_*1+cyt_cong__p_p_ERK_*1+cyt_cong__GRB2__SOS1_1__p_p_ERK_*1+cyt_cong__RAF1_1__p_p_ERK_*1+cyt_cong__NF1_1__p_p_ERK_*1+cyt_cong__ERK__p_p_MEK_*1+cyt_cong__p_ERK__p_p_MEK_*1+cyt_cong__RPS6KA__p_p_ERK_*1+nuc_cong__p_p_ERK__DUS1_*1+nuc_cong__FOS_1__p_p_ERK_*1+cyt_cong__p_ERK__DUS6_1_*1+cyt_cong__p_p_ERK__DUS6_1_*1+cyt_cong__p_p_ERK__p_DUS1_	1
