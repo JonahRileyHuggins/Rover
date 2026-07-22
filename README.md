@@ -11,8 +11,7 @@ over a shared **molecule-count** array store, orchestrated with
 ## Quickstart
 
 ```bash
-# Install StochMod (editable) then Rover
-pip install -e ../StochMod
+# Install Rover
 pip install -e ".[dev]"
 
 python basic_bigraph.py
