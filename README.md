@@ -1,5 +1,7 @@
 # Rover
 
+**This repository is still under development.**
+
 Statically partitioned hybrid simulator that couples:
 
 - **BNGsim** (ODE / analytical Jacobian) on a deterministic SBML partition
@@ -20,8 +22,8 @@ HybridSimulator.run
        └─ exchange(s0, s_stoch, s_bng) # owner-takes-all on overlap
 ```
 
-Edit coupling in [`rover/engine.py`](rover/engine.py) (`run_steps` / `exchange_counts`)
-or `advance_from` under [`rover/modules/`](rover/modules/).
+Edit coupling in `[rover/engine.py](rover/engine.py)` (`run_steps` / `exchange_counts`)
+or `advance_from` under `[rover/modules/](rover/modules/)`.
 
 Partitioning is **file membership** plus stoichiometric **write ownership**:
 overlap mRNA/genes are stoch-owned; overlap TFs (modifiers only in StochMod) are
@@ -80,10 +82,12 @@ compartment volumes (`nM · V · N_A · 1e-9`), matching SingleCell.
 
 ### Trajectory storage
 
-| Piece | Where | Why |
-|-------|--------|-----|
-| Live `_counts` | 1-D `float64` nM in RAM | Hot path for coupling |
-| Trajectory | `(n_points, n_species)` memory **or** memmap `.npy` | History only; one row write per step |
+
+| Piece          | Where                                               | Why                                  |
+| -------------- | --------------------------------------------------- | ------------------------------------ |
+| Live `_counts` | 1-D `float64` nM in RAM                             | Hot path for coupling                |
+| Trajectory     | `(n_points, n_species)` memory **or** memmap `.npy` | History only; one row write per step |
+
 
 Do **not** have BNGsim/StochMod dump to disk each step — that would dominate cost.
 The orchestrator copies the live vector into the next trajectory row (sequential
@@ -97,10 +101,12 @@ clock rewound before `advance(dt)`). StochMod leaps once by `dt` per call.
 
 Hybrid coupling is **not** the same cost model as a standalone batch run:
 
-| Mode | What happens |
-|------|----------------|
-| `StochMod.run(0, T, dt)` / `bngsim.Simulator.run(...)` | One Python call; entire trajectory stays in C |
-| `sim.run(t_end=T)` with coupling `dt` | `T/dt` Python↔C round-trips (set_state / advance / convert) |
+
+| Mode                                                   | What happens                                                |
+| ------------------------------------------------------ | ----------------------------------------------------------- |
+| `StochMod.run(0, T, dt)` / `bngsim.Simulator.run(...)` | One Python call; entire trajectory stays in C               |
+| `sim.run(t_end=T)` with coupling `dt`                  | `T/dt` Python↔C round-trips (set_state / advance / convert) |
+
 
 So `t_end=259200, dt=1` means **259 200 coupling steps**. Prefer a larger
 coupling `dt` when the biology allows it (e.g. `dt=30` → ~8640 steps for 3 days).
@@ -109,3 +115,80 @@ BNGsim defaults: codegen on, `jacobian="analytical"`, `rtol=1e-4`, `atol=1e-6`,
 `max_steps=1e8`. If codegen fails, Rover falls back to the interpreted RHS; if
 analytical Jacobian construction fails, it falls back to finite differences.
 On some Windows consoles codegen can fail with a `charmap` encoding error.
+
+## Preparing your own SBML pair
+
+Rover does not ingest a single model. You split **your** network into two
+SBML files and pass them as:
+
+```python
+HybridSimulator(deterministic_sbml, stochastic_sbml, dt=...)
+```
+
+The bundled examples happen to be gene expression plus protein binding
+(mRNA, genes, TFs). That biology is **not required**. Any species can live on either side of the split. Rover never classifies a species by what it represents; only by which file lists it and whether it is a reactant/product there.
+
+### What each file contains
+
+
+| File               | Simulator           | Put here                                       |
+| ------------------ | ------------------- | ---------------------------------------------- |
+| Deterministic SBML | BNGsim (ODE)        | Reactions you want integrated continuously     |
+| Stochastic SBML    | StochMod (tau-leap) | Reactions you want as discrete molecule events |
+
+
+A species may appear in **one file or both**. IDs are the join key: the same
+`species id` in both files is one shared state entry. Exclusive species
+(present in only one file) are fine.
+
+Typical pattern, independent of molecule type:
+
+1. Put a reaction in **exactly one** file — the side that should fire it.
+2. If the other side’s rate laws need that species as an input, also declare
+  it in the other file, usually as a **modifier** (not a reactant/product).
+3. Keep compartment `id`s and sizes consistent for shared species.
+
+Do **not** put the same reaction in both files. Species that are
+reactants/products in **both** files are ambiguous (see ownership below);
+avoid that unless you intend the name-based fallback.
+
+### Write ownership (who updates shared species)
+
+After each coupling step, overlap species take the **owner’s** post-step
+value. Ownership is inferred from stoichiometry, not from names like
+`mrna` / `gene` / `prot`:
+
+- **Reactant or product only in the stochastic file** → StochMod owns it.
+BNGsim holds it fixed over the ODE window (so the deterministic file can
+still *read* it, e.g. as a modifier).
+- **Reactant or product only in the deterministic file** → BNGsim owns it.
+StochMod sees it as nanomolar (not molecule counts) and does not write it
+back — the usual pattern for a regulator that appears only as a modifier
+in stochastic rate laws.
+- **Modifier-only** in a file does **not** confer ownership.
+- If a species is a reactant/product in **both** files, Rover falls back to
+a name heuristic (`mrna` / `gene` → stochastic, otherwise deterministic).
+Do not rely on that for a custom model: keep stoichiometric participation
+on one side only.
+
+So: a low-copy ion channel, a promoter, or an enzyme can be stochastic;
+a high-abundance metabolite or a transcription factor can be deterministic.
+Put the species as reactant/product in the file that should own it, and as
+a modifier (if needed) in the other.
+
+### Units and ICs
+
+Shared state is **nanomolar**. Use SBML `initialConcentration` in nM,
+compartment sizes in litres, and substance units of nanomole (the example
+files define `substance` as `mole` with `scale="-9"`). StochMod converts
+stoch-owned species to molecule counts with `nM · V · N_A · 1e-9`;
+det-owned overlap is passed through as nM, so stochastic kinetic laws that
+read those species should be written in nM, not counts.
+
+If both files set an overlap species’ initial condition, BNGsim’s value is
+used and a mismatch is logged.
+
+Example layout (bundled LR pair):
+`[tests/data/LR/deterministic-interactions.xml](tests/data/LR/deterministic-interactions.xml)`
+and
+`[tests/data/LR/stochastic-gene-expression.xml](tests/data/LR/stochastic-gene-expression.xml)`.
